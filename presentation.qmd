@@ -1,0 +1,3209 @@
+---
+title: "Statistical Thinking"
+author: Sophie Lee
+date: 2024-08-14
+format: 
+  revealjs:
+    incremental: true
+    slide-number: true
+    theme: custom.scss
+    width: 1920
+    height: 1080
+knitr:
+  opts_chunk: 
+    fig.align: center
+    message: false
+    dev: png
+    dev.args: { bg: "transparent" }
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+pacman::p_load(tidyverse, flextable, kableExtra, ggforce)
+
+# Theme for output
+theme_stats_thinking <- function() {
+  theme_minimal() +
+  theme(axis.text = element_text(size = 12),
+        axis.title = element_text(size = 15),
+        axis.line = element_line(colour = "grey30"),
+        panel.grid.major = element_line(colour = "grey50"),
+        panel.grid.minor = element_line(colour = "grey75"),
+        panel.background = element_blank(),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(size = 12))
+}
+```
+
+#  {.chapter-theme}
+
+::: r-fit-text
+Chapter 1:
+
+What is statistical thinking?
+:::
+
+## What is statistics?
+
+##### Statistics = science of data
+
+-   Collection and storage of data
+-   Data visualisation
+-   Analysis of data
+-   Interpretation of results
+-   Communication of results
+
+::: notes
+Statistics is the science of data. This includes the collection and storage of data, the visualisation and analysis of samples of data, and the interpretation and communication of results.
+:::
+
+## What is statistics?
+
+![](img/stats_inference1.png){height="20cm" width="50cm" fig-align="center"}
+
+::: notes
+The overall aim of statistics is to make inferences about a target population of interest based on a random sample.
+:::
+
+## What is statistics?
+
+![](img/stats_inference2.png){height="20cm" width="50cm" fig-align="center"}
+
+::: notes
+These inferences are made by applying some kind of statistical analysis to the random sample of the population and making inferences based on those results
+:::
+
+## What is statistical thinking?
+
+[Statistics does not require complex analysis methods]{.fragment}
+
+[Simplest approaches often the most effective]{.fragment}
+
+[Statistical thinking = data-driven critical thinking]{.fragment}
+
+::: notes
+People tend to assume that statistics involves complex analysis methods but often, the simplest approaches can be the most effective. In this course, we will not focus on analysis methods. Instead, we will be focusing on thinking statistically.
+
+Statistical thinking involves describing data and complex systems in relatively simple terms whilst acknowledging uncertainty that exists. The process of statistical thinking involves critically appraising available data, identifying patterns using visualisations and summaries, and communicating results in a clear, concise manner. Statistical thinking could be thought of as data-driven critical thinking.
+:::
+
+## Why statistical thinking?
+
+In 1990, 58% of the world’s population lived in low-income countries. What is the percentage today?
+
+::: nonincremental
+a.  Around 9%
+b.  Around 37%
+c.  Around 61%
+:::
+
+::: aside
+Source: [Gapminder](https://www.gapminder.org/)
+:::
+
+## Why statistical thinking?
+
+In 1990, 58% of the world’s population lived in low-income countries. What is the percentage today?
+
+::: nonincremental
+a.  [Around 9%]{.answer}
+b.  Around 37%
+c.  Around 61%
+:::
+
+::: aside
+Source: [Gapminder](https://www.gapminder.org/)
+:::
+
+## Why statistical thinking?
+
+In low-income countries across the world in 2022, what share of girls went to school until at least age 11?
+
+::: nonincremental
+a.  Around 20%
+b.  Around 40%
+c.  Around 60%
+:::
+
+::: aside
+Source: [Gapminder](https://www.gapminder.org/)
+:::
+
+## Why statistical thinking?
+
+In low-income countries across the world in 2022, what share of girls went to school until at least age 11?
+
+::: nonincremental
+a.  Around 20%
+b.  Around 40%
+c.  [Around 60%]{.answer}
+:::
+
+::: aside
+Source: [Gapminder](https://www.gapminder.org/)
+:::
+
+## Why statistical thinking?
+
+How many babies in the UK were vaccinated against some disease in 2019 (before the Coronavirus pandemic)?
+
+::: nonincremental
+a.  Around 40%
+b.  Around 60%
+c.  Around 90%
+:::
+
+::: aside
+Source: [Gapminder](https://www.gapminder.org/)
+:::
+
+## Why statistical thinking?
+
+How many babies in the UK were vaccinated against some disease in 2019 (before the Coronavirus pandemic)?
+
+::: nonincremental
+a.  Around 40%
+b.  Around 60%
+c.  [Around 90%]{.answer}
+:::
+
+::: aside
+Source: [Gapminder](https://www.gapminder.org/)
+:::
+
+## Why statistical thinking?
+
+[Necessary, not just in work but in personal life]{.fragment}
+
+[Claims by news/social media often exaggerated or skewed]{.fragment}
+
+[Human brain have a tendency to catastrophise, not good at assessing risk]{.fragment}
+
+## Course content
+
+[This course will not introduce complex analysis.]{.fragment}
+
+[Focus on thinking critically about data, identifying patterns, describing data in simple terms.]{.fragment}
+
+::: notes
+In this course, we will not be introducing any complex analysis methods. Instead, we will be focusing on statistical thinking. This involves thinking critically about data, identifying patterns, and describing the data in relatively simple terms.
+:::
+
+## Course content
+
+Topics covered in this course will include:
+
+-   Research questions: what they are, why they are important, how to formulate them
+-   Biases: common biases and how to recognise them
+-   Data visualisation: how to use graphs to explore data, investigate trends, and convey important messages
+-   Summarising data and quantifying differences and trends
+-   Inferential statistics: what they are and how to interpret them
+
+# {.chapter-theme}
+
+::: r-fit-text
+Chapter 2: 
+
+Research questions and biases 
+:::
+
+## Research questions
+
+[One of the most important parts of statistical analysis]{.fragment}
+
+[Should be formulated before any data collection or analysis carried out]{.fragment}
+
+[Must be clear, answerable, and concise]{.fragment}
+
+[Often not formally documented but helps develop an analysis plan]{.fragment}
+
+::: notes
+Arguably, the most important step in carrying out statistics is to specify a clear, answerable research question. Often, research questions are not formally documented but they are key to ensuring we are using appropriate data and methods to provide the most suitable advice. A research question must be fully specified before any data are collected or any analysis plans have been decided.
+:::
+
+## Research questions
+
+[All research questions must contain a target population and outcome]{.fragment}
+
+[Often questions contain comparison groups, these must also be fully defined]{.fragment}
+
+[Can be helpful to use PICO approach]{.fragment}
+
+::: notes
+Although there are infinite research questions that statistics can be used to address, all must contain certain elements. These are a target population and an outcome of interest. If an analysis requires a comparison between groups, these must also be clearly specified in the research question. One way to ensure that a research question has been correctly specified is to use the PICO approach:
+:::
+
+## PICO approach
+
+[P]{.answer}opulation
+
+[I]{.answer}ntervention
+
+[C]{.answer}omparison
+
+[O]{.answer}utcome
+
+## Target population
+
+[Target population that we wish to make inferences about]{.fragment}
+
+[Described fully, all characteristics clearly defined]{.fragment}
+
+[Example: young male adult offenders ]{.fragment}[ → male offenders aged between 18 and 20 at time of sentencing]{.fragment .answer}
+
+::: notes
+First, we must clearly specify a target population of interest. The population described must be as specifically as possible and contain all important characteristics that define the population. This is particularly important in situations where the definition of a characteristic may change or be unclear. For example, the Offender Management Statistics categorise age into three groups: juveniles, young adults, and adults. Rather than defining a population simply as male young adults, we would give the full definition: male offenders who were aged between 18 and 20 at the time of sentencing.
+:::
+
+## Intervention/comparison
+
+[Optional comparison groups]{.fragment}
+
+[Can be intervention, treatment, or just a characteristic]{.fragment}
+
+[Research question must contain both I and C, or neither]{.fragment}
+
+::: notes
+Although not necessary for all research questions, if a study involves a comparison between groups, these groups must also be fully defined and included. The intervention in a research question could be some intervention, procedure or treatment applied to the target population. However, in some cases this grouping definition is not an intervention at all, it could be an exposure of some kind or a characteristic that differs between the groups we are observing and comparing.
+:::
+
+## Outcome
+
+[All research questions must define an outcome of interest]{.fragment}
+
+[Must be measurable, specific, and relevant to the question]{.fragment}
+
+[Type of variable should be defined as this determines appropriate visualisations, summaries, and analyses that can be used]{.fragment}
+
+::: notes
+The outcome of interest defined in the research question must be measurable, specific, and relevant to the question we are aiming to answer. It is particularly important to correctly specify the type of variable used for the outcome as this determines the most appropriate visualisations, summaries and analyses. Variables can either be classified as numeric or categorical
+:::
+
+## Types of variables: numeric
+
+**Continuous:** can take any value on a number scale, include decimal places
+
+![](img/tapemeasure.png){height="6cm" width="20cm" fig-align="center"}
+
+Examples: height, blood pressure, temperature
+
+::: notes
+Numeric variables are measured on a number scale. If the outcome can take any value on a numeric scale, including with decimal places, this is known as a continuous numeric variable.
+:::
+
+## Types of variables: numeric
+
+**Discrete:** can only take whole numbers or rounded numbers, e.g. counts
+
+![](img/count.png){fig-align="center"}
+
+## Types of variables: categorical
+
+Categorical variables classified based on the number of groups/categories
+
+**Binary:** two categories (yes/no, positive/negative)
+
+::: columns
+::: {.column width="50%"}
+![](img/guilty.png){height="10cm" width="15cm" fig-align="right"}
+:::
+
+::: {.column width="50%"}
+![](img/covid.png){height="10cm" width="15cm" fig-align="left"}
+:::
+:::
+
+## Types of variables: categorical
+
+**Ordinal:** more than 2 ordered categories (e.g. low/medium/high)
+
+::: columns
+::: {.column width="40%"}
+![](img/faces.png){width="20cm" height="8cm" fig-align="right"}
+:::
+
+::: {.column width="60%"}
+![](img/metoffice.png){width="20cm" height="20cm" fig-align="left"}
+:::
+:::
+
+## Types of variables: categorical
+
+**Nominal:** more than 2 categories, no ordering
+
+::: columns
+::: {.column width="40%"}
+![](img/marital.png){height="20cm" width="15cm" fig-align="right"}
+:::
+
+::: {.column width="60%"}
+![](img/dogs.png){height="15cm" width="25cm" fig-align="left"}
+:::
+:::
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in obese adults?
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in [obese adults]{.answer}?
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in [obese adults]{.answer}?
+
+[Population:]{.underline} Obese adults
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in [obese adults]{.answer}?
+
+[Population:]{.underline} Obese ~~adults~~
+
+People aged 18 or over
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in [obese adults]{.answer}?
+
+[Population:]{.underline} ~~Obese adults~~
+
+People aged 18 or over with a BMI over 30
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in obese adults?
+
+[Population:]{.underline} People aged 18 or over with a BMI over 30
+
+## Example research question
+
+Does a [plant-based diet]{.answer} reduce cholesterol levels in obese adults?
+
+[Population:]{.underline} People aged 18 or over with a BMI over 30
+
+[[Intervention:]{.underline} Plant-based diet]{.fragment}
+
+[[Comparison:]{.underline} Standard diet (control group)]{.fragment}
+
+## Example research question
+
+Does a plant-based diet reduce cholesterol levels in obese adults?
+
+[Population:]{.underline} People aged 18 or over with a BMI over 30
+
+[Intervention:]{.underline} Plant-based diet
+
+[Comparison:]{.underline} Standard diet (control group)
+
+## Example research question
+
+Does a plant-based diet reduce [cholesterol levels]{.answer} in obese adults?
+
+[Population:]{.underline} People aged 18 or over with a BMI over 30
+
+[Intervention:]{.underline} Plant-based diet
+
+[Comparison:]{.underline} Standard diet (control group)
+
+[[Outcome:]{.underline} Difference in cholesterol level]{.fragment}
+
+## Biases
+
+[Almost all data and analyses will have some kind of bias included]{.fragment}
+
+[Important to consider before analysis plan decided]{.fragment}
+
+[Can arise at data collection, analysis, interpretation, and communication stages]{.fragment}
+
+::: notes
+Whether the data we use to answer our research question is collected by ourselves or taken from a published source, it is important to consider potential biases, or errors, that may be present. Unfortunately most data collection methods are inherently flawed, this makes it especially important to be transparent about the limitations of the data and analysis we provide.
+
+There are many different types of bias that can arise at different stages of an analysis. Here, I will introduce some of the most common types with examples.
+:::
+
+## Selection bias
+
+::: columns
+::: {.column width="70%"}
+Individuals more likely to be included in sample than others
+
+[Sample no longer random, cannot make inferences about target population]{.fragment}
+:::
+
+::: {.column width="30%"}
+![](img/cherry.png){.absolute top=400 right=0 height="10cm" width="20cm"}
+:::
+:::
+
+::: notes
+Selection bias occurs when some data are more likely to be included in a sample than others. One of the key requirements of statistical analysis is that a sample must be random and representative of the target population in our research question. If this is not the case, we may not be able to make inferences about the target population and will not be able to answer the research question. Cherry picking individuals
+
+For example, we are interested in whether one hour of yoga per day improves depressive symptoms in adults living in the UK with anxiety and depression. We ask GPs around the UK to suggest patients from their surgery that are currently being treated for anxiety and depression to take part in the study. If the doctors deliberately selected the patients they thought would benefit most from the yoga classes, i.e. those with the highest baseline depressive symptoms, this sample would not be random and the results would be impacted by selection bias.
+:::
+
+## Recall bias
+
+::: columns
+::: {.column width="70%"}
+Participants asked to recall past events or experiences
+
+[Accuracy and completeness will differ]{.fragment}
+
+[Not always trustworthy]{.fragment}
+:::
+
+::: {.column width="30%"}
+![](img/recall.png){height="20cm" width="15cm"}
+:::
+:::
+
+::: notes
+Recall bias occurs when participants are asked to recall past events or experiences as part of a study which will differ in accuracy and completeness. For example, in a study investigating the impact of ultra processed food on the rates of heart disease, participants were asked to recall how many ultra processed foods they had consumed in the past week. Most participants are likely to forget some of the food they had eaten over a week, and the accuracy of this recall is likely to differ between participants.
+:::
+
+## Confirmation bias
+
+::: columns
+::: {.column width="70%"}
+Choosing to analyse or interpret data based on pre-conceived ideas
+
+[Inherent to human brains]{.fragment}
+
+[Identify potential expectations before looking at data]{.fragment}
+:::
+
+::: {.column width="30%"}
+![](img/confirmation.png){width="15cm" height="15cm"}
+:::
+:::
+
+::: notes
+Confirmation bias is the tendency to analyse or interpret data in a way that supports preconceived ideas. Unfortunately, confirmation bias is inherent to human nature and can be difficult to spot. It is also one of the reasons that statistical thinking, rather than simply trusting our gut instinct, is so important. The best way to counteract confirmation bias is to acknowledge any pre-conceived ideas or expectations of results before looking at data and being aware of these throughout the process.
+:::
+
+## Missing data
+
+::: columns
+::: {.column width="70%"}
+Missing data = holes in the dataset
+
+[Something we intended to collect but have not]{.fragment}
+
+[Very common, not always obvious]{.fragment}
+
+[Potential source of bias]{.fragment}
+:::
+
+::: {.column width="30%"}
+![](img/missing.png){width="15cm" height="22cm"}
+:::
+:::
+
+::: notes
+Another potential source of bias comes from the existence of missing data. Missing data are observations that were intended to be collected but were not. Unfortunately they are very common in analysis, even when every effort has been made to avoid them. Examples of missing data include:
+:::
+
+## Examples of missing data
+
+-   Probation practitioners not adding data to administrative system [as they are [too busy]{.answer}]{.fragment}
+-   Questionnaires not complete [as some questions are [considered too personal]{.answer} by participants]{.fragment}
+-   Blood samples are [dropped in a lab]{.answer}[, losing the results, leaving holes in the data]{.fragment}
+
+::: notes
+Probation practitioners were asked to record details into an administrative system for the purpose of analysis. Practitioners in a certain area were very busy due to a large caseload and did not collect all of the information as it was not relevant to their work. This means that the data added onto the system is incomplete.
+
+-   A questionnaire is sent out to households in a local authority, asked for information about household income and employment history. Some households consider these questions too personal and did not fill in the information.
+-   A clinical trial involves taking blood samples from participants to analyse. Some samples are dropped on the way to the lab and their results are unusable. The analysis dataset contains blank spaces where these results would be.
+:::
+
+## Missing data
+
+[Impossible to truly know the reason for and impact of missing data]{.fragment}
+
+[Best way to overcome missing data is to not have any!]{.fragment}
+
+[Important to consider potential biases introduced by missing data and account for them in analysis]{.fragment}
+
+[Be transparent when reporting missing data]{.fragment}
+
+::: notes
+Unfortunately, the true reason for missingness will not be known as the data do not exist. When dealing with missing data, our main aim is to identify the most likely reasons and be transparent about the implication of this on our analysis. Failure to recognise and deal with missing data can produce invalid, often misleading results. If data are missing because of the missing data itself, or if there would be systematic differences between the observed and missing values, this means the data are no longer random, one of the main requirements of statistical inference. At a very minimum, we must be transparent about the number and type of missing data within our sample. This should be done before analysis methods are considered as sometimes they may require alternative approaches to overcome the bias introduced by missingness.
+:::
+
+#  {.chapter-theme}
+
+::: r-fit-text
+Exercise 1:
+
+research questions and missing data
+:::
+
+## Research questions: PICO
+
+Does the introduction of a 4-day working week increase productivity in government departments?
+
+**P**
+
+**I**
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+Does the introduction of a 4-day working week increase productivity in government departments?
+
+**P:** [Government departments]{.answer}
+
+**I**
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+Does the introduction of a 4-day working week increase productivity in government departments?
+
+**P:** [Government departments]{.answer}
+
+**I:** [4-day working week]{.answer}
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+Does the introduction of a 4-day working week increase productivity in government departments?
+
+**P:** [Government departments]{.answer}
+
+**I:** [4-day working week]{.answer}
+
+**C:** [Standard working week]{.answer}
+
+**O**
+
+## Research questions: PICO
+
+Does the introduction of a 4-day working week increase productivity in government departments?
+
+**P:** [Government departments]{.answer}
+
+**I:** [4-day working week]{.answer}
+
+**C:** [Standard working week]{.answer}
+
+**O:** [Productivity]{.answer}
+
+## Research questions: PICO
+
+What is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?
+
+**P**
+
+**I**
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+What is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?
+
+**P:** [Defendants dealt with at magistrates' courts in the North West]{.answer}
+
+**I**
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+What is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?
+
+**P:** [Defendants dealt with at magistrates' courts in the North West]{.answer}
+
+**~~I~~**
+
+**~~C~~**
+
+**O**
+
+## Research questions: PICO
+
+What is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?
+
+**P:** [Defendants dealt with at magistrates' courts in the North West]{.answer}
+
+**~~I~~**
+
+**~~C~~**
+
+**O:** [Time between offence committed and case completion]{.answer}
+
+## Research questions: PICO
+
+How has the prison population in England and Wales changed compared to pre-pandemic levels?
+
+**P**
+
+**I**
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+How has the prison population in England and Wales changed compared to pre-pandemic levels?
+
+**P:** [Prisons in England and Wales]{.answer}
+
+**I**
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+How has the prison population in England and Wales changed compared to pre-pandemic levels?
+
+**P:** [Prisons in England and Wales]{.answer}
+
+**I:** [Pre-pandemic, i.e. prior to 2020]{.answer}
+
+**C**
+
+**O**
+
+## Research questions: PICO
+
+How has the prison population in England and Wales changed compared to pre-pandemic levels?
+
+**P:** [Prisons in England and Wales]{.answer}
+
+**I:** [Pre-pandemic, i.e. prior to 2020]{.answer}
+
+**C:** [Post-pandemic]{.answer}
+
+**O**
+
+## Research questions: PICO
+
+How has the prison population in England and Wales changed compared to pre-pandemic levels?
+
+**P:** [Prisons in England and Wales]{.answer}
+
+**I:** [Pre-pandemic, i.e. prior to 2020]{.answer}
+
+**C:** [Post-pandemic]{.answer}
+
+**O:** [Prison population]{.answer}
+
+## Missing data
+
+[Probation practitioners were asked to record details in an administrative system for analytical purposes not directly related to their work.]{.fragment}
+
+[Some practitioners were busy and forgot to record the data on the system, leading to holes in the data.]{.fragment}
+
+[Give a scenario where this would introduce bias into the analysis, and another where this would not cause bias.]{.fragment}
+
+::: notes
+If probation practitioners did not record information about their caseload because it was too overwhelming, this means that the missing data will be for a certain subset of (potential) results. Therefore, the observed information will not be representative of the whole situation and will only relate to those with smaller caseloads.
+
+On the other hand, if the probation practitioner had to leave work early because they were unwell, not related to their work, this is completely random and not related to the missing data. Therefore, we would not expect the missing data to be different to the observed, and the results will not be biased
+:::
+
+#  {.chapter-theme}
+
+::: r-fit-text
+Chapter 3:
+
+Data visualisation
+:::
+
+## Why data visualisation?
+
+[Powerful tool with multiple uses]{.fragment}
+
+[Data exploration: identifying outliers, checking distributions]{.fragment}
+
+[Analysis tool: generating hypotheses, identifying trends]{.fragment}
+
+[Communication tool: conveying messages, sharing results]{.fragment}
+
+::: notes
+Data visualisation is a powerful tool with multiple important uses. First, visualisations allow us to explore the data, identify potential outliers and errors, or check that the variables behave in the way we would expect them to if they have been recorded correctly. Visualisations can also be used as an analysis tool, allowing us to identify trends in the data or differences between groups. Finally, visualisations can help to convey messages to an audience in a clear, concise way that is often more powerful than presenting them using numbers or text. In some cases, data visualisations can show results so clearly that further analysis is arguably unnecessary.
+:::
+
+## 
+
+```{r}
+#| label: shipman-line
+
+read_csv("Data/00-2-shipman-times-x.csv") %>% 
+  pivot_longer(Shipman:Comparison, 
+               names_to = "gp", 
+               values_to = "perc_death") %>% 
+  mutate(gp = factor(gp, levels = c("Shipman", "Comparison"))) %>% 
+  ggplot() +
+  geom_line(aes(x = Hour, y = perc_death, colour = gp), 
+            linewidth = 1) +
+  scale_colour_manual(name = "GP",
+                      values = c("firebrick", "blue")) +
+  labs(y = "% of deaths") +
+  theme_stats_thinking()
+```
+
+::: notes
+A gruesome example of this was found after the arrest of Harold Shipman, one of Britain’s most prolific serial killers. Harold Shipman was convicted of murdering hundreds of his mostly elderly patients with an overdose of opiates, often administered in their homes. After his conviction, investigators questioned whether he could have been caught earlier. The visualisation shows the time at which patients died who were registered at other local GP surgeries
+
+The red line shows the time of death of Harold Shipman’s patients, with a clear spike in the middle of the day when he was out on house visits to his elderly patients. The difference is so stark that it can be argued that no formal statistical analysis would be required to confirm this.
+:::
+
+## Choosing the most appropriate visualisation
+
+-   Number of variables to display
+-   Type of variable(s)
+-   Intention of the visualisation
+    -   Explorative
+    -   Communicating results
+    -   Generating hypotheses
+
+## Data visualisations
+
+-   Visualising a single, numeric variable
+-   Visualisations to compare a numeric variable between groups
+-   Visualising a single, categorical variable
+-   Visualisations to compare a categorical variable between groups
+-   Visualisations for two or more numeric variables
+-   Visualising temporal data
+
+## Visualising a single, numeric variable
+
+Histograms: identify outliers, check shape/distribution, identify peaks in data.
+
+```{r}
+#| label: normal-distribution
+
+normal_df <- tibble(x1 = seq(-4, 4, length=100)) %>% 
+  mutate(y1 = dnorm(x1))
+
+ggplot(normal_df) +
+  geom_density(aes(x = x1, y = y1), linewidth = 1,
+               stat = "identity", fill = "thistle") +
+  theme_void()
+```
+
+::: notes
+Histograms are a common data visualisation method for a single numeric variable. Histograms consist of bars that show the number of observations in a sample that lie within a numeric range: the higher the bar, the more common those values are. They are used to check the distribution (or shape) of variables, and are useful to identify outliers and potential errors in the data.
+
+The distribution we are most often checking for is the normal distribution, also known as a bell-shaped curve, which occurs naturally in many variables and is a common assumption for many statistical methods. A normal distribution is characterised by a single peak in the centre of the histogram, also known as the average or mean. The histogram will then have two symmetric tails that show more ‘extreme’ values become less common as they are further from the average
+:::
+
+## 
+
+```{r}
+#| label: sfa-histogram
+
+csp_2015 <- read_csv("Data/CSP_2015.csv") %>% 
+  filter(sfa_2015 != 0) %>% 
+  mutate(region_fct = factor(region, 
+                             levels = c("L", "NW", "NE", "YH", 
+                                        "WM", "EM", "EE", "SW",
+                                        "SE")))
+
+sfa_hist <- ggplot(data = csp_2015) + 
+  geom_histogram(aes(x = sfa_2015), fill = "grey", colour = "black") + 
+  labs(x = "Settlement funding assessment (£ millions)",
+       y = "Frequency") +
+  theme_stats_thinking()
+
+sfa_hist
+```
+
+::: notes
+The first thing we can see from this histogram is that it is clearly not a normal distribution. The peak of the sample distribution is close to 0, and there is a very long upper tail which is not symmetrical to a lower tail.
+:::
+
+## 
+
+```{r}
+#| label: sfa-outliers
+sfa_hist +
+  # add arrows to two outliers
+  annotate(geom = "curve", x = 950, y = 55, xend = 1150, yend = 5, 
+           curvature = -.3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "curve", x = 850, y = 55, xend = 600, yend = 5,
+           curvature = .3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "text", x = 852, y = 60, 
+           label = "outliers", hjust = "left") 
+```
+
+::: notes
+Another important thing to note is the presence of outliers. Most local authorities had an SFA of approximately £300 million or less. There are two observations that have values much larger than this which must be investigated.
+:::
+
+## Histograms
+
+[Use the data to check outliers, see if they should be included]{.fragment}
+
+:::{.fragment}
+```{r}
+#| label: outlier-check
+
+filter(csp_2015, sfa_2015 > 500) %>% 
+  select(ons_code, authority, sfa_2015) %>% 
+  knitr::kable()
+```
+
+:::
+
+[Greater London Authority is a duplicate of local authorities in data, should be removed]{.fragment}
+
+[Birmingham not an error, but an outlier]{.fragment}
+
+[Should not remove outliers from data unless they should not be included]{.fragment}
+
+::: notes
+The highest value on the histogram represents the Greater London Authority with an SFA of £1,163 million, the second is from Birmingham with an SFA of £612 million. Observations should only be removed from a sample if they should not be included in an analysis. The Greater London Authority is a collection of smaller local authorities that are already in the dataset. This value must be removed before any further analysis is carried out to avoid duplicating observations. However, the Birmingham observation represents a single local authority that has a large value because it covers a large population. The Birmingham observation should not be removed from the analysis as it is not an error, but we should make a note that there is an outlier in the SFA variable as this could influence certain results if further statistical analysis is carried out on this data.
+:::
+
+## 
+
+```{r}
+#| label: hist-sfa-nolon
+
+csp_nolon <- csp_2015 %>% 
+  filter(authority != "Greater London Authority")
+
+sfa_hist_nolon <- ggplot(data = csp_nolon, aes(x = sfa_2015)) + 
+  geom_histogram(fill = "grey", colour = "black") + 
+  labs(x = "Settlement funding assessment (£ millions)",
+       y = "Frequency") +
+  theme_stats_thinking()
+  
+sfa_hist_nolon
+```
+
+::: notes
+The updated histogram, without the Greater London Authority duplicate, is given below. Notice that the x axis limits have changed. If the objective of a histogram is to check the distribution of the variable, a density curve can be added to help interpretation
+:::
+
+## 
+
+```{r}
+#| label: sfa-density
+
+ggplot(csp_nolon, aes(x = sfa_2015)) + 
+  geom_histogram(aes(y = after_stat(density)), 
+                 fill = "grey", colour = "black")+
+  geom_density(fill="salmon", alpha = .2) +
+  labs(x = "Settlement funding assessment (£ millions)", 
+       y = "Density") + 
+  theme_stats_thinking() 
+```
+
+::: notes
+A density curve transforms the data into a smooth function that removes the smaller peaks and troughs and makes it easier to compare to a distribution of interest
+:::
+
+## 
+
+```{r}
+sfa_hist_nolon
+```
+
+::: notes
+When generating or interpreting histograms, one thing to consider is the number of bars (or bins) used. Changing this number can vastly change the interpretation of results
+:::
+
+## 
+
+```{r}
+#| label: sfa-hist15
+
+
+ggplot(data = csp_nolon, aes(x = sfa_2015)) + 
+  geom_histogram(fill = "grey", colour = "black", bins = 15) + 
+  labs(x = "Settlement funding assessment (£ millions)",
+       y = "Frequency") +
+  theme_stats_thinking()
+```
+
+::: notes
+Reducing the number of bars smooths the histogram but hides the dip in distribution at around £50 million
+:::
+
+## 
+
+```{r}
+#| label: sfa-hist100
+
+
+ggplot(data = csp_nolon, aes(x = sfa_2015)) + 
+  geom_histogram(fill = "grey", colour = "black", bins = 100) + 
+  labs(x = "Settlement funding assessment (£ millions)",
+       y = "Frequency") +
+  theme_stats_thinking()
+```
+
+::: notes
+Increasing the number of bars too much shows all the small peaks and troughs in the data but makes the overall distribution more difficult to interpret. The ideal number of bins depends on the data but when generating histograms, be sure to check different numbers to ensure the graph is as informative as possible
+:::
+
+## Comparing numeric variables between groups
+
+Depends on the intention of the graph:
+
+-   To show individuals
+-   To compare distributions
+-   To compare summary statistics
+
+::: notes
+Although histograms are useful to visualise the distribution of a numeric variable across a whole sample, we often want to compare a variable between groups. The choice of visualisation will depend on which aspect of the numeric variable we are interested in comparing, for example the entire distribution or some kind of summary of the groups.
+:::
+
+## Bar chart of averages
+
+Simple graph comparing average between groups
+
+- x-axis: Grouping variable
+- y-axis: Group average
+
+::: notes
+The simplest, least informative comparison of SFA between regions would be to show the average of each group. This can be done using bar charts which consist of a bar per region. The length of each bar will represent the average SFA for the region it represents. The most common choice of average for charts of this sort is the mean. We shall discuss in later sections why this may not be the most appropriate choice.
+:::
+
+## 
+
+```{r}
+#| label: sfa-average-bar
+
+ggplot(data = csp_nolon) +
+  geom_bar(aes(x = region_fct, y = sfa_2015), 
+           stat = "summary", fun = "mean",
+           fill = "grey", colour = "black") +
+  labs(x = "Region", 
+       y = "Mean settlement funding assessment (£ millions)") +
+  theme_stats_thinking() 
+```
+
+::: notes
+This bar chart shows that local authorities in London had the highest SFA on average, while the East Midlands and South East had the lowest. The chart is clear and easily interpretable but is missing a considerable amount of information.
+:::
+
+## Comparing numeric variables between groups
+
+Bar chart of averages easily interpretable
+
+[Removes most of the information about a variable]{.fragment}
+
+[No information about spread of distribution or overlap between groups]{.fragment}
+
+[Boxplot adds information about spread to average]{.fragment}
+
+::: notes
+The chart is clear and easily interpretable but is missing a considerable amount of information. In particular, the chart does not give any information about the spread of values in each group. Although the group averages look different, there is likely overlap in values in each of the groups. A common visualisation to compare average values across groups, whilst also showing measure of spread, is a boxplot.
+:::
+
+## 
+
+```{r}
+#| label: boxplot-sfa-region
+
+sfa_boxplot <- ggplot(data = csp_nolon) +
+  geom_boxplot(aes(x = region_fct, y = sfa_2015), linewidth = 1) +
+  labs(x = "Region", 
+       y = "Settlement funding assessment (£ millions)") +
+  theme_stats_thinking() 
+
+sfa_boxplot 
+```
+
+::: notes
+Boxplots contain a measure of the centre of each group, given by the median, surrounded by a box with limits defined by the interquartile range (IQR). The IQR is the difference between the 75th percentile (the value below which 75% of the sample lies) and the 25th percentile (the value below which 25% of the sample lies), giving the range of the middle 50% of the sample. The box has whiskers attached that give the range excluding outlier, and outliers are highlighted as points on the plot. The definition of outlier differs across software, however a common definition used for the boxplot below is any observation that lies further than 1.5 times the IQR from the box.
+:::
+
+## 
+
+```{r}
+#| label: boxplot-median
+
+sfa_boxplot +
+  annotate(geom = "curve", x = "NE", y = 300, xend = "L", yend = 125,
+               curvature = .3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "text", x = "NE", y = 300, size = 7,
+           label = "median", hjust = "left") 
+
+```
+
+## 
+
+```{r}
+#| label: boxplot-IQR
+
+sfa_boxplot +
+  annotate(geom = "curve", x = "NE", y = 300, xend = "L", yend = 150,
+               curvature = .3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "curve", x = "NE", y = 300, xend = "L", yend = 70,
+               curvature = -.3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "text", x = "NE", y = 300, size = 7,
+           label = "IQR", hjust = "left") 
+
+```
+
+::: notes
+The median is surrounded by a box with limits defined by the interquartile range (IQR). The IQR is the difference between the 75th percentile (the value below which 75% of the sample lies) and the 25th percentile (the value below which 25% of the sample lies), giving the range of the middle 50% of the sample.
+:::
+
+## 
+
+```{r}
+#| label: boxplot-whiskers
+
+sfa_boxplot +
+  annotate(geom = "curve", x = "NE", y = 300, xend = "L", yend = 170,
+               curvature = .3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "curve", x = "NE", y = 300, xend = "L", yend = 50,
+               curvature = -.3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "text", x = "NE", y = 300, size = 7,
+           label = "whiskers", hjust = "left") 
+
+```
+
+::: notes
+The box has whiskers attached that give the range excluding outlier,
+:::
+
+## 
+
+```{r}
+#| label: boxplot-outliers
+
+sfa_boxplot +
+  annotate(geom = "curve", x = "YH", y = 400, xend = "NW", yend = 300,
+               curvature = .3, arrow = arrow(length = unit(2, "mm"))) +
+  annotate(geom = "text", x = "YH", y = 400, size = 7,
+           label = "outliers", hjust = "left") 
+
+```
+
+::: notes
+and outliers are highlighted as points on the plot. The definition of outlier differs across software, however a common definition used for the boxplot below is any observation that lies further than 1.5 times the IQR from the box.
+:::
+
+## 
+
+```{r}
+sfa_boxplot
+```
+
+::: notes
+This boxplot clearly shows far more information than the bar chart of averages. We can clearly see the outlier which was identified earlier as Birmingham. We can also see that, although London has the highest average SFA, there is quite a large overlap of values with other regions. The East Midlands, East England, and South East regions had a large number of outliers and a very small IQR which should be investigated further. The dataset shows that this is not an error, these regions consist mostly of very small local authorities with very low spending and few towns and cities that have substantially higher spending. Therefore, any larger areas in these regions will appear as outliers compared to the very small local authorities.
+:::
+
+## Boxplots
+
+Add extra information compared to bar chart
+
+[Useful to compare summaries between groups]{.fragment}
+
+[Easy to identify potential outliers and investigate]{.fragment}
+
+[Still losing a lot of information]{.fragment}
+
+::: notes
+We gain more information from the box plot compared to the bar chart but we are still losing a lot of information by only showing summary measures. We can see the range of the middle 50% but we are not able to see how those values are distributed.To overcome these issues, we can show every observation in the sample as points, separated into groups, in a dot plot. Dot plots have the same axes layout as the previous plots, with grouping on the x axis and the numeric variable on the y-axis.
+:::
+
+## Dot plots
+Show every observation as a dot
+
+- x-axis: Grouping variable
+- y-axis : Numeric outcome
+
+[May need to ‘jitter’ points if lots of overlap]{.fragment}
+
+## 
+
+```{r}
+#| label: dotplot
+
+ggplot(data = csp_nolon) +
+  geom_point(aes(x = region_fct, y = sfa_2015)) +
+  labs(x = "Region", 
+       y = "Settlement funding assessment (£ millions)") +
+  theme_stats_thinking() 
+```
+
+::: notes
+Without checking, this dot plot appears to show every local authority’s SFA grouped by region. However, there are many local authorities that have very similar SFA values that can not be seen as they are currently lying on top of one another. To overcome this, a dot plot can be adapted by spreading the points out along the x-axis, also known as jittering:
+:::
+
+## 
+
+```{r}
+#| label: jitter
+
+ggplot(data = csp_nolon) +
+  geom_jitter(aes(x = region_fct, y = sfa_2015), width = .2) +
+  labs(x = "Region", 
+       y = "Settlement funding assessment (£ millions)") +
+  theme_stats_thinking() 
+```
+
+::: notes
+By jittering the points, we can now see the differences in the distribution of points in each region. The outlier of Birmingham is clearly visible, as are the bottom-heavy distributions of some regions. We can clearly see the differences in the number of observations in each region, for example, that the North East region has less local authorities and less variability compared to other regions. One thing that is not clear from this dot plot that was clear from previous plots, is that the London region had the highest average SFA.
+
+Sometimes a single choice of plot will not be enough and multiple visualisations are needed. In this case, we may wish to express the differences in summary statistics between regions, without losing information about the overall distribution and density of the sample. One solution would be to provide a boxplot with points added as an extra layer to the plot:
+:::
+
+## 
+
+```{r}
+#| label: box-jitter
+
+ggplot(data = csp_nolon, 
+       aes(x = region_fct, y = sfa_2015)) +
+  geom_boxplot(width = .15, outlier.shape = NA, position = "dodge") +
+  # Adds points, jittered as there is a lot of overlap
+  geom_jitter(alpha = .3, width = .2) +
+labs(x = "Region", 
+       y = "Settlement funding assessment (£ millions)") +
+  theme_stats_thinking() 
+```
+
+::: notes
+This final plot clearly shows the differences in the average SFA between regions, the outlier in the West Midlands region (Birmingham), and the differences in the shapes of distributions between regions. Although we have added an extra layer to each plot, the message of both is still clear and easily interpretable. Where additional layers hide a message or over complicate a visualisation, one or more complicated layers should be removed.
+
+Show as much relevant data as possible, maximising the amount of information given in the smallest amount of space. This does not mean showing all of the data. Overloading a plot can lead to confusion. Adding too many layers to the same visualisation can make it less informative, hiding important messages.
+:::
+
+## Visualising a single categorical variable
+
+Want to show distribution of observations between groups
+
+[Choice between visualising counts or proportions]{.fragment}
+
+[Frequency tables give full information and can provide both counts and proportions/percentages]{.fragment}
+
+::: notes
+Visualising categorical variables involves describing their distribution between categories. This can be done using counts or the proportion of observations in each group. Both counts and proportions/percentages can be displayed using frequency tables.
+:::
+
+## 
+
+```{r}
+#| label: table-recorded-crime-em
+
+recorded_crime_em <- read_csv("data/recorded_crime_2023.csv") %>% 
+  filter(area_code %in% c("E23000018", "E23000021", "E23000020", "E23000022",
+                          "E23000019")) 
+
+recorded_crime_total <- recorded_crime_em %>% 
+  select(area_name, total_recorded_crime) %>% 
+  mutate(propn_crime = round(total_recorded_crime / 
+                              sum(total_recorded_crime), 4),
+         perc_crime = paste0(propn_crime * 100, "%"))
+
+select(recorded_crime_total, -propn_crime) %>% 
+  flextable() %>% 
+  set_header_labels(area_name = "Area name",
+                    total_recorded_crime = "Total recorded crimes",
+                    perc_crime = "Percentage of total crimes") %>% 
+  autofit(add_w = .5) %>% 
+  bold(part = "header") %>% 
+  bg(part = "all", bg = "#fdddb6") %>% 
+  color(part = "all", color = "#222222") %>% 
+  fontsize(size = 60, part = "header") %>% 
+  fontsize(size = 48, part = "body") %>% 
+  line_spacing(space = 1.6, part = "body") %>% 
+  align(j = 3, align = "right", part = "all") %>% 
+  width(j = 2:3, width = 15, unit = "cm")
+
+  
+```
+
+::: notes
+For example, the number of recorded crimes in the East Midlands in 2023, categorised by police force: Frequency tables can provide a lot of information and, where there are not many categories, can be easy to interpret. However, they can quickly become overwhelming when there are many categories displayed, patterns in the data can be harder to spot, and they can look boring.
+:::
+
+## Bar chart
+
+Categorical version of histogram
+
+[Length of bars = number of observations in each group]{.fragment}
+
+[Simple, effective, easy to interpret]{.fragment}
+
+:::{.notes}
+This same data can be displayed using a bar chart, the categorical equivalent of a histogram, where the length of each bar represents the number of observations in the category:
+:::
+
+##
+
+```{r}
+#| label: recorded-crime-em
+
+ggplot(data = recorded_crime_total) + 
+  geom_bar(aes(x = area_name, y = total_recorded_crime), 
+           stat = "identity", colour = "black", fill = "grey") +
+  labs(y = "Total recorded crimes", x = "Area") +
+  theme_stats_thinking()
+```
+
+:::{.notes}
+Although this bar chart is also not particularly interesting, our eyes are immediately drawn to the differences between groups. We can immediately see that Lincolnshire and Northamptonshire had fewer recorded crimes than the other police force areas and that Leicestershire and Nottinghamshire had the highest number of recorded crimes which were at a similar level. 
+:::
+
+##
+
+```{r}
+#| label: recorded-crime-em-order
+
+crime_bar <- ggplot(recorded_crime_total) + 
+  geom_bar(aes(x = reorder(area_name, -total_recorded_crime), 
+               y = total_recorded_crime), stat = "identity",
+           colour = "black", fill = "grey") + 
+  labs(y = "Total recorded crimes", x = "Area") +
+  scale_y_continuous(labels = scales::label_number()) +
+  theme_stats_thinking()
+
+crime_bar
+```
+
+:::{.notes}
+If we want to make this order clearer, we can order the x-axis by the frequency in each group from largest to smallest.
+:::
+
+##
+
+```{r}
+#| label: recorded-crime-em-colour
+
+
+recorded_crime_total %>% 
+  mutate(fill_reg = factor(if_else(area_name == "Derbyshire", 1, 0))) %>% 
+  ggplot() + 
+  geom_bar(aes(x = reorder(area_name, -total_recorded_crime), 
+               y = total_recorded_crime, fill = fill_reg), stat = "identity",
+           colour = "black") + 
+  scale_fill_manual(values = c("grey", "#9a3416")) +
+  scale_y_continuous(labels = scales::label_number())  +
+  labs(y = "Total recorded crimes", x = "Area") +
+  theme_stats_thinking() +
+  theme(legend.position = "none")
+```
+
+:::{.notes}
+Colours can also be used to emphasise groups that are of interest to the audience. For example, if this graph was displayed as part of an investigation into crime levels in Derbyshire, we could change the colour of this bar to draw attention to it.
+
+Characteristics such as colours that naturally draw people’s attention within a visualisation are known as preattentive attributes. There are several categories of preattentive attributes that can be used to make important messages clearer.
+:::
+
+## 
+
+```{r}
+crime_bar
+```
+
+:::{.notes}
+When creating or interpreting visualisations, we want to ensure the information being shown is not misleading or distorted in any way. One way to avoid misleading readers is to follow the principle of proportional ink. This means that the amount of ink used in a visualisation should be proportional to the quantities it is representing. A common example of a violation in this principle is where a bar chart’s x-axis does not begin at 0. The differences in the lengths of bars is no longer representative of the differences between groups, leading to a distortion in the message.
+:::
+
+##
+
+```{r}
+#| label: recorded-crime-em-axis
+
+crime_bar +
+  coord_cartesian(ylim= c(50000, 100000)) 
+```
+
+:::{.notes}
+For example, using the recorded crime data, we could set the frequency axis to begin at 50,000 as all counts were higher than this.
+
+Although the plot shows the same information as the others, the smaller counts appear much smaller than the original plot and the difference between the highest and lowest values is more pronounced. Although this plot is showing the same information, this small change has affected how our brains interpret the results.
+:::
+
+## Pie charts
+
+Each ‘slice’ of the pie represents the proportion of sample in a group
+
+[Compares groups in context of whole sample]{.fragment}
+
+[Research shows people's perceptions of dots, lines and bars are more accurate than angles and proportions]{.fragment}
+
+:::{.notes}
+An alternative approach to summarising and visualising categorical variables is to use proportions. One benefit of considering proportions as opposed to the counts is that they allow us to take account of the sample size and put the counts into context. Proportions of a single sample can be visualised using a pie chart. Each ‘slice’ of the pie represents a category and the size of the slice represents the proportion of the sample that lies within that group. 
+
+Warning: Research shows that people’s perception of dots, lines and bars are more accurate than distinguishing between angles, proportions and colour hues. This is why pie charts, are harder to interpret than bar charts, particularly where differences between groups are small.
+:::
+
+##
+
+```{r}
+#| label: crime-pie
+
+ggplot(data = recorded_crime_total) +
+  geom_bar(aes(x = "", y = total_recorded_crime, fill = area_name),
+           stat = "identity", width =1, colour = "black") + 
+  scale_fill_manual(name = "Area", values = palette.colors(5, "Dark 2")) +  
+  coord_polar("y", start = 0) + 
+  theme_void(base_size = 15) 
+  
+```
+
+:::{.notes}
+For example, taking the recorded crime statistics from 2023, we can show the proportion of the total reported crimes in the East Midlands separated by police force area:
+
+The pie chart shows the same data as the bar charts shown earlier, however it is harder to compare the groups as the proportions are quite similar. One possible solution to this issue is to add labels with the values onto each slice:
+:::
+
+##
+
+```{r}
+#| label: crime-pie-label
+
+recorded_crime_total %>% 
+  arrange(desc(area_name)) %>% 
+  mutate(prop = total_recorded_crime / sum(total_recorded_crime) * 100,
+         ypos = cumsum(prop) - .5*prop) %>% 
+  ggplot() + 
+  geom_bar(aes(x = "", y = prop, fill = area_name),
+           stat = "identity", width = 1, colour = "black") +
+  scale_fill_manual(name = "Area", values = palette.colors(5, "Dark 2")) + 
+  coord_polar("y", start = 0) +
+  theme_void(base_size = 15) +
+  geom_text(aes(x = "", y = ypos, label = total_recorded_crime), 
+            colour = "black", size = 7.5) 
+```
+
+:::{.notes}
+Pie charts are generally discouraged because they are more difficult to interpret than bar charts or frequency tables. If pie charts are used, annotations such as the labels in Figure 2.18 should be used to avoid misinterpretation.
+:::
+
+## Comparing categorical variable between groups
+
+Extensions of bar charts
+
+- Stacked bar chart
+- Side-by-side bar chart
+
+[Choice depends on whether comparing the counts or proportions between groups]{.fragment}
+
+:::{.notes}
+Bar charts introduced in the previous section can be extended to include a further grouping variable and used to compare the distribution of observations between categories across groups. Stacked bar charts are used to compare the proportion of observations in different categories across groups, whereas side-by-side bar charts compare counts. 
+:::
+
+## Stacked bar chart
+
+Length of bar is total number in each category
+
+[Bars are made up of multiple smaller bars, total in each category in each group]{.fragment}
+
+[Useful when overall count in category is important as well as comparison]{.fragment}
+
+:::{.notes}
+A stacked bar chart is useful where the total number in each group is important, as well as the distribution of these groups between categories. As with a standard bar chart, the total number of observations in each group determines the length of the bar. These bars consist of multiple smaller bars that represent the number of observations in each category.
+:::
+
+##
+
+```{r}
+#| label: stacked-crime
+
+recorded_crime_em_long <- recorded_crime_em %>% 
+  select(-total_recorded_crime) %>% 
+  pivot_longer(cols = violent_crime:misc_crimes,
+               names_to = "crime_type",
+               values_to = "count") %>% 
+  mutate(crime_type_fct = factor(crime_type,
+                                 levels = c("violent_crime", 
+                                            "sexual_offences",
+                                            "robbery", "theft_offences",
+                                            "criminal_damage",
+                                            "drug_offences",
+                                            "possession_of_weapon", 
+                                            "public_order", "misc_crimes"),
+                                 labels = c("Violent", "Sexual",
+                                            "Robbery", "Theft", 
+                                            "Criminal\ndamage",
+                                            "Drugs", "Possession\nof weapon",
+                                            "Public order", "Miscelaneous")))
+
+
+ggplot(data = recorded_crime_em_long) +
+  geom_bar(aes(x = area_name, y = count, fill = crime_type_fct),
+           stat = "identity", colour = "black") +
+  labs(x = "Police force", y = "Count", fill = "Crime type") +
+  scale_fill_manual(values = palette.colors(9)) +
+  coord_flip() +
+  theme_stats_thinking() + 
+  theme(legend.position = "bottom") 
+
+```
+
+:::{.notes}
+For example, using the data from the previous section, we can compare the overall number of recorded crimes, as well as the different types of crimes, between police forces in the East Midlands.
+This bar chart clearly shows that Nottinghamshire and Leicestershire had the highest recorded crimes, and Lincolnshire and Northamptonshire had the lowest, which we had already seen previously. In addition to the findings from the previous bar charts, we can now see that the largest proportion of crimes from all police forces were violent crimes or theft. The distribution across types of crimes seems similar between police forces. If the distribution between the types of crimes is more important than comparing the total number per police force, we may also consider a proportion stacked bar chart. 
+:::
+
+##
+
+```{r}
+#| label: propn-bar-crime
+
+ggplot(data = recorded_crime_em_long) +
+  geom_bar(aes(x = area_name, y = count, fill = crime_type_fct),
+           stat = "identity", position = "fill", colour = "black") +
+  labs(x = "Police force", y = "Proportion", fill = "Crime type") +
+  scale_fill_manual(values = palette.colors(9)) +
+  coord_flip() +
+  theme_stats_thinking() + 
+  theme(legend.position = "bottom") 
+```
+
+:::{.notes}
+Proportion stacked bar charts are an alternative to the stacked bar chart which compares the proportion of each group that lie in different categories. The length of each bar is equal to 1 (representing the whole group size), and consists of smaller bars representing the proportion of the group in a category. These are particularly useful when differences in group sizes are not important and we want to compare relative distributions between groups.
+The proportion bar chart confirms that the distribution of different crime types is similar across police forces, regardless of the total number of crimes. 
+:::
+
+## Side-by-side bar chart
+
+Smaller bars are displayed side-by-side, clustered by category
+
+[Does not compare overall total in category but easier to compare counts in groups]{.fragment}
+
+[Not useful when there are many categories and groups]{.fragment}
+
+:::{.notes}
+Side-by-side bar charts allow us to compare the number of observations in each category between groups. The smaller bars that make up a stacked bar chart are placed next to one another, meaning the length of bars now represents the total observations per category per group. They are useful when comparison of the overall total of groups is not important, and where there is a small number of groups and/or categories to compare between.
+:::
+
+##
+
+```{r}
+#| label: sidebyside-bar
+
+recorded_crime_em_long %>% 
+  filter(crime_type_fct %in% c("Violent", "Theft", "Public order")) %>% 
+  ggplot() +
+  geom_bar(aes(x = area_name, y = count, fill = crime_type_fct),
+           stat = "identity", position = "dodge", colour = "black") +
+  labs(x = "Police force", y = "Count", fill = "Crime type") +
+  scale_fill_manual(values = palette.colors(4)[2:4]) +
+  theme_stats_thinking() + 
+  theme(legend.position = "bottom") 
+
+```
+
+:::{.notes}
+The previous example would require 45 bars in total (9 bars for each of the 5 police forces). This would be impossible to show clearly on one axis, so for this example, we will just compare the three most common types of crime between forces: violent, theft, and public order.
+:::
+
+## Bar charts
+
+All three charts show same information in different formats
+
+Choice of visualisation depends on motivation:
+
+- Compare overall crime total between groups: stacked bar chart
+- Compare distribution of groups between categories: proportion bar chart
+- Compare group totals across all categories: side-by-side bar chart
+
+:::{.notes}
+
+All three bar charts show the same information in slightly different formats. The most appropriate choice of these would depend on the motivation behind the plot. For example, are we interested in comparing the overall total crimes between regions? Would we prefer to compare the distribution of the different types of crimes between regions? Or is the intention of the plot to compare the total of a certain type of crimes between regions, rather than the overall total?
+:::
+
+## Visualising 2 or more numeric variables
+
+Scatterplots are used to visualise 2 numeric variables, 
+
+[Each observation represented by a point on the graph]{.fragments}
+
+- y-axis: outcome, or dependent variable (if appropriate)
+- x-axis: explanatory variable 
+
+:::{.notes}
+Visualising single variables is important when checking the data for errors and distributions. However, we often want to investigate relationships between multiple variables in a dataset. 
+One of the numeric variables is displayed on the vertical, or y-axis (often the outcome of interest or dependent variable), and the other is displayed on the horizontal, or x-axis (usually the explanatory variable). Each observation is represented with a point on the graph area. 
+:::
+
+## Scatterplots
+
+Scatterplots have multiple purposes:
+
+- Exploring data: some outliers and errors only visible when plotting multiple variables
+- Analysis: check for trends/relationships and generate hypotheses
+- Check assumptions: linear or nonlinear relationship
+
+:::{.notes}
+Scatterplots are useful to explore the data and identify outliers/errors which may not be as clearly visible in univariate plots. Scatterplots are also useful to generate hypotheses about the relationship between variables. For example, whether they are positive or negative.They can also explore the nature of relationships in terms of whether they are linear or not, which is a requirement of some statistical methods.
+:::
+
+##
+
+```{r}
+#| label: scatter-cancer
+
+cancer_reg <- read.csv("Data/cancer_reg.csv")
+
+cancer_poverty_scatter <- ggplot(data = cancer_reg,
+                                 aes(y = mortality_rate, x = poverty)) +
+  geom_point() +
+  labs(x = "% of residents living in poverty",
+       y = "Cancer mortality rate (per 100,000 residents)") +
+  theme_stats_thinking()
+
+cancer_poverty_scatter
+```
+
+:::{.notes}
+The scatterplot below shows the relationship between cancer mortality in US counties in 2015 and the level of poverty in these counties. Cancer mortality rate has been given on the y-axis as this is the outcome of interest which we think may be dependent on poverty (the explanatory variable):
+The scatterplot shows there are no unexpected outliers, and there appears to be a positive linear relationship between these variables. That is, as the percentage of the population living in poverty increases, the cancer mortality appears to increase on average. Note that we are not making inferences about the total population, nor are inferring causation from this graph.
+:::
+
+##
+
+```{r}
+#| label: scatter-line
+
+cancer_poverty_scatter +
+  geom_smooth(method = "lm", se = FALSE, colour = "#9a3416")
+
+
+```
+
+:::{.notes}
+This potential relationship can be made clearer by adding a line of best fit to the scatterplot. There are different methods of estimating a line of best fit, the most common being a linear model. Linear models produce a line that minimises the difference between each point and the line drawn. Alternative methods are available where a linear relationship is not appropriate.
+Adding a line of best fit to the scatterplot shown earlier highlights the positive association between poverty rate and cancer mortality. Although the line does not fit the data perfectly, it gives an estimation of the direction and magnitude of this relationship which can be investigated more formally using statistical analysis. 
+:::
+
+## Scatterplots
+
+Scatterplots can be extended by changing the colour, size or shape of the points based on another variables
+
+[Additional variables should only be added if they do not overload the plot]{.fragment}
+
+[Multiple, simpler graphs are better than one confusing plot]{.fragment}
+
+:::{.notes}
+Additional variables should only be included in data visualisations where they are needed and where they do not confuse the original message. Overloading a visualisation can make it hard to interpret and lose information. In some cases, it is better to have multiple, simple (but clear) plots rather than a single, complex plot. 
+:::
+
+##
+
+```{r}
+#| label: scatter-group
+
+ggplot(data = cancer_reg) +
+  geom_point(aes(y = mortality_rate, x = poverty, 
+                 colour = factor(group, levels = 1:3, 
+                                 labels = c("Group 1", "Group 2",
+                                            "Group 3"))),
+             size = 2) +
+  labs(x = "% of residents living in poverty",
+       y = "Cancer mortality rate (per 100,000 residents)") +
+  scale_colour_manual(name = "Group", values = c("black", "#9a3416",
+                                                 "#1B9E77")) +
+  theme_stats_thinking()
+```
+
+
+## Visualising temporal data
+
+Visualisations must make it clear repeated measures are related
+
+[Line graph most common temporal visualisation]{.fragment}
+
+- x-axis: time variable
+- y-axis: numeric variable
+
+:::{.notes}
+Where a variable has been measured repeatedly over time, we want to ensure that any visualisation makes it clear that these observations are related. The most common visualisation used for temporal data is a line graph. Line graphs have the measure of time along the x-axis and the variable measured over time on the y-axis. Each observation’s values are connected over time using a line. Line graphs are useful to explore trends over time, for example whether values have been increasing or decreasing. 
+:::
+
+##
+
+```{r}
+#| label: crime-line 
+
+violent_crime <- read.csv("Data/violent_crime.csv") 
+
+crime_line <- ggplot(data = violent_crime, 
+       aes(x = year, y = violent_crime)) +
+  geom_line(linewidth = 1) +
+  geom_point() +
+  scale_x_continuous(breaks = 2010:2020) +
+  labs(x = "Year", y = "Number of violent crimes recorded") +
+  theme_stats_thinking() 
+
+crime_line
+```
+
+:::{.notes}
+This line graph shows the number of violent crimes recorded in England between 2010 and 2020. From this simple graph, we can clearly see that there is a strong, downward trend. That is, the number of violent crimes recorded has decreased over the 10-year period. Line graphs are not only useful at determining overall trends but also checking the data for inconsistencies. For example, all years experienced a decrease in recorded crimes apart from 2014 - 2015 where there was an increase. We could go back and check the source of the data, make a note of potential reasons for this difference, and be sure to communicate this as part of our interpretation.
+:::
+
+##
+
+```{r}
+#| label: cases-line
+
+magistrate_data <- read.csv("Data/magistrate_data.csv") %>% 
+  pivot_longer(cols = Receipts:Outstanding,
+               names_to = "Type",
+               values_to = "Count")
+
+ggplot(data = magistrate_data, 
+       aes(x = Time, y = Count, colour = Type)) +
+  geom_line(linewidth = 1) +
+  geom_point() +
+  scale_x_continuous(name = "Year", breaks = c(seq(4, 44, 4)),
+                     labels = 2013:2023) +
+  scale_y_continuous(labels = scales::label_number()) +
+  scale_colour_manual(name = "", values = palette.colors(4)[2:4]) +
+  theme_stats_thinking() +
+  theme(legend.position = "bottom") 
+```
+
+:::{.notes}
+Line graphs can be used to compare trends between different groups by adding multiple lines to the same graph. For example, the following graph shows the number of magistrate court cases, by type, between 2012 and 2023. Each case type has a different coloured line, and the interactions between lines are clear:
+This line graph is the perfect example of where a visualisation is more powerful than simply writing results in a table of texts. The drastic drop of disposals due to closure of magistrates courts during the COVID-19 pandemic is stark. This is coupled with the vast increase of outstanding cases which we can see has not returned to pre-COVID levels. This can be explained by the other lines on the graph as we can see that the number of receipts are almost back to previous levels, whereas the number of disposals has still not quite recovered.  
+:::
+
+# {.chapter-theme}
+
+:::r-fit-text
+Exercise 2: 
+
+Data visualisations
+:::
+
+##
+
+![](img/prison_population.png){.absolute height=1000 width=1600 top=0 left=100}
+
+:::{.notes}
+- Dip in sentencing in 2020 during the pandemic, assuming due to court closures. Increasing up to 2023, almost returned to previous levels.
+- Number on remand has been increasing since around 2018/19. Look back into the data to try to understand the reasons for this. Is it possible that the steeper increase post-2020 is a result of an overloaded court system?
+- Hard to see differences in remand population as it is so small compared to the other lines, would it be better to show these as separate plots to better understand the changes over time?
+- Annotations to highlight the court closures and any changes in policy that could help explain patterns would be a helpful addition.
+- Text should be made larger to make the graph more accessible.
+:::
+
+## 
+
+![](img/probation_supervision.png){.absolute height=1000 width=1600 top=0 left=100}
+
+:::{.notes}
+- Clear annotation helps to explain the increase in supervisions following a policy change.
+- The differences in total supervisions makes it difficult to compare the number of types of supervisions over time. Has the number increased in every type following the introduction of the ORA or has this had more of an impact on post-release supervision?
+- These comparisons could be made clearer by adding labels with total to the bars or could be compared using a line graph with a line per supervision type (and possibly a total line).
+- A proportion stacked bar chart may also be useful to compare whether the distribution across types has changed following the change in policy.
+- Text should be made larger to make the graph more accessible.
+:::
+
+## 
+
+![](img/outstanding_cases_cc.png){.absolute height=1000 width=1600 top=0 left=100}
+
+:::{.notes}
+- There is a clear trend over time, with the proportion of ‘older’ cases increasing following the closure of courts in 2020.
+- An annotation would help make this trend clearer and make the proportions easier to interpret. -The use of bars creates a Moire pattern, a visual trick that makes the bars look like they are moving. This is quite unpleasant for some readers (me included), making it hard to look at the plot too long and interpret it.
+- Consider joining the bars into a stacked area plot to remove this unpleasant pattern.
+- Text needs to be larger to make the graph more accessible.
+:::
+
+# {.chapter-theme}
+
+::: r-fit-text
+Chapter 4:
+
+Summarising data
+:::
+
+## Summarising data
+
+Allows us to explore and quantify aspects of the sample
+
+[Can not be used to answer research question unless all information on target population is collected]{.fragment}
+
+[Choice of summary depends on type of variable, distribution of data, and property we wish to quantify]{.fragment}
+
+
+:::{.notes}
+Summary statistics allow us to quantify and explore different parts of a sample of data. They can be provided alongside data visualisations introduced earlier in the course to support results and interpretations. Note that the summary statistics introduced in this section describe only the sample data so cannot be used to answer research questions fully unless all data on the target population has been collected. 
+
+The choice of summary statistics will depend on the type of variable(s) we wish to explore, the distribution of these variable(s) and the aspect of the data we would like to quantify. When interpreting summaries provided from analysis that has already been completed, it is important to check that the most appropriate summaries have been used and that interpretations of them will be valid.
+:::
+
+## Summarising categorical variables
+
+Describe the distribution of observations between categories:
+
+- Proportion (0 &rarr; 1)
+- Percentage (0 &rarr; 100%)
+- Rate (0 &rarr; &infin;)
+
+[Can use count but does not account for overall sample size]{.fragment}
+
+:::{.notes}
+To summarise a single categorical variable, we simply need to quantify the distribution of observations lying in each group. The simplest way to do this is to count the number of observations that lie in each group, as we have seen previously displayed in frequency tables. However, a simple count can be difficult to interpret without proper context. Often, we wish to present these counts relative to the total sample that they are taken from.
+
+The proportion of observations in a given group is estimated as the number in the group divided by the total sample size. This gives a value between 0 and 1. Multiplying the proportion by 100 will give the percentage in each group, taking the value between 0 and 100%. In cases where the proportion and percentage in a given group is very small, we may wish to multiply the proportions by a larger number to make values easier to interpret. These values are known as rates and are interpreted as the value per the number multiplied by. For example, if the proportion in a group was 0.0005, this could be multiplied by 10,000 to give a rate of 5 per 10,000. 
+:::
+
+## Summarising categorical variables
+
+**Example:** number of recorded crimes in East Midlands, 2023
+
+:::{.fragment}
+**Total crimes in East Midlands:** 419,236
+
+**Total crimes in Nottinghamshire:** 105,899
+:::
+
+[**Proportion of crimes in Nottinghamshire:** 105,899 ÷ 419,236 <br> [ = 0.2526]{.fragment .answer}]{.fragment}
+
+[**Percentage of crimes:** 0.2526 x 100% [ = 25.26%]{.fragment .answer}]{.fragment}
+
+[**Rate of crimes:** [2526 crimes per 10,000]{.fragment .answer}]{.fragment}
+
+:::{.notes}
+To summarise a single categorical variable, we simply need to quantify the distribution of observations lying in each group. The simplest way to do this is to count the number of observations that lie in each group, as we have seen previously displayed in frequency tables. However, a simple count can be difficult to interpret without proper context. Often, we wish to present these counts relative to the total sample that they are taken from.
+
+The proportion of observations in a given group is estimated as the number in the group divided by the total sample size. This gives a value between 0 and 1. Multiplying the proportion by 100 will give the percentage in each group, taking the value between 0 and 100%. 
+:::
+
+##
+
+```{r}
+#| label: table-propn-perc-crime
+
+
+  flextable(recorded_crime_total) %>% 
+  set_header_labels(area_name = "Area name",
+                    total_recorded_crime = "Total recorded crimes",
+                    propn_crime = "Proportion of total crimes",
+                    perc_crime = "Percentage of total crimes") %>% 
+  autofit(add_w = .5) %>% 
+  bold(part = "header") %>% 
+  bg(part = "all", bg = "#fdddb6") %>% 
+  color(part = "all", color = "#222222") %>% 
+  fontsize(size = 60, part = "header") %>% 
+  fontsize(size = 48, part = "body") %>% 
+  line_spacing(space = 1.6, part = "body") %>% 
+  align(j = 4, align = "right", part = "all")
+```
+
+:::{.notes}
+Both the proportions and percentages give the same information (percentage is simply proportion multiplied by 100) but percentages are generally easier to interpret. In this example, Nottinghamshire had the highest proportion of crimes with just over a quarter (25.26%) of the total. This was closely followed by Leicestershire.
+:::
+
+## Summarising numeric variables
+
+Summarised using the centre (average) and spread of sample
+
+:::{.fragment}
+Choice of summary depends on distribution of variable
+
+```{r}
+#|label: normal-density
+
+
+normal_data <- tibble(x = seq(-4, 4, length=100),
+                      y = dnorm(x))
+
+normal_curve <- ggplot(normal_data) +
+  geom_density(aes(x = x, y = y), stat = "identity",
+               fill = "thistle") +
+  theme_void() 
+
+normal_curve
+```
+:::
+
+:::{.notes}
+Numeric variables are typically summarised using the centre of the variable, also known as the average, and a measure of the spread of the variable. The most appropriate choice of summary statistics will depend on the distribution of the variable. More specifically, whether the numeric variable is normally distributed or not. The shape/distribution of a variable is typically investigated by plotting data in a histogram.
+:::
+
+## Measure of centre
+
+When data are normally distributed, centre is given using the mean
+
+::::{.columns}
+:::{.column width="60%"}
+[Represents the peak of a normal distribution]{.fragment fragment-index=1}
+
+[Sum of the sample values, divided by the sample size]{.fragment fragment-index=3}
+:::
+:::{.column width="40%"}
+:::{.fragment fragment-index=2}
+```{r}
+ggplot(normal_data) +
+  geom_density(aes(x = x, y = y), stat = "identity",
+               fill = "thistle") +
+  geom_vline(xintercept = 0) +
+  scale_x_continuous(name = "", breaks = -4:4,
+                     labels = c("", "", "", "", "Mean", 
+                                "", "", "", "")) +
+  theme_void() + 
+  theme(axis.text.x = element_text(size = 25))
+```
+:::
+:::
+::::
+
+:::{.notes}
+The average of a numeric variable is another way of saying the centre of its distribution. Often, people will think of the mean when trying to calculate an average, however this may not always be the case. 
+When data are normally distributed, the mean is the central peak of the distribution. This is calculated by adding together all numbers in the sample and dividing it by the sample size. 
+:::
+
+## Measure of centre
+
+Measure 10 high school students’ heights in centimetres (cm):
+
+[**142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72**]{.fragment}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of centre
+
+Find the mean height:
+
+[**142.23 + 149.58 + 146.06 + 160.42 + 174.64 + 172.54 + 148.67 + 143.00 + 173.11 + 168.72**]{.fragment} [= 1578.97cm]{.fragment .answer}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of centre
+
+Find the mean height:
+
+[**1578.97 &divide; 10**]{.fragment} [= 157.897cm]{.fragment .answer}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of center
+
+Where data are not normal, use [median]{.answer} instead
+
+[Order sample from smallest to largest, select middle value]{.fragment}
+
+[Uses less information than mean (less [powerful]{.answer}) but always valid]{.fragment}
+
+:::{.notes}
+However, when the sample is not normally distributed and the peak does not lie in the middle, extreme values or a longer tail will pull the mean towards it. This means that where data are not normally distributed, the mean will not be the centre and the value will be invalid. Where this is the case, the median should be used instead. The median is calculated by ordering the numeric values from smallest to largest and selecting the middle value.
+:::
+
+## Measure of centre
+
+To find the median, first order heights smallest to largest:
+
+[**142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72**]{.fragment}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of centre
+
+To find the median, first order heights smallest to largest:
+
+**142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of centre
+
+Median is the middle value
+
+**[142.23, 143.00, 146.06, 148.67, 149.58]{.fragment .highlight-blue}, 160.42, 168.72, 172.54, 173.11, 174.64**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+:::{.notes}
+We then take the middle value. As the sample size is even, the median will lie between two values - the 5th (149.58cm) and the 6th (160.42cm). 
+:::
+
+## Measure of centre
+
+Median is between 149.58cm and 162.42cm
+
+[**Middle value: (149.58 + 162.42) &divide; 2**]{.fragment} [= 155cm]{.fragment .answer}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of centre
+
+Before choosing summary, use a histogram to check distribution
+
+[When data are normally distributed, mean uses more of the data and gives centre of the sample]{.fragment}
+
+[When data are skewed, mean is influenced by extreme values and longer tail]{.fragment}
+
+[When data are normal, mean and median will be equal]{.fragment}
+
+:::{.notes}
+When data are normally distributed, the mean and median will give the same, or very similar, values. This is because both are measuring the centre. However, when the data are skewed, the mean and median will differ. We prefer to use the mean where possible as it is the more powerful measure. This means that it uses more of the data than the median and is therefore more sensitive to changes in the sample. 
+:::
+
+## Measure of spread
+Measures how wide or narrow a sample is
+
+[Simplest measure is the [range]{.answer}]{.fragment}
+
+[Either given as the smallest and largest values or the difference between these]{.fragment}
+
+:::{.notes}
+Generally the measure of the centre of a numeric variable is presented with a measure of spread, or how wide/narrow the distribution is. As with the centre, the most appropriate values will depend on whether the sample is normally distributed or not. 
+
+The most simple measure of spread is the range of a sample. The range is either presented as the smallest and largest values from a sample or the difference between these. 
+:::
+
+## Measure of spread
+
+Find the range of the 10 high schoolers' heights:
+
+[**142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72**]{.fragment}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Find the range of the 10 high schoolers' heights:
+
+**142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Find the range of the 10 high schoolers' heights:
+
+**[142.23]{.answer}, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, [174.64]{.answer}**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Range is either given as two values: [142.23cm ,174.64cm]{.answer}
+
+[Or as the difference between these: [174.64 - 142.23 =  32.41cm]{.answer}]{.fragment}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Range only uses most extreme values, loses lots of information 
+
+[Interquartile range (IQR): the range of the middle 50%]{.fragment}
+
+[**Lower quartile:** 25th percentile, 25% of sample lies below]{.fragment}
+
+[**Upper quartile:** 75th percentile, 75% of sample lies below]{.fragment}
+
+:::{.notes}
+The issue with using the range is that it is entirely defined by the most extreme values in the sample and does not give any information about the rest of it. An alternative to this would be to give the range of the middle 50%, also known as the interquartile range (IQR). The IQR is the difference between the 75th percentile, or upper quartile, and the 25th percentile, or lower quartile.
+
+:::
+
+## Measure of spread
+
+Find the IQR of the 10 high schoolers' heights:
+
+[**142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72**]{.fragment}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Find the upper and lower quartile:
+
+**[142.23, 143.00, 146.06, 148.67, 149.58,]{.fragment .highlight-blue} 160.42, 168.72, 172.54, 173.11, 174.64**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Find the upper and lower quartile:
+
+**142.23, 143.00, [146.06,]{.answer} 148.67, 149.58, [160.42, 168.72, 172.54, 173.11, 174.64]{.fragment .highlight-blue}**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+Find the upper and lower quartile:
+
+**142.23, 143.00, [146.06,]{.answer} 148.67, 149.58, 160.42, 168.72, [172.54]{.answer}, 173.11, 174.64**
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+IQR is either given as 2 values: [146.06, 172.54cm]{.answer}
+
+[Or as the difference between these: 172.54 - 146.06]{.fragment} [=  26.48cm]{.fragment .answer}
+
+![](img/school.png){.absolute bottom=100 right=600 height="10cm" width="20cm"}
+
+## Measure of spread
+
+IQR is still discarding most of the sample
+
+[If sample is normally distributed, can use the [standard deviation (SD)]{.answer}]{.fragment}
+
+[Average difference between observations and the mean]{.fragment}
+
+[Bigger SD &rarr; wider, flatter curve]{.fragment}
+
+[Smaller SD &rarr; narrower, taller curve]{.fragment}
+
+:::{.notes}
+Both the range and IQR only use 2 values from the sample. As with the median, these measures discard a lot of information from the summaries. Where the sample is normally distributed, the standard deviation (SD) can be used which measures the average distance between each observation and the mean. The larger the SD, the wider and flatter the normal curve will be; the smaller the SD, the narrower and taller the curve will be:
+:::
+
+##
+
+```{r}
+#| label: normal-sd-diff
+
+
+normal_data_sd <- tibble(x = rep(seq(-4, 4, length = 100), 2),
+                         y = c(dnorm(x[1:100]), dnorm(x[101:200], sd = .1)),
+                         sd_grp = c(rep(0, 100), rep(1, 100)),
+                         sd = factor(sd_grp, 
+                                     labels = c("sd = 1", "sd = 0.1")))
+
+ggplot(normal_data_sd) +
+  geom_density(aes(x = x, y = y), 
+               stat = "identity", fill = "thistle") +
+  labs(x = "", y = "") + 
+  facet_grid(rows = vars(sd)) +
+  theme_stats_thinking() +
+  theme(strip.text = element_text(size = 12, colour = "#ebe8e3"),
+        strip.background = element_rect(fill = "#1f2e32"))
+```
+
+## Normal distribution
+
+Normal distribution completely defined by the [mean]{.answer} (peak) and [SD]{.answer} (spread)
+
+
+```{r}
+#|label: normal-with-sd
+
+
+ggplot(normal_data) +
+  geom_density(aes(x = x, y = y), stat = "identity",
+               fill = "thistle") +
+  geom_vline(xintercept = -3:3, colour = "grey55") +
+  scale_x_continuous(name = "", breaks = -4:4,
+                     labels = c("", "-3sd", "-2sd", "-1sd", "Mean", 
+                                "1sd", "2sd", "3sd", "")) +
+  theme_void() +
+  theme(axis.text.x = element_text(size = 15))
+```
+
+:::{.notes}
+The standard deviation is only appropriate where a numeric variable has a normal distribution, otherwise this value is meaningless. If a sample is normally distributed, then the entire sample can be completely described just using the mean and standard deviation, even when the sample values are not given. As the distribution is symmetrical, the mean and standard deviation can be used to estimate ranges of values.
+
+For example, it is known that approximately 68% of a sample will lie one standard deviation from the mean, approximately 95% within 2 standard deviations from the mean, and around 99.7% within 3 standard deviations:
+:::
+
+## Normal distribution
+
+Approximately 68% of the sample will lie within 1 standard deviation of the mean
+
+```{r}
+#| label: normal-sd-68
+
+normal_sd <- mutate(normal_data,
+                    y1 = c(rep(0, 37), y[38:63], rep(0, 37)),
+                    y2 = c(rep(0, 25), y[26:75], rep(0, 25)))
+
+ggplot(data = normal_sd) + 
+  geom_density(aes(x = x, y = y1), linewidth = 1,
+               stat = "identity", fill = "#efc3e6") +
+  geom_line(aes(x = x, y = y), linewidth = 1,
+                stat = "identity") +
+  geom_hline(yintercept = 0, linewidth = 1) +
+  scale_x_continuous(breaks = -3:3, 
+                     labels = c("", "", "-1sd", "Mean", "+1sd", 
+                                "", "")) +
+  annotate("text", x = 0, y = 0.2, label = "68%", size = 7) +
+  theme_void() +
+  theme(axis.text.x = element_text(size = 15))
+```
+
+:::{.notes}
+The standard deviation is only appropriate where a numeric variable has a normal distribution, otherwise this value is meaningless. If a sample is normally distributed, then the entire sample can be completely described just using the mean and standard deviation, even when the sample values are not given. As the distribution is symmetrical, the mean and standard deviation can be used to estimate ranges of values.
+
+For example, it is known that approximately 68% of a sample will lie one standard deviation from the mean, approximately 95% within 2 standard deviations from the mean, and around 99.7% within 3 standard deviations:
+:::
+
+## Normal distribution
+
+Approximately 95% of the sample will lie within 2 standard deviations of the mean
+
+```{r}
+#| label: normal-sd-95
+
+ggplot(data = normal_sd) + 
+  geom_density(aes(x = x, y = y2), linewidth = 1,
+               stat = "identity", fill = "#efc3e6") +
+  geom_line(aes(x = x, y = y), linewidth = 1,
+                stat = "identity") +
+  geom_hline(yintercept = 0, linewidth = 1) +
+  scale_x_continuous(breaks = -3:3, 
+                     labels = c("", "-2sd", "", "Mean", "", 
+                                "+2sd", "")) +
+  annotate("text", x = 0, y = 0.2, label = "95%", size = 7) +
+  theme_void() +
+  theme(axis.text.x = element_text(size = 15))
+```
+
+:::{.notes}
+The standard deviation is only appropriate where a numeric variable has a normal distribution, otherwise this value is meaningless. If a sample is normally distributed, then the entire sample can be completely described just using the mean and standard deviation, even when the sample values are not given. As the distribution is symmetrical, the mean and standard deviation can be used to estimate ranges of values.
+ For example, it is known that approximately 68% of a sample will lie one standard deviation from the mean, approximately 95% within 2 standard deviations from the mean, and around 99.7% within 3 standard deviations:
+:::
+
+## Normal distribution
+
+Mean and SD can be used to check normal distribution assumption
+
+[**Settlement funding assessment in England:**]{.fragment}
+
+[Mean = £50.85 million]{.fragment}
+
+[SD = £75.06 million]{.fragment}
+
+[If normal, 95% of the sample would lie between <br> £50.85 &pm; (75.06 &times; 2) million.]{.fragment}
+
+:::{.notes}
+This knowledge can also be used to check the mean and standard deviation were appropriate summary statistics, even if we have no other information. For example, we saw earlier a sample of settlement funding assessment (SFA) values for local authorities in England in 2015. Using a histogram, it was clear that this sample was not normally distributed. However, let’s assume that we do not have the data to plot a histogram, instead we are just given the mean, £50.85 million, and the standard deviation, £75.06 million.
+:::
+
+
+## Normal distribution
+
+Mean and SD can be used to check normal distribution assumption
+
+**Settlement funding assessment in England:**
+
+Mean = £50.85 million
+
+SD = £75.06 million
+
+If normal, 95% of the sample would lie between 
+
+[-£97.26 million and £198.97 million]{.answer}
+
+:::{.notes}
+ Using these values, that would mean 95% of the values lying between -£97.26 million and £198.97 million. The SFA for local authorities cannot be negative, therefore this range would contain a lot of impossible values. This shows that the mean and standard deviation are not appropriate summaries, and the sample is not normally distributed.
+:::
+
+## Summarising numeric variables
+
+Most appropriate summary depends on distribution (normal or not)
+
+[If normally distributed, use [mean and SD]{.answer}]{.fragment}
+
+[If not, these are invalid, use [median and IQR]{.answer}]{.fragment}
+
+[Mean and SD can be used to check normal distribution [even without the full sample]{.answer}]{.fragment}
+
+# {.chapter-theme}
+
+::: r-fit-text
+Exercise 3:
+
+Summarising data
+:::
+
+##
+
+![](img/days_completion_cc.png){.absolute height=1000 width=1600 top=0 left=100}
+
+:::{.notes}
+When displaying averages/measures of centre, we should only give one measure. If the data are normally distributed, the mean and median will be equal so there is no need to show both. If the data are not normal, the mean is not a valid measure and should not be shown anyway.
+
+The median should be used as there is a substantial difference between these values, indicating that the data are not normally distributed.
+
+When displaying graphs for comparison, ensure that the axis scales are the same to avoid misleading readers who will assume a like-for-like comparison.
+:::
+
+##
+
+```{r}
+tibble(year = 2020:2023,
+       mean_wait = c(13.5, 19.1, 20.9, 22.8),
+       sd_wait = c(10.2, 15.6, 13.9, 14.7)) %>% 
+  knitr::kable(col.names = c("Year", "Mean wait (weeks)", "SD wait (weeks)"))
+```
+
+:::{.notes}
+If we use the formula to approximate the 95% sample range, all these give negative waiting times which are impossible. For example, in 2020 the 95% range of waiting times would be approximately 13.5 &pm; (10.2 &times; 2) = -6.9 &rarr; 33.9 weeks. Therefore, the data are not normally distributed and the mean should not be given. The median and interquartile range would be more appropriate.
+:::
+
+# {.chapter-theme}
+
+::: r-fit-text
+Chapter 5:
+
+Comparing groups
+:::
+
+## Comparing groups
+
+Most appropriate choice depends on intention, type of outcome, nature of the relationship 
+
+- Comparison of variable between groups
+-	Investigating trends over time
+-	Relationship between numeric variables
+
+:::{.notes}
+Often, our research question will involve a comparison between groups, investigating trends over time, or investigating a relationship between two numeric variables. There are multiple approaches we can use to compare groups but the correct choice will depend on the outcome of interest and the type of relationship we are interested in. This section will describe the most common comparative statistics, their interpretations, and the reasons we may choose to use one approach over another.
+:::
+
+## Comparing categorical outcomes
+
+Compare summary statistics (proportions, percentages, or rates) between groups
+
+[[Absolute difference:]{.answer} Subtract values]{.fragment}
+
+[[Relative difference:]{.answer} Divide values]{.fragment}
+
+:::{.notes}
+When comparing a categorical variable between groups, we are often comparing the summary measures that were introduced in the previous section: proportions, percentages, and rates. These summaries are either compared using the absolute difference or the relative difference. 
+:::
+
+## 
+
+```{r}
+#| label: table-crime-em-wm
+
+
+crimes_midlands <- tibble(area = c("East Midlands", "West Midlands"),
+                          recorded_crime = c(419236, 572937),
+                          violent_crime = c(161865, 233851)) %>% 
+  mutate(violent_perc = paste0(round((violent_crime / recorded_crime) * 100,
+                                      2), "%"),
+         nonviolent_crime = recorded_crime - violent_crime,
+         nonviolent_perc = paste0(round((nonviolent_crime / recorded_crime) 
+                                        * 100,
+                                        2), "%"),
+         violent_table = paste0(violent_crime, " (", violent_perc, ")"),
+         nonviolent_table = paste0(nonviolent_crime, " (", nonviolent_perc,
+                                   ")")) %>% 
+  select(area, recorded_crime, violent_table, nonviolent_table)
+
+crimes_midlands_table <- knitr::kable(crimes_midlands,
+             col.names = c("Region", "Recorded crimes", "Violent crimes",
+                           "Nonviolent crimes"),
+             align = c("l", rep("r", 3))) %>% 
+  column_spec(3:4, width = "15cm")
+
+crimes_midlands_table
+```
+
+[**Absolute difference:** 40.8% - 38.6%]{.fragment} [ = 2.2%]{.fragment .answer}
+
+[West Midlands had [2.2%]{.answer} more violent crimes recorded in 2023 than the East Midlands]{.fragment}
+
+
+:::{.notes}
+To demonstrate the difference between these comparisons, let’s consider the number of recorded crimes in the East Midlands we saw earlier and compare them to the number recorded in the West Midlands. These crimes are categorised as either violent or non-violent. We wish to compare the distribution of these types of crimes between the regions, i.e. was the proportion of recorded crimes that were violent similar between regions. The table below shows the number and type of crime, along with the percentage of total crimes in each region that were classified as either violent or non-violent
+
+The absolute difference is calculated by simply subtracting proportions or percentages between groups. In this example, the absolute difference in proportions of total crimes that were violent is (0.408 - 0.386) 0.22, and the absolute difference in percentages is (40.8% - 38.6%) 2.2%. The West Midlands had 2.2% higher percentage of recorded violent crimes than the East Midlands. If we carried out the sums the other way round, we would get a negative number (-2.2%), indicating a reduction in the percentage in East Midlands compared to the West. Absolute differences are interpreted relative to a null value of 0, representing no difference. 
+:::
+
+##
+
+```{r}
+crimes_midlands_table
+```
+
+[**Relative difference:** 40.8% &div; 38.6%]{.fragment} [ = 1.057]{.fragment .answer}
+
+[West Midlands had [1.057 times]{.answer} higher percentage of violent crimes recorded in 2023 than the East Midlands]{.fragment}
+
+[No difference = 1]{.fragment}
+
+:::{.notes}
+Alternatively, the relative difference is found by dividing one value by another. Unlike the absolute difference, this will be the same whether we use the proportion or percentage. The relative difference in the percentage of violent crimes between regions is (40.8% / 38.6%) 1.057. This means that the percentage of crimes recorded as violent was 1.057 times higher in the West Midlands compared to the East Midlands.
+:::
+
+##
+
+```{r}
+crimes_midlands_table
+```
+
+[**Relative difference:** 38.6% &div; 40.8%]{.fragment} [ = 0.948]{.fragment .answer}
+
+[East Midlands had [0.946 times]{.answer} the percentage violent crimes recorded in 2023 than the West Midlands]{.fragment}
+
+[Less than 1: **reduction**]{.fragment}
+
+:::{.notes}
+If we wanted to do this comparison the other way around (comparing the East to West Midlands), we would find a relative difference of (38.6% / 40.8%) 0.946. Therefore, the percentage of recorded crimes in the East Midlands that were violent was 0.946 times the percentage in the West Midlands. When interpreting relative differences, we are comparing the result to a null value of 1, given when both values are equal. As 0.946 is below 1, this represents a reduction. 
+:::
+
+## Comparing numeric outcomes
+
+Compare measures of centre/average (mean or median) between groups
+
+[Most appropriate depends on distribution of sample in each group]{.fragment}
+
+[Requires a histogram per group]{.fragment}
+
+:::{.notes}
+The most appropriate method to compare a numeric variable between groups will once again depend on the distribution of the variable. A comparison can either be made using the difference in means, where both groups have a normally distributed sample, or difference in medians, where the samples are skewed.
+:::
+
+##
+
+```{r}
+#| label: sfa-hist-nw-yh
+
+
+csp_north <- csp_2015 %>% 
+  filter(sfa_2015 != 0,
+         region %in% c("NW", "YH")) 
+  
+
+ggplot(data = csp_north) +
+  geom_histogram(aes(x = sfa_2015), binwidth = 50, fill = "grey", colour = "black") +
+  facet_wrap( ~ region) +
+  labs(x = "Settlement funding assessment (£ millions)", y = "Count") +
+  theme_stats_thinking() +
+  theme(strip.text = element_text(size = 15, colour = "#ebe8e3"),
+        strip.background = element_rect(fill = "#1f2e32"))
+```
+
+:::{.notes}
+Earlier in the course, we saw the settlement funding assessment (SFA) for each local authority in England in 2015. We may want to compare this between two regions, for example between the North West and the Yorkshire and Humber regions. Before choosing the most appropriate comparison, we must check the distribution of SFA in each region using a histogram:
+As with the full sample, both regions’ values are positively skewed (with a longer upper tail). This means that a comparison of means would be inappropriate, we must use the difference in medians. 
+:::
+
+## Comparing numeric outcomes
+
+Median most appropriate measure for comparison
+
+[**Median NW:** £57.17 million]{.fragment}
+
+[**Median YH:** £58.49 million]{.fragment}
+
+[**Difference in medians:** £57.17 million - £58.49 million]{.fragment} 
+
+[ = -£1.34 million]{.fragment .answer}
+
+:::{.notes}
+The median of the North West was £57.15 million, the median in Yorkshire and the Humber was £58.49 million. This makes the median difference £1.34 million (or -£1.34 million depending on which difference we are finding). Therefore, the SFA was £1.34 million higher on average in the Yorkshire and Humber region than in the North West.
+:::
+
+## Comparing variables over time
+
+Visualised using line graph
+
+[Common comparisons: [absolute difference, relative difference, or percentage change]{.answer}]{.fragment}
+
+[Choice depends on intention, interpretation differs]{.fragment}
+
+:::{.notes}
+When dealing with temporal data, it is important to quantify differences across time as well as visualising them using a line graph. Comparison across time is typically given as an absolute difference between time points, as a relative difference, or this is commonly converted into a percentage change. 
+:::
+
+##
+
+```{r}
+crime_line
+```
+
+:::{.notes}
+Recall the line graph given in an earlier section showing the reduction in the number of violent crimes recorded between 2010 and 2020:
+This difference can be quantified by comparing the number of violent crimes recorded in 2010 and 2020.
+:::
+
+##
+
+```{r}
+#| label: crime-line-circle
+
+crime_line +
+  geom_mark_circle(aes(filter = year == 2010), fill = "#9a3416") +
+  geom_mark_circle(aes(filter = year == 2020), fill = "#9a3416")
+
+```
+
+:::{.notes}
+Recall the line graph given in an earlier section showing the reduction in the number of violent crimes recorded between 2010 and 2020:
+This difference can be quantified by comparing the number of violent crimes recorded in 2010 (1,841,000 and 2020 1,239,000.)
+:::
+
+## Comparing variables over time
+
+**Absolute difference:** 1,841,000 - 1,239,000 [ = 602,000]{.fragment .answer}
+
+[There were [602,000 less violent crimes]{.answer} reported in 2020 compared to 2010]{.fragment}
+
+[**Relative difference:** 1,841,000 &div; 1,239,000]{.fragment} [ = 1.486]{.fragment .answer}
+
+[There were [1.486 times more violent crimes]{.answer} reported in 2020 compared to 2010]{.fragment}
+
+:::{.notes}
+The absolute difference is found by subtracting the number of violent crimes recorded in 2020, 1,239,000, by the number in 2010, 1,841,000. There were 602,000 ;ess violent crimes reported in 2020 compared to 2010.
+
+The relative difference is found by dividing one count by the other. In this example, the relative difference (1,841,000 / 1,239,000) is 1.486. This means that there were 1.486 times more violent crimes reported in 2020 compared to 2010. 
+:::
+
+## Comparing variables over time
+
+The percentage change can also be found by converting the relative difference
+
+[**Compare relative difference to no difference:**]{.fragment} [ 1.486 - 1]{.fragment} [ = 0.486]{.fragment .answer}
+
+[**Convert the proportion change to percentage:**]{.fragment} [ 0.486 x 100%]{.fragment} 
+
+[ = 48.6%]{.fragment .answer}
+
+[There were [48.6% more violent crimes]{.answer} reported in 2010 than 2020]{.fragment}
+
+:::{.notes}
+The percentage change can be found by comparing the relative difference to the null value of 1 (no relative difference). When comparing  2010 to 2020, the relative difference was 0.486 above 1, giving the proportion increase. This can be multiplied by 100 to give a percentage increase of 48.6%. Therefore, there were 48.6% more violent crimes reported in 2010 compared to 2020.
+:::
+
+## Comparing variables over time
+
+Percentage reduction found in similar way
+
+[**Relative difference:** 1,239,000 &div; 1,841,000]{.fragment} [ = 0.673]{.fragment .answer}
+
+[**Compare to no difference:**]{.fragment} [ 1 - 0.673]{.fragment} [ = 0.327 (32.7%)]{.fragment .answer}
+
+[There were [32.7% fewer violent crimes]{.answer} reported in 2020 than 2010]{.fragment}
+
+:::{.notes}
+The relative difference can also be found by comparing 2020 to 2010 if we want to give the relative or percentage decrease in violent crime. The relative difference (1,239,000 / 1,841,000) is 0.673, so there were 0.673 times the number of crimes reported in 2020 than 2010. This result is not intuitive, so converting the difference into a percentage decrease can make the value easier to interpret. As with an increase, we first find the difference between the relative difference and the null (1 - 0.673). This gives a proportion decrease of 0.327 or a percentage decrease of 32.7%. Therefore, there were 32.7% fewer violent crimes reported in 2020 compared to 2010.
+:::
+
+## Relationship between numeric variables
+
+Scatterplot used to visualise trends
+
+[Strength of relationship quantified using [correlation coefficients]{.answer}]{.fragment}
+
+[Choice of coefficients depends on if trend is linear or not]{.fragment}
+
+- **Linear trend:** Pearson’s correlation coefficient
+- **Nonlinear trend:** Spearman’s correlation coefficient
+
+:::{.notes}
+Correlation coefficients are summary statistics that describe the strength and direction of a relationship between two numeric variables. There are different types of correlation coefficients that exist, the choice of which depends on the nature of the trend it is measuring: is it linear or nonlinear?
+
+The Pearson’s correlation coefficient measures the association between numeric variables if we assume it is linear. It essentially measures how close points lie to the line of best fit added to a scatterplot. The alternative to Pearson’s correlation is Spearman’s correlation coefficient, this measures the general trend upwards or downwards, whether or not this is linear. As with medians and IQRs, Spearman’s correlation coefficient uses less of the data than Pearson’s so we only use it where necessary.
+:::
+
+## Correlation coefficients
+
+Take value between [-1]{.answer} and [1]{.answer}
+
+[Correlation of 0 means **no association**]{.fragment}
+
+[Closer coefficient is to +1/-1, the stronger the **positive/negative association** is]{.fragment}
+
+:::{.notes}
+Correlation coefficients take a value between -1 and 1. A value of 0 represents no association, values of +/- 1 represent perfect association (a straight or curved line depending on the choice of statistic). Generally, a correlation coefficient will lie between 0 and +/- 1 where the further the value gets from 0, the stronger the relationship is.
+:::
+
+##
+
+```{r}
+#| label: correlation-1
+
+correlation_data <- tibble(xcor1 = runif(100, 0, 15),
+                           ycor1 = xcor1 + 5,
+                           ycor_pos = xcor1 + rnorm(100),
+                           ycor_1 = -xcor1 + 25,
+                           ycor_neg = -xcor1 + rnorm(100) + 25,
+                           y_nocor = runif(100, 0, 25),
+                           yspearman = (xcor1 + rnorm(100)) ^ 2)
+
+ggplot(data = correlation_data) +
+  geom_point(aes(x = xcor1, y = ycor1)) +
+  labs(x = "", y = "") + 
+  theme_stats_thinking()
+
+```
+
+:::{.notes}
+A correlation coefficient is said to show a positive association if the value is above 0. This means as one variable increases, the other also tends to increase:
+:::
+
+## 
+
+```{r}
+#| label: correlation-pos
+
+ggplot(data = correlation_data) +
+  geom_point(aes(x = xcor1, y = ycor_pos)) +
+  labs(x = "", y = "") + 
+  theme_stats_thinking()
+```
+
+## 
+
+```{r}
+#| label: correlation-neg1
+
+ggplot(data = correlation_data) +
+  geom_point(aes(x = xcor1, y = ycor_1)) +
+  labs(x = "", y = "") + 
+  theme_stats_thinking()
+```
+
+## 
+
+```{r}
+#| label: correlation-neg
+
+ggplot(data = correlation_data) +
+  geom_point(aes(x = xcor1, y = ycor_neg)) +
+  labs(x = "", y = "") + 
+  theme_stats_thinking()
+```
+
+## 
+
+```{r}
+#| label: correlation-nocorr
+
+ggplot(data = correlation_data) +
+  geom_point(aes(x = xcor1, y = y_nocor)) +
+  labs(x = "", y = "") + 
+  theme_stats_thinking()
+```
+
+## 
+
+```{r}
+#| label: correlation-spearman
+
+ggplot(data = correlation_data) +
+  geom_point(aes(x = xcor1, y = yspearman)) +
+  labs(x = "", y = "") + 
+  theme_stats_thinking()
+```
+
+# {.chapter-theme}
+
+::: r-fit-text
+Chapter 6:
+
+Inferential statistics
+:::
+
+## What are inferential statistics?
+
+![](img/stats_inference2.png){height="20cm" width="50cm" fig-align="center"}
+
+:::{.notes}
+At the beginning of the course, we saw that one of the main aims of statistics is to make inferences about a target population of interest based on results of analysis applied to a random sample. These inferences require inferential statistics,
+:::
+
+## What are inferential statistics?
+
+Inferential statistics make inferences about target population based on a [random, representative sample]{.answer}
+
+[Combine sample estimates with [sample size]{.answer} and [level of precision]{.answer}]{.fragment}
+
+[Most common inferential statistics: [p-values]{.answer} and [confidence intervals]{.answer}]{.fragment}
+
+:::{.notes}
+These are estimated by combining results from the random, representative sample taken from the target population, and information about the sample size and precision of the sample estimate.
+:::
+
+## Measures of precision
+
+Precision of an estimate quantified by [standard error (SE)]{.answer}
+
+[Based on sample size and sample variability]{.fragment}
+
+[Different formula for each type of estimate (e.g. mean, percentage, difference between means)]{.fragment}
+
+:::{.fragment .bigger .absolute bottom=300 left=750}
+$SE(\bar{x}) = \frac{SD}{\sqrt{n}}$
+:::
+
+:::{.notes}
+Inferential statistics require a measure of how precise a sample estimate is. Precision is quanti􀏐ied using the standard error (SE), calculated using the sample size and sample variability. The formula used to calculate a standard error depends on the type of parameter we wish to obtain from the target.
+For example, the standard error of a single mean (𝑆𝐸(𝑥)̄ ) is found by dividing the sample standard deviation (𝑆𝐷) by the square root of the sample size (𝑛):
+:::
+
+## Measures of precision
+
+:::{.bigger .absolute top=200 left=750}
+$SE(\bar{x}) = \frac{SD}{\sqrt{n}}$
+:::
+
+:::{.absolute left=0 top=350}
+[For every parameter of interest:]{.fragment}
+
+- Larger sample, higher precision &rarr; [lower standard error]{.answer}
+- More variability, lower precision &rarr; [higher standard error]{.answer}
+
+[Inferential statistics work based on the **central limit theorem**]{.fragment}
+:::
+
+:::{.notes}
+Regardless of the formula used or the parameter of interest, the larger a sample is, the more precise an estimate will be. Conversely, the more varied a sample is, the less precise an estimate is. A precise estimate is represented by a small standard error value. Standard errors are used to estimate inferential statistics (p‑values and con􀏐idence intervals) based on the central limit theorem.
+:::
+
+## Central limit theorem
+
+```{r}
+normal_curve
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+df_arrow <- tibble(y = rep(c(.1, 0), 8),
+                   x = rep(runif(8, min = -4, max = 4), each = 2))
+
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[5], y = df_arrow$y[5], 
+                   xend = df_arrow$x[6], yend = df_arrow$y[6]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[5], y = df_arrow$y[5], 
+                   xend = df_arrow$x[6], yend = df_arrow$y[6]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[7], y = df_arrow$y[7], 
+                   xend = df_arrow$x[8], yend = df_arrow$y[8]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[5], y = df_arrow$y[5], 
+                   xend = df_arrow$x[6], yend = df_arrow$y[6]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[7], y = df_arrow$y[7], 
+                   xend = df_arrow$x[8], yend = df_arrow$y[8]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[9], y = df_arrow$y[9], 
+                   xend = df_arrow$x[10], yend = df_arrow$y[10]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[5], y = df_arrow$y[5], 
+                   xend = df_arrow$x[6], yend = df_arrow$y[6]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[7], y = df_arrow$y[7], 
+                   xend = df_arrow$x[8], yend = df_arrow$y[8]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[9], y = df_arrow$y[9], 
+                   xend = df_arrow$x[10], yend = df_arrow$y[10]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[11], y = df_arrow$y[11], 
+                   xend = df_arrow$x[12], yend = df_arrow$y[12]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[5], y = df_arrow$y[5], 
+                   xend = df_arrow$x[6], yend = df_arrow$y[6]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[7], y = df_arrow$y[7], 
+                   xend = df_arrow$x[8], yend = df_arrow$y[8]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[9], y = df_arrow$y[9], 
+                   xend = df_arrow$x[10], yend = df_arrow$y[10]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[11], y = df_arrow$y[11], 
+                   xend = df_arrow$x[12], yend = df_arrow$y[12]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[13], y = df_arrow$y[13], 
+                   xend = df_arrow$x[14], yend = df_arrow$y[14]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+
+## Central limit theorem
+
+```{r}
+# Create random draws for arrows
+normal_curve +
+  geom_segment(aes(x = df_arrow$x[1], y = df_arrow$y[1], 
+                   xend = df_arrow$x[2], yend = df_arrow$y[2]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[3], y = df_arrow$y[3], 
+                   xend = df_arrow$x[4], yend = df_arrow$y[4]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[5], y = df_arrow$y[5], 
+                   xend = df_arrow$x[6], yend = df_arrow$y[6]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[7], y = df_arrow$y[7], 
+                   xend = df_arrow$x[8], yend = df_arrow$y[8]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[9], y = df_arrow$y[9], 
+                   xend = df_arrow$x[10], yend = df_arrow$y[10]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[11], y = df_arrow$y[11], 
+                   xend = df_arrow$x[12], yend = df_arrow$y[12]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[13], y = df_arrow$y[13], 
+                   xend = df_arrow$x[14], yend = df_arrow$y[14]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2) +
+    geom_segment(aes(x = df_arrow$x[15], y = df_arrow$y[15], 
+                   xend = df_arrow$x[16], yend = df_arrow$y[16]),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+## Central limit theorem
+
+```{r}
+#| label: sd-to-se
+
+normal_data %>% 
+  mutate(se = dnorm(x, sd = y/sqrt(16))) %>% 
+  pivot_longer(y:se,
+               names_to = "measure",
+               values_to = "values") %>% 
+  mutate(measure = factor(measure, levels = c("y", "se"),
+                          labels = c("SD", "SE"))) %>% 
+  ggplot() +
+  geom_density(aes(x = x, y = values), stat = "identity",
+               fill = "thistle") +
+  facet_grid(rows = vars(measure)) +
+  theme_stats_thinking() +
+  theme(strip.text = element_text(size = 12, colour = "#ebe8e3"),
+        strip.background = element_rect(fill = "#1f2e32"))
+
+```
+
+## Confidence intervals
+
+- A range of values the true population parameter is compatible with
+- Based on sample estimate, precision, and confidence level
+
+:::{.notes}
+A con􀏐idence interval is a range of values that the true population statistic is compatible with based on the sample estimate, precision, and some pre‑de􀏐ined level of con􀏐idence.
+The con􀏐idence level can be adjusted depending on how con􀏐ident we wish to be about the true population parameter. 
+:::
+
+##
+
+```{r}
+#| label: confidence-levels
+
+tibble(level = c("80%", "90%", "95%", "99%", "99.9%"),
+       se = c(1.282, 1.645, 1.960, 2.576, 3.291)) %>% 
+  kable(col.names = c("Confidence levels", "Number of SEs"), 
+        align = "r")
+```
+
+## Confidence intervals {.nonincremental}
+
+- A range of values the true population parameter is compatible with
+- Based on sample estimate, precision, and confidence level
+
+[- Based on central limit theorem, can capture ranges we would expect a percentage of parameter estimates to lie:]{.fragment}
+
+:::{.fragment .bigger .absolute left=800}
+$\bar{x} \pm 1.96 \times SE(\bar{x})$
+:::
+
+:::{.notes}
+The con􀏐idence interval is created assuming the central limit theorem. As the hypothetical repeated estimates are assumed to follow a normal distribution, we can use the sample estimate of the parameter and the standard error to obtain ranges within which we would expect a certain percentage of parameter estimates to lie.
+:::
+
+##
+
+```{r}
+#| label: conf-int-95
+
+conf_int95 <- ggplot(data = normal_sd) + 
+  geom_density(aes(x = x, y = y2), linewidth = 1,
+               stat = "identity", fill = "#efc3e6") +
+  geom_line(aes(x = x, y = y), linewidth = 1,
+                stat = "identity") +
+  geom_hline(yintercept = 0, linewidth = 1) +
+  scale_x_continuous(breaks = -3:3, 
+                     labels = c("-3se", "-2se", "-1se", "Mean", "+1se", 
+                                "+2se", "+3se")) +
+  annotate("text", x = 0, y = 0.2, label = "95%", size = 7) +
+  theme_void() +
+  theme(axis.text.x = element_text(size = 15))
+
+conf_int95
+```
+
+## Confidence interval example
+
+```{r}
+#| label: gest-age-hist
+
+set.seed(154)
+
+gest_age <-  tibble(age = rnorm(130, mean = 266, sd = 16))
+
+hist_gest <- ggplot(gest_age) +
+  geom_histogram(aes(x = age), fill = "grey75", colour = "black") +
+  scale_x_continuous(name = "Gestational age (days)") +
+  theme_stats_thinking()
+
+hist_gest
+```
+
+:::{.notes}
+We wish to make inferences about the mean gestational period (length of time from conception to the birth of a baby) in the UK. As we are not able to obtain all information from every birth in the UK, we instead collect a random sample of 130 pregnant women and measure their gestational period in days:
+
+This sample follows a normal distribution with mean gestational period 266.55 days, and a standard deviation of 16.37. However, if we wish to make inferences about the whole of the UK, we will need to estimate inferential statistics, such as a con􀏐idence interval.
+:::
+
+## Confidence interval example
+
+First, we calculate the standard error of the mean:
+
+:::{.fragment .bigger .absolute left=700}
+$SE = SD \div \sqrt{n}$
+:::
+
+:::{.fragment .bigger .absolute top=400 left=800}
+$= 16.37 \div \sqrt{130}$ [$= 1.436$]{.fragment}  
+:::
+
+## Confidence interval example
+
+::::{.columns}
+:::{.column width="50%"}
+mean = 266.55 days
+
+[Confidence level = 95%]{.fragment fragment-index=2}
+:::
+:::{.column width="50%"}
+[Standard error = 1.436]{.fragment fragment-index=1}
+:::
+::::
+
+[95% confidence interval = [$266 \pm 1.96 \times 1.436$]]{.fragment fragment-index=3}
+
+[= [$263.74, 269.37$]]{.fragment fragment-index=4 .absolute left=600}
+
+:::{.notes}
+Therefore, we are 95% con􀏐ident that the mean gestational period in the whole of the UK lies between 263.74 days and 269.37 days (if the sample is random and representative!).
+:::
+
+## p-values
+
+- Probability of obtaining a result as extreme or more extreme as the sample if the null hypothesis is true
+- Null hypothesis (H0): no difference/association
+
+:::{.notes}
+Another commonly used inferential statistic is the p‑value. A p‑value is the probability of obtaining a sample estimate as extreme, or more extreme, than the current if some null hypothesis (H0) were true.
+The null hypothesis is usually ‘no difference’ or ‘no association’, depending on the value being tested.
+:::
+
+## p-values
+
+```{r}
+#| label: random-se1
+
+normal_curve +
+  geom_segment(aes(x = -.3, y = .1, 
+                   xend = -.3, yend = 0),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+:::{.notes}
+If we consider the normal distribution of repeated sample estimates, the p‑value is estimated by assuming the null hypothesis is true (and is therefore the peak of the distribution) and measuring how far the sample value is from this relative to the spread of the distribution (the standard error).
+The closer the sample estimate is to the null hypothesis, the more likely it was to occur if the null hypothesis were true, and the higher the p‑value
+:::
+
+## p-values
+
+```{r}
+#| label: random-se2
+
+normal_curve +
+  scale_x_continuous(breaks = -3:3, labels = c("-3se", "-2se", "-1se",
+                                               "Population \nmean", "+1se",
+                                               "+2se", "+3se")) + 
+  geom_segment(aes(x = 3.8, y = .1, 
+                   xend = 3.8, yend = 0),
+               arrow = arrow(length = unit(.3, "cm")), 
+               colour = "#9a3416", lwd = 2)
+```
+
+:::{.notes}
+The further away from the null hypothesis, the less likely it would be to occur and the lower the p‑value.
+:::
+
+## p-values 
+
+:::{.nonincremental}
+- Probability of obtaining a result as extreme or more extreme as the sample if the null hypothesis is true
+- Null hypothesis (H0): no difference/association
+:::
+
+:::{.incremental}
+- Low p-value: less evidence to support the null hypothesis
+  - Very low p-value is known as [statistically significant]{.answer}
+:::
+
+## Statistical significance
+
+Often significance is defined by arbitrary cut-off [(usually 0.05)]{.fragment}
+
+[**Be careful with these arbitrary definitions, it is not how probability behaves!**]{.fragment}
+
+[p < 0.05 is significant]{.fragment} [ at the 5% level]{.fragment .answer}
+
+[We never [accept]{.answer} or [reject]{.answer} a null hypothesis]{.fragment}
+
+:::{.notes}
+Results are often referred to as statistically signi􀏐icant if a p‑value falls below a certain threshold. 
+This threshold is often set to 0.05, or a 5% chance that an estimate as extreme as the one obtained would occur if the null hypothesis were true.
+Although arbitrary cut‑offs may be useful in some situations, for example where a decision needs to be taken based on the results, this is not how probability behaves. In reality, there is very little difference between a p‑value of 0.049 (4.9% chance) and 0.051 (a 5.1% chance). Therefore, it is not advised to report ‘accepting’ or ‘rejecting’ a null hypothesis, despite how commonplace this is in some literature.
+:::
+
+## p-values example
+
+```{r}
+hist_gest
+```
+
+## p-value example
+
+**Null hypothesis:** population mean is 40 weeks (280 days)
+
+[**Sample mean:** 266.55 days]{.fragment}
+
+[**standard error of the mean:** 1.436 days]{.fragment}
+
+[Begin assuming the null hypothesis is true]{.fragment}
+
+## p-value example
+
+```{r}
+#| label: pvalue-normal-h0
+
+tibble(x = seq(-10, 10, by = .1),
+                       y = dnorm(x)) %>% 
+  ggplot() +
+  geom_density(aes(x = x, y = y), fill = "thistle", stat = "identity") +
+  scale_x_continuous(name = "Gestational period (days)",
+                     breaks = c(-5, -2, 0, 2, 5),
+                     labels = c("-5se", "-2se", "280", "+2se", "+5se")) +
+  theme_void() +
+  theme(axis.title = element_text(size = 15),
+        axis.text = element_text(size = 12))
+```
+
+## p-value example
+
+```{r}
+#| label: pvalue-gest-hist
+
+tibble(x = seq(-10, 10, by = .1),
+                       y = dnorm(x)) %>% 
+  ggplot() +
+  geom_density(aes(x = x, y = y), fill = "thistle", stat = "identity") +
+  scale_x_continuous(name = "Gestational period (days)",
+                     breaks = c(-9.8, -5, -2, 0, 2, 5, 10),
+                     labels = c("266", "-5se", "-2se", "280", "+2se", 
+                                "+5se", "+10se")) +
+  geom_vline(xintercept = -9.8, colour = "red", linewidth = 1) +
+  annotate("text", x = -8, y = .4, label = "p < 0.001", size = 8) +
+  theme_void() +
+  theme(axis.title = element_text(size = 15),
+        axis.text = element_text(size = 12))
+```
+
+:::{.notes}
+The sample estimate, 266.55 days, lies very far from the hypothesised 280 days. This leads us to a very small p‑value, less than 0.0001. Such a small p‑value would most certainly be considered statistically signi􀏐icant, and provides strong evidence against the null hypothesis that this sample came from a population with a mean gestational age of 280 days.
+:::
+
+## Relationship between p-values and confidence intervals
+
+Confidence intervals and p-values are based on the same information and so agree with one another
+
+[If a p-value is [above 0.05]{.answer}, the sample estimate is [less than 1.96 SEs away]{.answer}. This means it will be [within the 95% confidence interval]{.answer}]{.fragment}
+
+[If the null hypothesis is [outside the 99% confidence interval]{.answer}, it is [over 2.576 SEs away]{.answer} from the sample estimate so [p < 0.01]{.answer}]{.fragment}
+
+##
+
+```{r}
+conf_int95
+```
+
+# {.chapter-theme}
+
+::: r-fit-text
+Exercise 4:
+
+Inferential statistics
+:::
+
+##
+
+![](img/only_connect_table.png){fig-align="center"}
+
+## 
+
+![](img/only_connect_figs.png){fig-align="center"}
+
+# {.chapter-theme}
+
+::: r-fit-text
+Final thoughts
+:::
+
+## Statistical thinking
+
+Statistical analysis does not need to be complicated
+
+[[Think critically]{.answer} about the data, the research question and any biases]{.fragment}
+
+[Use [visualisations]{.answer} to explore the data and convey messages in a clear, concise way]{.fragment}
+
+[Quantify findings with summary statistics]{.fragment}
+
+## Statistical thinking
+
+None of the approaches here make causal inferences about the target population
+
+[Do not make causal statements unless using causal methods]{.fragment}
+
+[Question findings, check past data, investigate unusual findings]{.fragment}
+
+# {.chapter-theme}
+
+::: r-fit-text
+Thank you for attending!
+:::

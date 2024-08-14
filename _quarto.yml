@@ -1,0 +1,4 @@
+project:
+  title: "Statistical thinking"
+  type: website
+  output-dir: docs

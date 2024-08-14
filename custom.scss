@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+
+$theme-lightback: #fdddb6;
+$theme-lighthigh: #9a3416;
+$theme-lighttext: #222222;
+$theme-darkback: #1f2e32;
+$theme-darktext: #ebe8e3;
+
+
+$body-bg: $theme-lightback;
+$body-color: $theme-lighttext;
+$link-color: $theme-lighthigh;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+$presentation-heading-font: "Noto Serif", serif;
+$presentation-font-size-root: 60px;
+$presentation-line-height: 1.6;
+
+/*-- scss:rules --*/
+
+h1 {
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+
+h2 {
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+
+.answer {
+  color: $theme-lighthigh;
+  font-weight: bold;
+}
+
+.chapter-theme{
+  color: $theme-darktext;
+  background-color: $theme-darkback;
+  h1 {
+    color: $theme-darktext;
+  }
+  .slide-background-content {
+    background-color: $theme-darkback;
+  }
+  
+}
