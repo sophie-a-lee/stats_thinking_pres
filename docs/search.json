@@ -1,0 +1,1367 @@
+[
+  {
+    "objectID": "presentation.html#what-is-statistics",
+    "href": "presentation.html#what-is-statistics",
+    "title": "Statistical Thinking",
+    "section": "What is statistics?",
+    "text": "What is statistics?\nStatistics = science of data\n\nCollection and storage of data\nData visualisation\nAnalysis of data\nInterpretation of results\nCommunication of results\n\n\nStatistics is the science of data. This includes the collection and storage of data, the visualisation and analysis of samples of data, and the interpretation and communication of results."
+  },
+  {
+    "objectID": "presentation.html#what-is-statistics-1",
+    "href": "presentation.html#what-is-statistics-1",
+    "title": "Statistical Thinking",
+    "section": "What is statistics?",
+    "text": "What is statistics?\n\n\n\n\n\n\nThe overall aim of statistics is to make inferences about a target population of interest based on a random sample."
+  },
+  {
+    "objectID": "presentation.html#what-is-statistics-2",
+    "href": "presentation.html#what-is-statistics-2",
+    "title": "Statistical Thinking",
+    "section": "What is statistics?",
+    "text": "What is statistics?\n\n\n\n\n\n\nThese inferences are made by applying some kind of statistical analysis to the random sample of the population and making inferences based on those results"
+  },
+  {
+    "objectID": "presentation.html#what-is-statistical-thinking",
+    "href": "presentation.html#what-is-statistical-thinking",
+    "title": "Statistical Thinking",
+    "section": "What is statistical thinking?",
+    "text": "What is statistical thinking?\nStatistics does not require complex analysis methods\nSimplest approaches often the most effective\nStatistical thinking = data-driven critical thinking\n\nPeople tend to assume that statistics involves complex analysis methods but often, the simplest approaches can be the most effective. In this course, we will not focus on analysis methods. Instead, we will be focusing on thinking statistically.\nStatistical thinking involves describing data and complex systems in relatively simple terms whilst acknowledging uncertainty that exists. The process of statistical thinking involves critically appraising available data, identifying patterns using visualisations and summaries, and communicating results in a clear, concise manner. Statistical thinking could be thought of as data-driven critical thinking."
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking",
+    "href": "presentation.html#why-statistical-thinking",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nIn 1990, 58% of the world’s population lived in low-income countries. What is the percentage today?\n\n\nAround 9%\nAround 37%\nAround 61%\n\n\n\n\nSource: Gapminder"
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking-1",
+    "href": "presentation.html#why-statistical-thinking-1",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nIn 1990, 58% of the world’s population lived in low-income countries. What is the percentage today?\n\n\nAround 9%\nAround 37%\nAround 61%\n\n\n\n\nSource: Gapminder"
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking-2",
+    "href": "presentation.html#why-statistical-thinking-2",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nIn low-income countries across the world in 2022, what share of girls went to school until at least age 11?\n\n\nAround 20%\nAround 40%\nAround 60%\n\n\n\n\nSource: Gapminder"
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking-3",
+    "href": "presentation.html#why-statistical-thinking-3",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nIn low-income countries across the world in 2022, what share of girls went to school until at least age 11?\n\n\nAround 20%\nAround 40%\nAround 60%\n\n\n\n\nSource: Gapminder"
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking-4",
+    "href": "presentation.html#why-statistical-thinking-4",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nHow many babies in the UK were vaccinated against some disease in 2019 (before the Coronavirus pandemic)?\n\n\nAround 40%\nAround 60%\nAround 90%\n\n\n\n\nSource: Gapminder"
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking-5",
+    "href": "presentation.html#why-statistical-thinking-5",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nHow many babies in the UK were vaccinated against some disease in 2019 (before the Coronavirus pandemic)?\n\n\nAround 40%\nAround 60%\nAround 90%\n\n\n\n\nSource: Gapminder"
+  },
+  {
+    "objectID": "presentation.html#why-statistical-thinking-6",
+    "href": "presentation.html#why-statistical-thinking-6",
+    "title": "Statistical Thinking",
+    "section": "Why statistical thinking?",
+    "text": "Why statistical thinking?\nNecessary, not just in work but in personal life\nClaims by news/social media often exaggerated or skewed\nHuman brain have a tendency to catastrophise, not good at assessing risk"
+  },
+  {
+    "objectID": "presentation.html#course-content",
+    "href": "presentation.html#course-content",
+    "title": "Statistical Thinking",
+    "section": "Course content",
+    "text": "Course content\nThis course will not introduce complex analysis.\nFocus on thinking critically about data, identifying patterns, describing data in simple terms.\n\nIn this course, we will not be introducing any complex analysis methods. Instead, we will be focusing on statistical thinking. This involves thinking critically about data, identifying patterns, and describing the data in relatively simple terms."
+  },
+  {
+    "objectID": "presentation.html#course-content-1",
+    "href": "presentation.html#course-content-1",
+    "title": "Statistical Thinking",
+    "section": "Course content",
+    "text": "Course content\nTopics covered in this course will include:\n\nResearch questions: what they are, why they are important, how to formulate them\nBiases: common biases and how to recognise them\nData visualisation: how to use graphs to explore data, investigate trends, and convey important messages\nSummarising data and quantifying differences and trends\nInferential statistics: what they are and how to interpret them"
+  },
+  {
+    "objectID": "presentation.html#research-questions",
+    "href": "presentation.html#research-questions",
+    "title": "Statistical Thinking",
+    "section": "Research questions",
+    "text": "Research questions\nOne of the most important parts of statistical analysis\nShould be formulated before any data collection or analysis carried out\nMust be clear, answerable, and concise\nOften not formally documented but helps develop an analysis plan\n\nArguably, the most important step in carrying out statistics is to specify a clear, answerable research question. Often, research questions are not formally documented but they are key to ensuring we are using appropriate data and methods to provide the most suitable advice. A research question must be fully specified before any data are collected or any analysis plans have been decided."
+  },
+  {
+    "objectID": "presentation.html#research-questions-1",
+    "href": "presentation.html#research-questions-1",
+    "title": "Statistical Thinking",
+    "section": "Research questions",
+    "text": "Research questions\nAll research questions must contain a target population and outcome\nOften questions contain comparison groups, these must also be fully defined\nCan be helpful to use PICO approach\n\nAlthough there are infinite research questions that statistics can be used to address, all must contain certain elements. These are a target population and an outcome of interest. If an analysis requires a comparison between groups, these must also be clearly specified in the research question. One way to ensure that a research question has been correctly specified is to use the PICO approach:"
+  },
+  {
+    "objectID": "presentation.html#pico-approach",
+    "href": "presentation.html#pico-approach",
+    "title": "Statistical Thinking",
+    "section": "PICO approach",
+    "text": "PICO approach\nPopulation\nIntervention\nComparison\nOutcome"
+  },
+  {
+    "objectID": "presentation.html#target-population",
+    "href": "presentation.html#target-population",
+    "title": "Statistical Thinking",
+    "section": "Target population",
+    "text": "Target population\nTarget population that we wish to make inferences about\nDescribed fully, all characteristics clearly defined\nExample: young male adult offenders→ male offenders aged between 18 and 20 at time of sentencing\n\nFirst, we must clearly specify a target population of interest. The population described must be as specifically as possible and contain all important characteristics that define the population. This is particularly important in situations where the definition of a characteristic may change or be unclear. For example, the Offender Management Statistics categorise age into three groups: juveniles, young adults, and adults. Rather than defining a population simply as male young adults, we would give the full definition: male offenders who were aged between 18 and 20 at the time of sentencing."
+  },
+  {
+    "objectID": "presentation.html#interventioncomparison",
+    "href": "presentation.html#interventioncomparison",
+    "title": "Statistical Thinking",
+    "section": "Intervention/comparison",
+    "text": "Intervention/comparison\nOptional comparison groups\nCan be intervention, treatment, or just a characteristic\nResearch question must contain both I and C, or neither\n\nAlthough not necessary for all research questions, if a study involves a comparison between groups, these groups must also be fully defined and included. The intervention in a research question could be some intervention, procedure or treatment applied to the target population. However, in some cases this grouping definition is not an intervention at all, it could be an exposure of some kind or a characteristic that differs between the groups we are observing and comparing."
+  },
+  {
+    "objectID": "presentation.html#outcome",
+    "href": "presentation.html#outcome",
+    "title": "Statistical Thinking",
+    "section": "Outcome",
+    "text": "Outcome\nAll research questions must define an outcome of interest\nMust be measurable, specific, and relevant to the question\nType of variable should be defined as this determines appropriate visualisations, summaries, and analyses that can be used\n\nThe outcome of interest defined in the research question must be measurable, specific, and relevant to the question we are aiming to answer. It is particularly important to correctly specify the type of variable used for the outcome as this determines the most appropriate visualisations, summaries and analyses. Variables can either be classified as numeric or categorical"
+  },
+  {
+    "objectID": "presentation.html#types-of-variables-numeric",
+    "href": "presentation.html#types-of-variables-numeric",
+    "title": "Statistical Thinking",
+    "section": "Types of variables: numeric",
+    "text": "Types of variables: numeric\nContinuous: can take any value on a number scale, include decimal places\n\n\n\n\n\nExamples: height, blood pressure, temperature\n\nNumeric variables are measured on a number scale. If the outcome can take any value on a numeric scale, including with decimal places, this is known as a continuous numeric variable."
+  },
+  {
+    "objectID": "presentation.html#types-of-variables-numeric-1",
+    "href": "presentation.html#types-of-variables-numeric-1",
+    "title": "Statistical Thinking",
+    "section": "Types of variables: numeric",
+    "text": "Types of variables: numeric\nDiscrete: can only take whole numbers or rounded numbers, e.g. counts"
+  },
+  {
+    "objectID": "presentation.html#types-of-variables-categorical",
+    "href": "presentation.html#types-of-variables-categorical",
+    "title": "Statistical Thinking",
+    "section": "Types of variables: categorical",
+    "text": "Types of variables: categorical\nCategorical variables classified based on the number of groups/categories\nBinary: two categories (yes/no, positive/negative)"
+  },
+  {
+    "objectID": "presentation.html#types-of-variables-categorical-1",
+    "href": "presentation.html#types-of-variables-categorical-1",
+    "title": "Statistical Thinking",
+    "section": "Types of variables: categorical",
+    "text": "Types of variables: categorical\nOrdinal: more than 2 ordered categories (e.g. low/medium/high)"
+  },
+  {
+    "objectID": "presentation.html#types-of-variables-categorical-2",
+    "href": "presentation.html#types-of-variables-categorical-2",
+    "title": "Statistical Thinking",
+    "section": "Types of variables: categorical",
+    "text": "Types of variables: categorical\nNominal: more than 2 categories, no ordering"
+  },
+  {
+    "objectID": "presentation.html#example-research-question",
+    "href": "presentation.html#example-research-question",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-1",
+    "href": "presentation.html#example-research-question-1",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-2",
+    "href": "presentation.html#example-research-question-2",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: Obese adults"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-3",
+    "href": "presentation.html#example-research-question-3",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: Obese adults\nPeople aged 18 or over"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-4",
+    "href": "presentation.html#example-research-question-4",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: Obese adults\nPeople aged 18 or over with a BMI over 30"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-5",
+    "href": "presentation.html#example-research-question-5",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: People aged 18 or over with a BMI over 30"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-6",
+    "href": "presentation.html#example-research-question-6",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: People aged 18 or over with a BMI over 30\nIntervention: Plant-based diet\nComparison: Standard diet (control group)"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-7",
+    "href": "presentation.html#example-research-question-7",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: People aged 18 or over with a BMI over 30\nIntervention: Plant-based diet\nComparison: Standard diet (control group)"
+  },
+  {
+    "objectID": "presentation.html#example-research-question-8",
+    "href": "presentation.html#example-research-question-8",
+    "title": "Statistical Thinking",
+    "section": "Example research question",
+    "text": "Example research question\nDoes a plant-based diet reduce cholesterol levels in obese adults?\nPopulation: People aged 18 or over with a BMI over 30\nIntervention: Plant-based diet\nComparison: Standard diet (control group)\nOutcome: Difference in cholesterol level"
+  },
+  {
+    "objectID": "presentation.html#biases",
+    "href": "presentation.html#biases",
+    "title": "Statistical Thinking",
+    "section": "Biases",
+    "text": "Biases\nAlmost all data and analyses will have some kind of bias included\nImportant to consider before analysis plan decided\nCan arise at data collection, analysis, interpretation, and communication stages\n\nWhether the data we use to answer our research question is collected by ourselves or taken from a published source, it is important to consider potential biases, or errors, that may be present. Unfortunately most data collection methods are inherently flawed, this makes it especially important to be transparent about the limitations of the data and analysis we provide.\nThere are many different types of bias that can arise at different stages of an analysis. Here, I will introduce some of the most common types with examples."
+  },
+  {
+    "objectID": "presentation.html#selection-bias",
+    "href": "presentation.html#selection-bias",
+    "title": "Statistical Thinking",
+    "section": "Selection bias",
+    "text": "Selection bias\n\n\nIndividuals more likely to be included in sample than others\nSample no longer random, cannot make inferences about target population\n\n\n\n\n\nSelection bias occurs when some data are more likely to be included in a sample than others. One of the key requirements of statistical analysis is that a sample must be random and representative of the target population in our research question. If this is not the case, we may not be able to make inferences about the target population and will not be able to answer the research question. Cherry picking individuals\nFor example, we are interested in whether one hour of yoga per day improves depressive symptoms in adults living in the UK with anxiety and depression. We ask GPs around the UK to suggest patients from their surgery that are currently being treated for anxiety and depression to take part in the study. If the doctors deliberately selected the patients they thought would benefit most from the yoga classes, i.e. those with the highest baseline depressive symptoms, this sample would not be random and the results would be impacted by selection bias."
+  },
+  {
+    "objectID": "presentation.html#recall-bias",
+    "href": "presentation.html#recall-bias",
+    "title": "Statistical Thinking",
+    "section": "Recall bias",
+    "text": "Recall bias\n\n\nParticipants asked to recall past events or experiences\nAccuracy and completeness will differ\nNot always trustworthy\n\n\n\n\n\nRecall bias occurs when participants are asked to recall past events or experiences as part of a study which will differ in accuracy and completeness. For example, in a study investigating the impact of ultra processed food on the rates of heart disease, participants were asked to recall how many ultra processed foods they had consumed in the past week. Most participants are likely to forget some of the food they had eaten over a week, and the accuracy of this recall is likely to differ between participants."
+  },
+  {
+    "objectID": "presentation.html#confirmation-bias",
+    "href": "presentation.html#confirmation-bias",
+    "title": "Statistical Thinking",
+    "section": "Confirmation bias",
+    "text": "Confirmation bias\n\n\nChoosing to analyse or interpret data based on pre-conceived ideas\nInherent to human brains\nIdentify potential expectations before looking at data\n\n\n\n\n\nConfirmation bias is the tendency to analyse or interpret data in a way that supports preconceived ideas. Unfortunately, confirmation bias is inherent to human nature and can be difficult to spot. It is also one of the reasons that statistical thinking, rather than simply trusting our gut instinct, is so important. The best way to counteract confirmation bias is to acknowledge any pre-conceived ideas or expectations of results before looking at data and being aware of these throughout the process."
+  },
+  {
+    "objectID": "presentation.html#missing-data",
+    "href": "presentation.html#missing-data",
+    "title": "Statistical Thinking",
+    "section": "Missing data",
+    "text": "Missing data\n\n\nMissing data = holes in the dataset\nSomething we intended to collect but have not\nVery common, not always obvious\nPotential source of bias\n\n\n\n\n\nAnother potential source of bias comes from the existence of missing data. Missing data are observations that were intended to be collected but were not. Unfortunately they are very common in analysis, even when every effort has been made to avoid them. Examples of missing data include:"
+  },
+  {
+    "objectID": "presentation.html#examples-of-missing-data",
+    "href": "presentation.html#examples-of-missing-data",
+    "title": "Statistical Thinking",
+    "section": "Examples of missing data",
+    "text": "Examples of missing data\n\nProbation practitioners not adding data to administrative system as they are too busy\nQuestionnaires not complete as some questions are considered too personal by participants\nBlood samples are dropped in a lab, losing the results, leaving holes in the data\n\n\nProbation practitioners were asked to record details into an administrative system for the purpose of analysis. Practitioners in a certain area were very busy due to a large caseload and did not collect all of the information as it was not relevant to their work. This means that the data added onto the system is incomplete.\n\nA questionnaire is sent out to households in a local authority, asked for information about household income and employment history. Some households consider these questions too personal and did not fill in the information.\nA clinical trial involves taking blood samples from participants to analyse. Some samples are dropped on the way to the lab and their results are unusable. The analysis dataset contains blank spaces where these results would be."
+  },
+  {
+    "objectID": "presentation.html#missing-data-1",
+    "href": "presentation.html#missing-data-1",
+    "title": "Statistical Thinking",
+    "section": "Missing data",
+    "text": "Missing data\nImpossible to truly know the reason for and impact of missing data\nBest way to overcome missing data is to not have any!\nImportant to consider potential biases introduced by missing data and account for them in analysis\nBe transparent when reporting missing data\n\nUnfortunately, the true reason for missingness will not be known as the data do not exist. When dealing with missing data, our main aim is to identify the most likely reasons and be transparent about the implication of this on our analysis. Failure to recognise and deal with missing data can produce invalid, often misleading results. If data are missing because of the missing data itself, or if there would be systematic differences between the observed and missing values, this means the data are no longer random, one of the main requirements of statistical inference. At a very minimum, we must be transparent about the number and type of missing data within our sample. This should be done before analysis methods are considered as sometimes they may require alternative approaches to overcome the bias introduced by missingness."
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico",
+    "href": "presentation.html#research-questions-pico",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nDoes the introduction of a 4-day working week increase productivity in government departments?\nP\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-1",
+    "href": "presentation.html#research-questions-pico-1",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nDoes the introduction of a 4-day working week increase productivity in government departments?\nP: Government departments\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-2",
+    "href": "presentation.html#research-questions-pico-2",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nDoes the introduction of a 4-day working week increase productivity in government departments?\nP: Government departments\nI: 4-day working week\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-3",
+    "href": "presentation.html#research-questions-pico-3",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nDoes the introduction of a 4-day working week increase productivity in government departments?\nP: Government departments\nI: 4-day working week\nC: Standard working week\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-4",
+    "href": "presentation.html#research-questions-pico-4",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nDoes the introduction of a 4-day working week increase productivity in government departments?\nP: Government departments\nI: 4-day working week\nC: Standard working week\nO: Productivity"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-5",
+    "href": "presentation.html#research-questions-pico-5",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nWhat is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?\nP\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-6",
+    "href": "presentation.html#research-questions-pico-6",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nWhat is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?\nP: Defendants dealt with at magistrates’ courts in the North West\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-7",
+    "href": "presentation.html#research-questions-pico-7",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nWhat is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?\nP: Defendants dealt with at magistrates’ courts in the North West\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-8",
+    "href": "presentation.html#research-questions-pico-8",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nWhat is the average time between an offence being committed and case completion for defendants dealt with at magistrates’ courts in the North West of England?\nP: Defendants dealt with at magistrates’ courts in the North West\nI\nC\nO: Time between offence committed and case completion"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-9",
+    "href": "presentation.html#research-questions-pico-9",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nHow has the prison population in England and Wales changed compared to pre-pandemic levels?\nP\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-10",
+    "href": "presentation.html#research-questions-pico-10",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nHow has the prison population in England and Wales changed compared to pre-pandemic levels?\nP: Prisons in England and Wales\nI\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-11",
+    "href": "presentation.html#research-questions-pico-11",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nHow has the prison population in England and Wales changed compared to pre-pandemic levels?\nP: Prisons in England and Wales\nI: Pre-pandemic, i.e. prior to 2020\nC\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-12",
+    "href": "presentation.html#research-questions-pico-12",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nHow has the prison population in England and Wales changed compared to pre-pandemic levels?\nP: Prisons in England and Wales\nI: Pre-pandemic, i.e. prior to 2020\nC: Post-pandemic\nO"
+  },
+  {
+    "objectID": "presentation.html#research-questions-pico-13",
+    "href": "presentation.html#research-questions-pico-13",
+    "title": "Statistical Thinking",
+    "section": "Research questions: PICO",
+    "text": "Research questions: PICO\nHow has the prison population in England and Wales changed compared to pre-pandemic levels?\nP: Prisons in England and Wales\nI: Pre-pandemic, i.e. prior to 2020\nC: Post-pandemic\nO: Prison population"
+  },
+  {
+    "objectID": "presentation.html#missing-data-2",
+    "href": "presentation.html#missing-data-2",
+    "title": "Statistical Thinking",
+    "section": "Missing data",
+    "text": "Missing data\nProbation practitioners were asked to record details in an administrative system for analytical purposes not directly related to their work.\nSome practitioners were busy and forgot to record the data on the system, leading to holes in the data.\nGive a scenario where this would introduce bias into the analysis, and another where this would not cause bias.\n\nIf probation practitioners did not record information about their caseload because it was too overwhelming, this means that the missing data will be for a certain subset of (potential) results. Therefore, the observed information will not be representative of the whole situation and will only relate to those with smaller caseloads.\nOn the other hand, if the probation practitioner had to leave work early because they were unwell, not related to their work, this is completely random and not related to the missing data. Therefore, we would not expect the missing data to be different to the observed, and the results will not be biased"
+  },
+  {
+    "objectID": "presentation.html#why-data-visualisation",
+    "href": "presentation.html#why-data-visualisation",
+    "title": "Statistical Thinking",
+    "section": "Why data visualisation?",
+    "text": "Why data visualisation?\nPowerful tool with multiple uses\nData exploration: identifying outliers, checking distributions\nAnalysis tool: generating hypotheses, identifying trends\nCommunication tool: conveying messages, sharing results\n\nData visualisation is a powerful tool with multiple important uses. First, visualisations allow us to explore the data, identify potential outliers and errors, or check that the variables behave in the way we would expect them to if they have been recorded correctly. Visualisations can also be used as an analysis tool, allowing us to identify trends in the data or differences between groups. Finally, visualisations can help to convey messages to an audience in a clear, concise way that is often more powerful than presenting them using numbers or text. In some cases, data visualisations can show results so clearly that further analysis is arguably unnecessary."
+  },
+  {
+    "objectID": "presentation.html#section-4",
+    "href": "presentation.html#section-4",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "A gruesome example of this was found after the arrest of Harold Shipman, one of Britain’s most prolific serial killers. Harold Shipman was convicted of murdering hundreds of his mostly elderly patients with an overdose of opiates, often administered in their homes. After his conviction, investigators questioned whether he could have been caught earlier. The visualisation shows the time at which patients died who were registered at other local GP surgeries\nThe red line shows the time of death of Harold Shipman’s patients, with a clear spike in the middle of the day when he was out on house visits to his elderly patients. The difference is so stark that it can be argued that no formal statistical analysis would be required to confirm this."
+  },
+  {
+    "objectID": "presentation.html#choosing-the-most-appropriate-visualisation",
+    "href": "presentation.html#choosing-the-most-appropriate-visualisation",
+    "title": "Statistical Thinking",
+    "section": "Choosing the most appropriate visualisation",
+    "text": "Choosing the most appropriate visualisation\n\nNumber of variables to display\nType of variable(s)\nIntention of the visualisation\n\nExplorative\nCommunicating results\nGenerating hypotheses"
+  },
+  {
+    "objectID": "presentation.html#data-visualisations",
+    "href": "presentation.html#data-visualisations",
+    "title": "Statistical Thinking",
+    "section": "Data visualisations",
+    "text": "Data visualisations\n\nVisualising a single, numeric variable\nVisualisations to compare a numeric variable between groups\nVisualising a single, categorical variable\nVisualisations to compare a categorical variable between groups\nVisualisations for two or more numeric variables\nVisualising temporal data"
+  },
+  {
+    "objectID": "presentation.html#visualising-a-single-numeric-variable",
+    "href": "presentation.html#visualising-a-single-numeric-variable",
+    "title": "Statistical Thinking",
+    "section": "Visualising a single, numeric variable",
+    "text": "Visualising a single, numeric variable\nHistograms: identify outliers, check shape/distribution, identify peaks in data.\n\n\nHistograms are a common data visualisation method for a single numeric variable. Histograms consist of bars that show the number of observations in a sample that lie within a numeric range: the higher the bar, the more common those values are. They are used to check the distribution (or shape) of variables, and are useful to identify outliers and potential errors in the data.\nThe distribution we are most often checking for is the normal distribution, also known as a bell-shaped curve, which occurs naturally in many variables and is a common assumption for many statistical methods. A normal distribution is characterised by a single peak in the centre of the histogram, also known as the average or mean. The histogram will then have two symmetric tails that show more ‘extreme’ values become less common as they are further from the average"
+  },
+  {
+    "objectID": "presentation.html#section-5",
+    "href": "presentation.html#section-5",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "The first thing we can see from this histogram is that it is clearly not a normal distribution. The peak of the sample distribution is close to 0, and there is a very long upper tail which is not symmetrical to a lower tail."
+  },
+  {
+    "objectID": "presentation.html#section-6",
+    "href": "presentation.html#section-6",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Another important thing to note is the presence of outliers. Most local authorities had an SFA of approximately £300 million or less. There are two observations that have values much larger than this which must be investigated."
+  },
+  {
+    "objectID": "presentation.html#histograms",
+    "href": "presentation.html#histograms",
+    "title": "Statistical Thinking",
+    "section": "Histograms",
+    "text": "Histograms\nUse the data to check outliers, see if they should be included\n\n\n\n\n\n\nons_code\nauthority\nsfa_2015\n\n\n\n\nE08000025\nBirmingham\n611.9105\n\n\n-\nGreater London Authority\n1163.4927\n\n\n\n\n\n\nGreater London Authority is a duplicate of local authorities in data, should be removed\nBirmingham not an error, but an outlier\nShould not remove outliers from data unless they should not be included\n\nThe highest value on the histogram represents the Greater London Authority with an SFA of £1,163 million, the second is from Birmingham with an SFA of £612 million. Observations should only be removed from a sample if they should not be included in an analysis. The Greater London Authority is a collection of smaller local authorities that are already in the dataset. This value must be removed before any further analysis is carried out to avoid duplicating observations. However, the Birmingham observation represents a single local authority that has a large value because it covers a large population. The Birmingham observation should not be removed from the analysis as it is not an error, but we should make a note that there is an outlier in the SFA variable as this could influence certain results if further statistical analysis is carried out on this data."
+  },
+  {
+    "objectID": "presentation.html#section-7",
+    "href": "presentation.html#section-7",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "The updated histogram, without the Greater London Authority duplicate, is given below. Notice that the x axis limits have changed. If the objective of a histogram is to check the distribution of the variable, a density curve can be added to help interpretation"
+  },
+  {
+    "objectID": "presentation.html#section-8",
+    "href": "presentation.html#section-8",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "A density curve transforms the data into a smooth function that removes the smaller peaks and troughs and makes it easier to compare to a distribution of interest"
+  },
+  {
+    "objectID": "presentation.html#section-9",
+    "href": "presentation.html#section-9",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "When generating or interpreting histograms, one thing to consider is the number of bars (or bins) used. Changing this number can vastly change the interpretation of results"
+  },
+  {
+    "objectID": "presentation.html#section-10",
+    "href": "presentation.html#section-10",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Reducing the number of bars smooths the histogram but hides the dip in distribution at around £50 million"
+  },
+  {
+    "objectID": "presentation.html#section-11",
+    "href": "presentation.html#section-11",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Increasing the number of bars too much shows all the small peaks and troughs in the data but makes the overall distribution more difficult to interpret. The ideal number of bins depends on the data but when generating histograms, be sure to check different numbers to ensure the graph is as informative as possible"
+  },
+  {
+    "objectID": "presentation.html#comparing-numeric-variables-between-groups",
+    "href": "presentation.html#comparing-numeric-variables-between-groups",
+    "title": "Statistical Thinking",
+    "section": "Comparing numeric variables between groups",
+    "text": "Comparing numeric variables between groups\nDepends on the intention of the graph:\n\nTo show individuals\nTo compare distributions\nTo compare summary statistics\n\n\nAlthough histograms are useful to visualise the distribution of a numeric variable across a whole sample, we often want to compare a variable between groups. The choice of visualisation will depend on which aspect of the numeric variable we are interested in comparing, for example the entire distribution or some kind of summary of the groups."
+  },
+  {
+    "objectID": "presentation.html#bar-chart-of-averages",
+    "href": "presentation.html#bar-chart-of-averages",
+    "title": "Statistical Thinking",
+    "section": "Bar chart of averages",
+    "text": "Bar chart of averages\nSimple graph comparing average between groups\n\nx-axis: Grouping variable\ny-axis: Group average\n\n\nThe simplest, least informative comparison of SFA between regions would be to show the average of each group. This can be done using bar charts which consist of a bar per region. The length of each bar will represent the average SFA for the region it represents. The most common choice of average for charts of this sort is the mean. We shall discuss in later sections why this may not be the most appropriate choice."
+  },
+  {
+    "objectID": "presentation.html#section-12",
+    "href": "presentation.html#section-12",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "This bar chart shows that local authorities in London had the highest SFA on average, while the East Midlands and South East had the lowest. The chart is clear and easily interpretable but is missing a considerable amount of information."
+  },
+  {
+    "objectID": "presentation.html#comparing-numeric-variables-between-groups-1",
+    "href": "presentation.html#comparing-numeric-variables-between-groups-1",
+    "title": "Statistical Thinking",
+    "section": "Comparing numeric variables between groups",
+    "text": "Comparing numeric variables between groups\nBar chart of averages easily interpretable\nRemoves most of the information about a variable\nNo information about spread of distribution or overlap between groups\nBoxplot adds information about spread to average\n\nThe chart is clear and easily interpretable but is missing a considerable amount of information. In particular, the chart does not give any information about the spread of values in each group. Although the group averages look different, there is likely overlap in values in each of the groups. A common visualisation to compare average values across groups, whilst also showing measure of spread, is a boxplot."
+  },
+  {
+    "objectID": "presentation.html#section-13",
+    "href": "presentation.html#section-13",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Boxplots contain a measure of the centre of each group, given by the median, surrounded by a box with limits defined by the interquartile range (IQR). The IQR is the difference between the 75th percentile (the value below which 75% of the sample lies) and the 25th percentile (the value below which 25% of the sample lies), giving the range of the middle 50% of the sample. The box has whiskers attached that give the range excluding outlier, and outliers are highlighted as points on the plot. The definition of outlier differs across software, however a common definition used for the boxplot below is any observation that lies further than 1.5 times the IQR from the box."
+  },
+  {
+    "objectID": "presentation.html#section-15",
+    "href": "presentation.html#section-15",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "The median is surrounded by a box with limits defined by the interquartile range (IQR). The IQR is the difference between the 75th percentile (the value below which 75% of the sample lies) and the 25th percentile (the value below which 25% of the sample lies), giving the range of the middle 50% of the sample."
+  },
+  {
+    "objectID": "presentation.html#section-16",
+    "href": "presentation.html#section-16",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "The box has whiskers attached that give the range excluding outlier,"
+  },
+  {
+    "objectID": "presentation.html#section-17",
+    "href": "presentation.html#section-17",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "and outliers are highlighted as points on the plot. The definition of outlier differs across software, however a common definition used for the boxplot below is any observation that lies further than 1.5 times the IQR from the box."
+  },
+  {
+    "objectID": "presentation.html#section-18",
+    "href": "presentation.html#section-18",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "This boxplot clearly shows far more information than the bar chart of averages. We can clearly see the outlier which was identified earlier as Birmingham. We can also see that, although London has the highest average SFA, there is quite a large overlap of values with other regions. The East Midlands, East England, and South East regions had a large number of outliers and a very small IQR which should be investigated further. The dataset shows that this is not an error, these regions consist mostly of very small local authorities with very low spending and few towns and cities that have substantially higher spending. Therefore, any larger areas in these regions will appear as outliers compared to the very small local authorities."
+  },
+  {
+    "objectID": "presentation.html#boxplots",
+    "href": "presentation.html#boxplots",
+    "title": "Statistical Thinking",
+    "section": "Boxplots",
+    "text": "Boxplots\nAdd extra information compared to bar chart\nUseful to compare summaries between groups\nEasy to identify potential outliers and investigate\nStill losing a lot of information\n\nWe gain more information from the box plot compared to the bar chart but we are still losing a lot of information by only showing summary measures. We can see the range of the middle 50% but we are not able to see how those values are distributed.To overcome these issues, we can show every observation in the sample as points, separated into groups, in a dot plot. Dot plots have the same axes layout as the previous plots, with grouping on the x axis and the numeric variable on the y-axis."
+  },
+  {
+    "objectID": "presentation.html#dot-plots",
+    "href": "presentation.html#dot-plots",
+    "title": "Statistical Thinking",
+    "section": "Dot plots",
+    "text": "Dot plots\nShow every observation as a dot\n\nx-axis: Grouping variable\ny-axis : Numeric outcome\n\nMay need to ‘jitter’ points if lots of overlap"
+  },
+  {
+    "objectID": "presentation.html#section-19",
+    "href": "presentation.html#section-19",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Without checking, this dot plot appears to show every local authority’s SFA grouped by region. However, there are many local authorities that have very similar SFA values that can not be seen as they are currently lying on top of one another. To overcome this, a dot plot can be adapted by spreading the points out along the x-axis, also known as jittering:"
+  },
+  {
+    "objectID": "presentation.html#section-20",
+    "href": "presentation.html#section-20",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "By jittering the points, we can now see the differences in the distribution of points in each region. The outlier of Birmingham is clearly visible, as are the bottom-heavy distributions of some regions. We can clearly see the differences in the number of observations in each region, for example, that the North East region has less local authorities and less variability compared to other regions. One thing that is not clear from this dot plot that was clear from previous plots, is that the London region had the highest average SFA.\nSometimes a single choice of plot will not be enough and multiple visualisations are needed. In this case, we may wish to express the differences in summary statistics between regions, without losing information about the overall distribution and density of the sample. One solution would be to provide a boxplot with points added as an extra layer to the plot:"
+  },
+  {
+    "objectID": "presentation.html#section-21",
+    "href": "presentation.html#section-21",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "This final plot clearly shows the differences in the average SFA between regions, the outlier in the West Midlands region (Birmingham), and the differences in the shapes of distributions between regions. Although we have added an extra layer to each plot, the message of both is still clear and easily interpretable. Where additional layers hide a message or over complicate a visualisation, one or more complicated layers should be removed.\nShow as much relevant data as possible, maximising the amount of information given in the smallest amount of space. This does not mean showing all of the data. Overloading a plot can lead to confusion. Adding too many layers to the same visualisation can make it less informative, hiding important messages."
+  },
+  {
+    "objectID": "presentation.html#visualising-a-single-categorical-variable",
+    "href": "presentation.html#visualising-a-single-categorical-variable",
+    "title": "Statistical Thinking",
+    "section": "Visualising a single categorical variable",
+    "text": "Visualising a single categorical variable\nWant to show distribution of observations between groups\nChoice between visualising counts or proportions\nFrequency tables give full information and can provide both counts and proportions/percentages\n\nVisualising categorical variables involves describing their distribution between categories. This can be done using counts or the proportion of observations in each group. Both counts and proportions/percentages can be displayed using frequency tables."
+  },
+  {
+    "objectID": "presentation.html#section-22",
+    "href": "presentation.html#section-22",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Area nameTotal recorded crimesPercentage of total crimesDerbyshire90,18121.51%Leicestershire103,80624.76%Lincolnshire57,23413.65%Northamptonshire62,11614.82%Nottinghamshire105,89925.26%\n\n\n\nFor example, the number of recorded crimes in the East Midlands in 2023, categorised by police force: Frequency tables can provide a lot of information and, where there are not many categories, can be easy to interpret. However, they can quickly become overwhelming when there are many categories displayed, patterns in the data can be harder to spot, and they can look boring."
+  },
+  {
+    "objectID": "presentation.html#bar-chart",
+    "href": "presentation.html#bar-chart",
+    "title": "Statistical Thinking",
+    "section": "Bar chart",
+    "text": "Bar chart\nCategorical version of histogram\nLength of bars = number of observations in each group\nSimple, effective, easy to interpret\n\nThis same data can be displayed using a bar chart, the categorical equivalent of a histogram, where the length of each bar represents the number of observations in the category:"
+  },
+  {
+    "objectID": "presentation.html#section-23",
+    "href": "presentation.html#section-23",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Although this bar chart is also not particularly interesting, our eyes are immediately drawn to the differences between groups. We can immediately see that Lincolnshire and Northamptonshire had fewer recorded crimes than the other police force areas and that Leicestershire and Nottinghamshire had the highest number of recorded crimes which were at a similar level."
+  },
+  {
+    "objectID": "presentation.html#section-24",
+    "href": "presentation.html#section-24",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "If we want to make this order clearer, we can order the x-axis by the frequency in each group from largest to smallest."
+  },
+  {
+    "objectID": "presentation.html#section-25",
+    "href": "presentation.html#section-25",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Colours can also be used to emphasise groups that are of interest to the audience. For example, if this graph was displayed as part of an investigation into crime levels in Derbyshire, we could change the colour of this bar to draw attention to it.\nCharacteristics such as colours that naturally draw people’s attention within a visualisation are known as preattentive attributes. There are several categories of preattentive attributes that can be used to make important messages clearer."
+  },
+  {
+    "objectID": "presentation.html#section-26",
+    "href": "presentation.html#section-26",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "When creating or interpreting visualisations, we want to ensure the information being shown is not misleading or distorted in any way. One way to avoid misleading readers is to follow the principle of proportional ink. This means that the amount of ink used in a visualisation should be proportional to the quantities it is representing. A common example of a violation in this principle is where a bar chart’s x-axis does not begin at 0. The differences in the lengths of bars is no longer representative of the differences between groups, leading to a distortion in the message."
+  },
+  {
+    "objectID": "presentation.html#section-27",
+    "href": "presentation.html#section-27",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "For example, using the recorded crime data, we could set the frequency axis to begin at 50,000 as all counts were higher than this.\nAlthough the plot shows the same information as the others, the smaller counts appear much smaller than the original plot and the difference between the highest and lowest values is more pronounced. Although this plot is showing the same information, this small change has affected how our brains interpret the results."
+  },
+  {
+    "objectID": "presentation.html#pie-charts",
+    "href": "presentation.html#pie-charts",
+    "title": "Statistical Thinking",
+    "section": "Pie charts",
+    "text": "Pie charts\nEach ‘slice’ of the pie represents the proportion of sample in a group\nCompares groups in context of whole sample\nResearch shows people’s perceptions of dots, lines and bars are more accurate than angles and proportions\n\nAn alternative approach to summarising and visualising categorical variables is to use proportions. One benefit of considering proportions as opposed to the counts is that they allow us to take account of the sample size and put the counts into context. Proportions of a single sample can be visualised using a pie chart. Each ‘slice’ of the pie represents a category and the size of the slice represents the proportion of the sample that lies within that group.\nWarning: Research shows that people’s perception of dots, lines and bars are more accurate than distinguishing between angles, proportions and colour hues. This is why pie charts, are harder to interpret than bar charts, particularly where differences between groups are small."
+  },
+  {
+    "objectID": "presentation.html#section-28",
+    "href": "presentation.html#section-28",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "For example, taking the recorded crime statistics from 2023, we can show the proportion of the total reported crimes in the East Midlands separated by police force area:\nThe pie chart shows the same data as the bar charts shown earlier, however it is harder to compare the groups as the proportions are quite similar. One possible solution to this issue is to add labels with the values onto each slice:"
+  },
+  {
+    "objectID": "presentation.html#section-29",
+    "href": "presentation.html#section-29",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Pie charts are generally discouraged because they are more difficult to interpret than bar charts or frequency tables. If pie charts are used, annotations such as the labels in Figure 2.18 should be used to avoid misinterpretation."
+  },
+  {
+    "objectID": "presentation.html#comparing-categorical-variable-between-groups",
+    "href": "presentation.html#comparing-categorical-variable-between-groups",
+    "title": "Statistical Thinking",
+    "section": "Comparing categorical variable between groups",
+    "text": "Comparing categorical variable between groups\nExtensions of bar charts\n\nStacked bar chart\nSide-by-side bar chart\n\nChoice depends on whether comparing the counts or proportions between groups\n\nBar charts introduced in the previous section can be extended to include a further grouping variable and used to compare the distribution of observations between categories across groups. Stacked bar charts are used to compare the proportion of observations in different categories across groups, whereas side-by-side bar charts compare counts."
+  },
+  {
+    "objectID": "presentation.html#stacked-bar-chart",
+    "href": "presentation.html#stacked-bar-chart",
+    "title": "Statistical Thinking",
+    "section": "Stacked bar chart",
+    "text": "Stacked bar chart\nLength of bar is total number in each category\nBars are made up of multiple smaller bars, total in each category in each group\nUseful when overall count in category is important as well as comparison\n\nA stacked bar chart is useful where the total number in each group is important, as well as the distribution of these groups between categories. As with a standard bar chart, the total number of observations in each group determines the length of the bar. These bars consist of multiple smaller bars that represent the number of observations in each category."
+  },
+  {
+    "objectID": "presentation.html#section-30",
+    "href": "presentation.html#section-30",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "For example, using the data from the previous section, we can compare the overall number of recorded crimes, as well as the different types of crimes, between police forces in the East Midlands. This bar chart clearly shows that Nottinghamshire and Leicestershire had the highest recorded crimes, and Lincolnshire and Northamptonshire had the lowest, which we had already seen previously. In addition to the findings from the previous bar charts, we can now see that the largest proportion of crimes from all police forces were violent crimes or theft. The distribution across types of crimes seems similar between police forces. If the distribution between the types of crimes is more important than comparing the total number per police force, we may also consider a proportion stacked bar chart."
+  },
+  {
+    "objectID": "presentation.html#section-31",
+    "href": "presentation.html#section-31",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Proportion stacked bar charts are an alternative to the stacked bar chart which compares the proportion of each group that lie in different categories. The length of each bar is equal to 1 (representing the whole group size), and consists of smaller bars representing the proportion of the group in a category. These are particularly useful when differences in group sizes are not important and we want to compare relative distributions between groups. The proportion bar chart confirms that the distribution of different crime types is similar across police forces, regardless of the total number of crimes."
+  },
+  {
+    "objectID": "presentation.html#side-by-side-bar-chart",
+    "href": "presentation.html#side-by-side-bar-chart",
+    "title": "Statistical Thinking",
+    "section": "Side-by-side bar chart",
+    "text": "Side-by-side bar chart\nSmaller bars are displayed side-by-side, clustered by category\nDoes not compare overall total in category but easier to compare counts in groups\nNot useful when there are many categories and groups\n\nSide-by-side bar charts allow us to compare the number of observations in each category between groups. The smaller bars that make up a stacked bar chart are placed next to one another, meaning the length of bars now represents the total observations per category per group. They are useful when comparison of the overall total of groups is not important, and where there is a small number of groups and/or categories to compare between."
+  },
+  {
+    "objectID": "presentation.html#section-32",
+    "href": "presentation.html#section-32",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "The previous example would require 45 bars in total (9 bars for each of the 5 police forces). This would be impossible to show clearly on one axis, so for this example, we will just compare the three most common types of crime between forces: violent, theft, and public order."
+  },
+  {
+    "objectID": "presentation.html#bar-charts",
+    "href": "presentation.html#bar-charts",
+    "title": "Statistical Thinking",
+    "section": "Bar charts",
+    "text": "Bar charts\nAll three charts show same information in different formats\nChoice of visualisation depends on motivation:\n\nCompare overall crime total between groups: stacked bar chart\nCompare distribution of groups between categories: proportion bar chart\nCompare group totals across all categories: side-by-side bar chart\n\n\nAll three bar charts show the same information in slightly different formats. The most appropriate choice of these would depend on the motivation behind the plot. For example, are we interested in comparing the overall total crimes between regions? Would we prefer to compare the distribution of the different types of crimes between regions? Or is the intention of the plot to compare the total of a certain type of crimes between regions, rather than the overall total?"
+  },
+  {
+    "objectID": "presentation.html#visualising-2-or-more-numeric-variables",
+    "href": "presentation.html#visualising-2-or-more-numeric-variables",
+    "title": "Statistical Thinking",
+    "section": "Visualising 2 or more numeric variables",
+    "text": "Visualising 2 or more numeric variables\nScatterplots are used to visualise 2 numeric variables,\nEach observation represented by a point on the graph\n\ny-axis: outcome, or dependent variable (if appropriate)\nx-axis: explanatory variable\n\n\nVisualising single variables is important when checking the data for errors and distributions. However, we often want to investigate relationships between multiple variables in a dataset. One of the numeric variables is displayed on the vertical, or y-axis (often the outcome of interest or dependent variable), and the other is displayed on the horizontal, or x-axis (usually the explanatory variable). Each observation is represented with a point on the graph area."
+  },
+  {
+    "objectID": "presentation.html#scatterplots",
+    "href": "presentation.html#scatterplots",
+    "title": "Statistical Thinking",
+    "section": "Scatterplots",
+    "text": "Scatterplots\nScatterplots have multiple purposes:\n\nExploring data: some outliers and errors only visible when plotting multiple variables\nAnalysis: check for trends/relationships and generate hypotheses\nCheck assumptions: linear or nonlinear relationship\n\n\nScatterplots are useful to explore the data and identify outliers/errors which may not be as clearly visible in univariate plots. Scatterplots are also useful to generate hypotheses about the relationship between variables. For example, whether they are positive or negative.They can also explore the nature of relationships in terms of whether they are linear or not, which is a requirement of some statistical methods."
+  },
+  {
+    "objectID": "presentation.html#section-33",
+    "href": "presentation.html#section-33",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "The scatterplot below shows the relationship between cancer mortality in US counties in 2015 and the level of poverty in these counties. Cancer mortality rate has been given on the y-axis as this is the outcome of interest which we think may be dependent on poverty (the explanatory variable): The scatterplot shows there are no unexpected outliers, and there appears to be a positive linear relationship between these variables. That is, as the percentage of the population living in poverty increases, the cancer mortality appears to increase on average. Note that we are not making inferences about the total population, nor are inferring causation from this graph."
+  },
+  {
+    "objectID": "presentation.html#section-34",
+    "href": "presentation.html#section-34",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "This potential relationship can be made clearer by adding a line of best fit to the scatterplot. There are different methods of estimating a line of best fit, the most common being a linear model. Linear models produce a line that minimises the difference between each point and the line drawn. Alternative methods are available where a linear relationship is not appropriate. Adding a line of best fit to the scatterplot shown earlier highlights the positive association between poverty rate and cancer mortality. Although the line does not fit the data perfectly, it gives an estimation of the direction and magnitude of this relationship which can be investigated more formally using statistical analysis."
+  },
+  {
+    "objectID": "presentation.html#scatterplots-1",
+    "href": "presentation.html#scatterplots-1",
+    "title": "Statistical Thinking",
+    "section": "Scatterplots",
+    "text": "Scatterplots\nScatterplots can be extended by changing the colour, size or shape of the points based on another variables\nAdditional variables should only be added if they do not overload the plot\nMultiple, simpler graphs are better than one confusing plot\n\nAdditional variables should only be included in data visualisations where they are needed and where they do not confuse the original message. Overloading a visualisation can make it hard to interpret and lose information. In some cases, it is better to have multiple, simple (but clear) plots rather than a single, complex plot."
+  },
+  {
+    "objectID": "presentation.html#visualising-temporal-data",
+    "href": "presentation.html#visualising-temporal-data",
+    "title": "Statistical Thinking",
+    "section": "Visualising temporal data",
+    "text": "Visualising temporal data\nVisualisations must make it clear repeated measures are related\nLine graph most common temporal visualisation\n\nx-axis: time variable\ny-axis: numeric variable\n\n\nWhere a variable has been measured repeatedly over time, we want to ensure that any visualisation makes it clear that these observations are related. The most common visualisation used for temporal data is a line graph. Line graphs have the measure of time along the x-axis and the variable measured over time on the y-axis. Each observation’s values are connected over time using a line. Line graphs are useful to explore trends over time, for example whether values have been increasing or decreasing."
+  },
+  {
+    "objectID": "presentation.html#section-36",
+    "href": "presentation.html#section-36",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "This line graph shows the number of violent crimes recorded in England between 2010 and 2020. From this simple graph, we can clearly see that there is a strong, downward trend. That is, the number of violent crimes recorded has decreased over the 10-year period. Line graphs are not only useful at determining overall trends but also checking the data for inconsistencies. For example, all years experienced a decrease in recorded crimes apart from 2014 - 2015 where there was an increase. We could go back and check the source of the data, make a note of potential reasons for this difference, and be sure to communicate this as part of our interpretation."
+  },
+  {
+    "objectID": "presentation.html#section-37",
+    "href": "presentation.html#section-37",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Line graphs can be used to compare trends between different groups by adding multiple lines to the same graph. For example, the following graph shows the number of magistrate court cases, by type, between 2012 and 2023. Each case type has a different coloured line, and the interactions between lines are clear: This line graph is the perfect example of where a visualisation is more powerful than simply writing results in a table of texts. The drastic drop of disposals due to closure of magistrates courts during the COVID-19 pandemic is stark. This is coupled with the vast increase of outstanding cases which we can see has not returned to pre-COVID levels. This can be explained by the other lines on the graph as we can see that the number of receipts are almost back to previous levels, whereas the number of disposals has still not quite recovered."
+  },
+  {
+    "objectID": "presentation.html#section-39",
+    "href": "presentation.html#section-39",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Dip in sentencing in 2020 during the pandemic, assuming due to court closures. Increasing up to 2023, almost returned to previous levels.\nNumber on remand has been increasing since around 2018/19. Look back into the data to try to understand the reasons for this. Is it possible that the steeper increase post-2020 is a result of an overloaded court system?\nHard to see differences in remand population as it is so small compared to the other lines, would it be better to show these as separate plots to better understand the changes over time?\nAnnotations to highlight the court closures and any changes in policy that could help explain patterns would be a helpful addition.\nText should be made larger to make the graph more accessible."
+  },
+  {
+    "objectID": "presentation.html#section-40",
+    "href": "presentation.html#section-40",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Clear annotation helps to explain the increase in supervisions following a policy change.\nThe differences in total supervisions makes it difficult to compare the number of types of supervisions over time. Has the number increased in every type following the introduction of the ORA or has this had more of an impact on post-release supervision?\nThese comparisons could be made clearer by adding labels with total to the bars or could be compared using a line graph with a line per supervision type (and possibly a total line).\nA proportion stacked bar chart may also be useful to compare whether the distribution across types has changed following the change in policy.\nText should be made larger to make the graph more accessible."
+  },
+  {
+    "objectID": "presentation.html#section-41",
+    "href": "presentation.html#section-41",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "There is a clear trend over time, with the proportion of ‘older’ cases increasing following the closure of courts in 2020.\nAn annotation would help make this trend clearer and make the proportions easier to interpret. -The use of bars creates a Moire pattern, a visual trick that makes the bars look like they are moving. This is quite unpleasant for some readers (me included), making it hard to look at the plot too long and interpret it.\nConsider joining the bars into a stacked area plot to remove this unpleasant pattern.\nText needs to be larger to make the graph more accessible."
+  },
+  {
+    "objectID": "presentation.html#summarising-data",
+    "href": "presentation.html#summarising-data",
+    "title": "Statistical Thinking",
+    "section": "Summarising data",
+    "text": "Summarising data\nAllows us to explore and quantify aspects of the sample\nCan not be used to answer research question unless all information on target population is collected\nChoice of summary depends on type of variable, distribution of data, and property we wish to quantify\n\nSummary statistics allow us to quantify and explore different parts of a sample of data. They can be provided alongside data visualisations introduced earlier in the course to support results and interpretations. Note that the summary statistics introduced in this section describe only the sample data so cannot be used to answer research questions fully unless all data on the target population has been collected.\nThe choice of summary statistics will depend on the type of variable(s) we wish to explore, the distribution of these variable(s) and the aspect of the data we would like to quantify. When interpreting summaries provided from analysis that has already been completed, it is important to check that the most appropriate summaries have been used and that interpretations of them will be valid."
+  },
+  {
+    "objectID": "presentation.html#summarising-categorical-variables",
+    "href": "presentation.html#summarising-categorical-variables",
+    "title": "Statistical Thinking",
+    "section": "Summarising categorical variables",
+    "text": "Summarising categorical variables\nDescribe the distribution of observations between categories:\n\nProportion (0 → 1)\nPercentage (0 → 100%)\nRate (0 → ∞)\n\nCan use count but does not account for overall sample size\n\nTo summarise a single categorical variable, we simply need to quantify the distribution of observations lying in each group. The simplest way to do this is to count the number of observations that lie in each group, as we have seen previously displayed in frequency tables. However, a simple count can be difficult to interpret without proper context. Often, we wish to present these counts relative to the total sample that they are taken from.\nThe proportion of observations in a given group is estimated as the number in the group divided by the total sample size. This gives a value between 0 and 1. Multiplying the proportion by 100 will give the percentage in each group, taking the value between 0 and 100%. In cases where the proportion and percentage in a given group is very small, we may wish to multiply the proportions by a larger number to make values easier to interpret. These values are known as rates and are interpreted as the value per the number multiplied by. For example, if the proportion in a group was 0.0005, this could be multiplied by 10,000 to give a rate of 5 per 10,000."
+  },
+  {
+    "objectID": "presentation.html#summarising-categorical-variables-1",
+    "href": "presentation.html#summarising-categorical-variables-1",
+    "title": "Statistical Thinking",
+    "section": "Summarising categorical variables",
+    "text": "Summarising categorical variables\nExample: number of recorded crimes in East Midlands, 2023\n\nTotal crimes in East Midlands: 419,236\nTotal crimes in Nottinghamshire: 105,899\n\nProportion of crimes in Nottinghamshire: 105,899 ÷ 419,236  = 0.2526\nPercentage of crimes: 0.2526 x 100% = 25.26%\nRate of crimes: 2526 crimes per 10,000\n\nTo summarise a single categorical variable, we simply need to quantify the distribution of observations lying in each group. The simplest way to do this is to count the number of observations that lie in each group, as we have seen previously displayed in frequency tables. However, a simple count can be difficult to interpret without proper context. Often, we wish to present these counts relative to the total sample that they are taken from.\nThe proportion of observations in a given group is estimated as the number in the group divided by the total sample size. This gives a value between 0 and 1. Multiplying the proportion by 100 will give the percentage in each group, taking the value between 0 and 100%."
+  },
+  {
+    "objectID": "presentation.html#section-43",
+    "href": "presentation.html#section-43",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Area nameTotal recorded crimesProportion of total crimesPercentage of total crimesDerbyshire90,1810.215121.51%Leicestershire103,8060.247624.76%Lincolnshire57,2340.136513.65%Northamptonshire62,1160.148214.82%Nottinghamshire105,8990.252625.26%\n\n\n\nBoth the proportions and percentages give the same information (percentage is simply proportion multiplied by 100) but percentages are generally easier to interpret. In this example, Nottinghamshire had the highest proportion of crimes with just over a quarter (25.26%) of the total. This was closely followed by Leicestershire."
+  },
+  {
+    "objectID": "presentation.html#summarising-numeric-variables",
+    "href": "presentation.html#summarising-numeric-variables",
+    "title": "Statistical Thinking",
+    "section": "Summarising numeric variables",
+    "text": "Summarising numeric variables\nSummarised using the centre (average) and spread of sample\n\nChoice of summary depends on distribution of variable\n\n\n\n\n\n\n\n\n\n\n\nNumeric variables are typically summarised using the centre of the variable, also known as the average, and a measure of the spread of the variable. The most appropriate choice of summary statistics will depend on the distribution of the variable. More specifically, whether the numeric variable is normally distributed or not. The shape/distribution of a variable is typically investigated by plotting data in a histogram."
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre",
+    "href": "presentation.html#measure-of-centre",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nWhen data are normally distributed, centre is given using the mean\n\n\nRepresents the peak of a normal distribution\nSum of the sample values, divided by the sample size\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe average of a numeric variable is another way of saying the centre of its distribution. Often, people will think of the mean when trying to calculate an average, however this may not always be the case. When data are normally distributed, the mean is the central peak of the distribution. This is calculated by adding together all numbers in the sample and dividing it by the sample size."
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-1",
+    "href": "presentation.html#measure-of-centre-1",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nMeasure 10 high school students’ heights in centimetres (cm):\n142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72"
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-2",
+    "href": "presentation.html#measure-of-centre-2",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nFind the mean height:\n142.23 + 149.58 + 146.06 + 160.42 + 174.64 + 172.54 + 148.67 + 143.00 + 173.11 + 168.72 = 1578.97cm"
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-3",
+    "href": "presentation.html#measure-of-centre-3",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nFind the mean height:\n1578.97 ÷ 10 = 157.897cm"
+  },
+  {
+    "objectID": "presentation.html#measure-of-center",
+    "href": "presentation.html#measure-of-center",
+    "title": "Statistical Thinking",
+    "section": "Measure of center",
+    "text": "Measure of center\nWhere data are not normal, use median instead\nOrder sample from smallest to largest, select middle value\nUses less information than mean (less powerful) but always valid\n\nHowever, when the sample is not normally distributed and the peak does not lie in the middle, extreme values or a longer tail will pull the mean towards it. This means that where data are not normally distributed, the mean will not be the centre and the value will be invalid. Where this is the case, the median should be used instead. The median is calculated by ordering the numeric values from smallest to largest and selecting the middle value."
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-4",
+    "href": "presentation.html#measure-of-centre-4",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nTo find the median, first order heights smallest to largest:\n142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72"
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-5",
+    "href": "presentation.html#measure-of-centre-5",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nTo find the median, first order heights smallest to largest:\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64"
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-6",
+    "href": "presentation.html#measure-of-centre-6",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nMedian is the middle value\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64\n\n\nWe then take the middle value. As the sample size is even, the median will lie between two values - the 5th (149.58cm) and the 6th (160.42cm)."
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-7",
+    "href": "presentation.html#measure-of-centre-7",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nMedian is between 149.58cm and 162.42cm\nMiddle value: (149.58 + 162.42) ÷ 2 = 155cm"
+  },
+  {
+    "objectID": "presentation.html#measure-of-centre-8",
+    "href": "presentation.html#measure-of-centre-8",
+    "title": "Statistical Thinking",
+    "section": "Measure of centre",
+    "text": "Measure of centre\nBefore choosing summary, use a histogram to check distribution\nWhen data are normally distributed, mean uses more of the data and gives centre of the sample\nWhen data are skewed, mean is influenced by extreme values and longer tail\nWhen data are normal, mean and median will be equal\n\nWhen data are normally distributed, the mean and median will give the same, or very similar, values. This is because both are measuring the centre. However, when the data are skewed, the mean and median will differ. We prefer to use the mean where possible as it is the more powerful measure. This means that it uses more of the data than the median and is therefore more sensitive to changes in the sample."
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread",
+    "href": "presentation.html#measure-of-spread",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nMeasures how wide or narrow a sample is\nSimplest measure is the range\nEither given as the smallest and largest values or the difference between these\n\nGenerally the measure of the centre of a numeric variable is presented with a measure of spread, or how wide/narrow the distribution is. As with the centre, the most appropriate values will depend on whether the sample is normally distributed or not.\nThe most simple measure of spread is the range of a sample. The range is either presented as the smallest and largest values from a sample or the difference between these."
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-1",
+    "href": "presentation.html#measure-of-spread-1",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the range of the 10 high schoolers’ heights:\n142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-2",
+    "href": "presentation.html#measure-of-spread-2",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the range of the 10 high schoolers’ heights:\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-3",
+    "href": "presentation.html#measure-of-spread-3",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the range of the 10 high schoolers’ heights:\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-4",
+    "href": "presentation.html#measure-of-spread-4",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nRange is either given as two values: 142.23cm ,174.64cm\nOr as the difference between these: 174.64 - 142.23 = 32.41cm"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-5",
+    "href": "presentation.html#measure-of-spread-5",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nRange only uses most extreme values, loses lots of information\nInterquartile range (IQR): the range of the middle 50%\nLower quartile: 25th percentile, 25% of sample lies below\nUpper quartile: 75th percentile, 75% of sample lies below\n\nThe issue with using the range is that it is entirely defined by the most extreme values in the sample and does not give any information about the rest of it. An alternative to this would be to give the range of the middle 50%, also known as the interquartile range (IQR). The IQR is the difference between the 75th percentile, or upper quartile, and the 25th percentile, or lower quartile."
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-6",
+    "href": "presentation.html#measure-of-spread-6",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the IQR of the 10 high schoolers’ heights:\n142.23, 149.58, 146.06, 160.42, 174.64, 172.54, 148.67, 143.00, 173.11, 168.72"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-7",
+    "href": "presentation.html#measure-of-spread-7",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the upper and lower quartile:\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-8",
+    "href": "presentation.html#measure-of-spread-8",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the upper and lower quartile:\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-9",
+    "href": "presentation.html#measure-of-spread-9",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nFind the upper and lower quartile:\n142.23, 143.00, 146.06, 148.67, 149.58, 160.42, 168.72, 172.54, 173.11, 174.64"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-10",
+    "href": "presentation.html#measure-of-spread-10",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nIQR is either given as 2 values: 146.06, 172.54cm\nOr as the difference between these: 172.54 - 146.06 = 26.48cm"
+  },
+  {
+    "objectID": "presentation.html#measure-of-spread-11",
+    "href": "presentation.html#measure-of-spread-11",
+    "title": "Statistical Thinking",
+    "section": "Measure of spread",
+    "text": "Measure of spread\nIQR is still discarding most of the sample\nIf sample is normally distributed, can use the standard deviation (SD)\nAverage difference between observations and the mean\nBigger SD → wider, flatter curve\nSmaller SD → narrower, taller curve\n\nBoth the range and IQR only use 2 values from the sample. As with the median, these measures discard a lot of information from the summaries. Where the sample is normally distributed, the standard deviation (SD) can be used which measures the average distance between each observation and the mean. The larger the SD, the wider and flatter the normal curve will be; the smaller the SD, the narrower and taller the curve will be:"
+  },
+  {
+    "objectID": "presentation.html#normal-distribution",
+    "href": "presentation.html#normal-distribution",
+    "title": "Statistical Thinking",
+    "section": "Normal distribution",
+    "text": "Normal distribution\nNormal distribution completely defined by the mean (peak) and SD (spread)\n\n\nThe standard deviation is only appropriate where a numeric variable has a normal distribution, otherwise this value is meaningless. If a sample is normally distributed, then the entire sample can be completely described just using the mean and standard deviation, even when the sample values are not given. As the distribution is symmetrical, the mean and standard deviation can be used to estimate ranges of values.\nFor example, it is known that approximately 68% of a sample will lie one standard deviation from the mean, approximately 95% within 2 standard deviations from the mean, and around 99.7% within 3 standard deviations:"
+  },
+  {
+    "objectID": "presentation.html#normal-distribution-1",
+    "href": "presentation.html#normal-distribution-1",
+    "title": "Statistical Thinking",
+    "section": "Normal distribution",
+    "text": "Normal distribution\nApproximately 68% of the sample will lie within 1 standard deviation of the mean\n\n\nThe standard deviation is only appropriate where a numeric variable has a normal distribution, otherwise this value is meaningless. If a sample is normally distributed, then the entire sample can be completely described just using the mean and standard deviation, even when the sample values are not given. As the distribution is symmetrical, the mean and standard deviation can be used to estimate ranges of values.\nFor example, it is known that approximately 68% of a sample will lie one standard deviation from the mean, approximately 95% within 2 standard deviations from the mean, and around 99.7% within 3 standard deviations:"
+  },
+  {
+    "objectID": "presentation.html#normal-distribution-2",
+    "href": "presentation.html#normal-distribution-2",
+    "title": "Statistical Thinking",
+    "section": "Normal distribution",
+    "text": "Normal distribution\nApproximately 95% of the sample will lie within 2 standard deviations of the mean\n\n\nThe standard deviation is only appropriate where a numeric variable has a normal distribution, otherwise this value is meaningless. If a sample is normally distributed, then the entire sample can be completely described just using the mean and standard deviation, even when the sample values are not given. As the distribution is symmetrical, the mean and standard deviation can be used to estimate ranges of values. For example, it is known that approximately 68% of a sample will lie one standard deviation from the mean, approximately 95% within 2 standard deviations from the mean, and around 99.7% within 3 standard deviations:"
+  },
+  {
+    "objectID": "presentation.html#normal-distribution-3",
+    "href": "presentation.html#normal-distribution-3",
+    "title": "Statistical Thinking",
+    "section": "Normal distribution",
+    "text": "Normal distribution\nMean and SD can be used to check normal distribution assumption\nSettlement funding assessment in England:\nMean = £50.85 million\nSD = £75.06 million\nIf normal, 95% of the sample would lie between  £50.85 ± (75.06 × 2) million.\n\nThis knowledge can also be used to check the mean and standard deviation were appropriate summary statistics, even if we have no other information. For example, we saw earlier a sample of settlement funding assessment (SFA) values for local authorities in England in 2015. Using a histogram, it was clear that this sample was not normally distributed. However, let’s assume that we do not have the data to plot a histogram, instead we are just given the mean, £50.85 million, and the standard deviation, £75.06 million."
+  },
+  {
+    "objectID": "presentation.html#normal-distribution-4",
+    "href": "presentation.html#normal-distribution-4",
+    "title": "Statistical Thinking",
+    "section": "Normal distribution",
+    "text": "Normal distribution\nMean and SD can be used to check normal distribution assumption\nSettlement funding assessment in England:\nMean = £50.85 million\nSD = £75.06 million\nIf normal, 95% of the sample would lie between\n-£97.26 million and £198.97 million\n\nUsing these values, that would mean 95% of the values lying between -£97.26 million and £198.97 million. The SFA for local authorities cannot be negative, therefore this range would contain a lot of impossible values. This shows that the mean and standard deviation are not appropriate summaries, and the sample is not normally distributed."
+  },
+  {
+    "objectID": "presentation.html#summarising-numeric-variables-1",
+    "href": "presentation.html#summarising-numeric-variables-1",
+    "title": "Statistical Thinking",
+    "section": "Summarising numeric variables",
+    "text": "Summarising numeric variables\nMost appropriate summary depends on distribution (normal or not)\nIf normally distributed, use mean and SD\nIf not, these are invalid, use median and IQR\nMean and SD can be used to check normal distribution even without the full sample"
+  },
+  {
+    "objectID": "presentation.html#section-46",
+    "href": "presentation.html#section-46",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "When displaying averages/measures of centre, we should only give one measure. If the data are normally distributed, the mean and median will be equal so there is no need to show both. If the data are not normal, the mean is not a valid measure and should not be shown anyway.\nThe median should be used as there is a substantial difference between these values, indicating that the data are not normally distributed.\nWhen displaying graphs for comparison, ensure that the axis scales are the same to avoid misleading readers who will assume a like-for-like comparison."
+  },
+  {
+    "objectID": "presentation.html#section-47",
+    "href": "presentation.html#section-47",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Year\nMean wait (weeks)\nSD wait (weeks)\n\n\n\n\n2020\n13.5\n10.2\n\n\n2021\n19.1\n15.6\n\n\n2022\n20.9\n13.9\n\n\n2023\n22.8\n14.7\n\n\n\n\n\n\nIf we use the formula to approximate the 95% sample range, all these give negative waiting times which are impossible. For example, in 2020 the 95% range of waiting times would be approximately 13.5 ± (10.2 × 2) = -6.9 → 33.9 weeks. Therefore, the data are not normally distributed and the mean should not be given. The median and interquartile range would be more appropriate."
+  },
+  {
+    "objectID": "presentation.html#comparing-groups",
+    "href": "presentation.html#comparing-groups",
+    "title": "Statistical Thinking",
+    "section": "Comparing groups",
+    "text": "Comparing groups\nMost appropriate choice depends on intention, type of outcome, nature of the relationship\n\nComparison of variable between groups\nInvestigating trends over time\nRelationship between numeric variables\n\n\nOften, our research question will involve a comparison between groups, investigating trends over time, or investigating a relationship between two numeric variables. There are multiple approaches we can use to compare groups but the correct choice will depend on the outcome of interest and the type of relationship we are interested in. This section will describe the most common comparative statistics, their interpretations, and the reasons we may choose to use one approach over another."
+  },
+  {
+    "objectID": "presentation.html#comparing-categorical-outcomes",
+    "href": "presentation.html#comparing-categorical-outcomes",
+    "title": "Statistical Thinking",
+    "section": "Comparing categorical outcomes",
+    "text": "Comparing categorical outcomes\nCompare summary statistics (proportions, percentages, or rates) between groups\nAbsolute difference: Subtract values\nRelative difference: Divide values\n\nWhen comparing a categorical variable between groups, we are often comparing the summary measures that were introduced in the previous section: proportions, percentages, and rates. These summaries are either compared using the absolute difference or the relative difference."
+  },
+  {
+    "objectID": "presentation.html#section-49",
+    "href": "presentation.html#section-49",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Region\nRecorded crimes\nViolent crimes\nNonviolent crimes\n\n\n\n\nEast Midlands\n419236\n161865 (38.61%)\n257371 (61.39%)\n\n\nWest Midlands\n572937\n233851 (40.82%)\n339086 (59.18%)\n\n\n\n\n\n\n\n\nAbsolute difference: 40.8% - 38.6% = 2.2%\nWest Midlands had 2.2% more violent crimes recorded in 2023 than the East Midlands\n\nTo demonstrate the difference between these comparisons, let’s consider the number of recorded crimes in the East Midlands we saw earlier and compare them to the number recorded in the West Midlands. These crimes are categorised as either violent or non-violent. We wish to compare the distribution of these types of crimes between the regions, i.e. was the proportion of recorded crimes that were violent similar between regions. The table below shows the number and type of crime, along with the percentage of total crimes in each region that were classified as either violent or non-violent\nThe absolute difference is calculated by simply subtracting proportions or percentages between groups. In this example, the absolute difference in proportions of total crimes that were violent is (0.408 - 0.386) 0.22, and the absolute difference in percentages is (40.8% - 38.6%) 2.2%. The West Midlands had 2.2% higher percentage of recorded violent crimes than the East Midlands. If we carried out the sums the other way round, we would get a negative number (-2.2%), indicating a reduction in the percentage in East Midlands compared to the West. Absolute differences are interpreted relative to a null value of 0, representing no difference."
+  },
+  {
+    "objectID": "presentation.html#section-50",
+    "href": "presentation.html#section-50",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Region\nRecorded crimes\nViolent crimes\nNonviolent crimes\n\n\n\n\nEast Midlands\n419236\n161865 (38.61%)\n257371 (61.39%)\n\n\nWest Midlands\n572937\n233851 (40.82%)\n339086 (59.18%)\n\n\n\n\n\n\n\n\nRelative difference: 40.8% ÷ 38.6% = 1.057\nWest Midlands had 1.057 times higher percentage of violent crimes recorded in 2023 than the East Midlands\nNo difference = 1\n\nAlternatively, the relative difference is found by dividing one value by another. Unlike the absolute difference, this will be the same whether we use the proportion or percentage. The relative difference in the percentage of violent crimes between regions is (40.8% / 38.6%) 1.057. This means that the percentage of crimes recorded as violent was 1.057 times higher in the West Midlands compared to the East Midlands."
+  },
+  {
+    "objectID": "presentation.html#section-51",
+    "href": "presentation.html#section-51",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Region\nRecorded crimes\nViolent crimes\nNonviolent crimes\n\n\n\n\nEast Midlands\n419236\n161865 (38.61%)\n257371 (61.39%)\n\n\nWest Midlands\n572937\n233851 (40.82%)\n339086 (59.18%)\n\n\n\n\n\n\n\n\nRelative difference: 38.6% ÷ 40.8% = 0.948\nEast Midlands had 0.946 times the percentage violent crimes recorded in 2023 than the West Midlands\nLess than 1: reduction\n\nIf we wanted to do this comparison the other way around (comparing the East to West Midlands), we would find a relative difference of (38.6% / 40.8%) 0.946. Therefore, the percentage of recorded crimes in the East Midlands that were violent was 0.946 times the percentage in the West Midlands. When interpreting relative differences, we are comparing the result to a null value of 1, given when both values are equal. As 0.946 is below 1, this represents a reduction."
+  },
+  {
+    "objectID": "presentation.html#comparing-numeric-outcomes",
+    "href": "presentation.html#comparing-numeric-outcomes",
+    "title": "Statistical Thinking",
+    "section": "Comparing numeric outcomes",
+    "text": "Comparing numeric outcomes\nCompare measures of centre/average (mean or median) between groups\nMost appropriate depends on distribution of sample in each group\nRequires a histogram per group\n\nThe most appropriate method to compare a numeric variable between groups will once again depend on the distribution of the variable. A comparison can either be made using the difference in means, where both groups have a normally distributed sample, or difference in medians, where the samples are skewed."
+  },
+  {
+    "objectID": "presentation.html#section-52",
+    "href": "presentation.html#section-52",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Earlier in the course, we saw the settlement funding assessment (SFA) for each local authority in England in 2015. We may want to compare this between two regions, for example between the North West and the Yorkshire and Humber regions. Before choosing the most appropriate comparison, we must check the distribution of SFA in each region using a histogram: As with the full sample, both regions’ values are positively skewed (with a longer upper tail). This means that a comparison of means would be inappropriate, we must use the difference in medians."
+  },
+  {
+    "objectID": "presentation.html#comparing-numeric-outcomes-1",
+    "href": "presentation.html#comparing-numeric-outcomes-1",
+    "title": "Statistical Thinking",
+    "section": "Comparing numeric outcomes",
+    "text": "Comparing numeric outcomes\nMedian most appropriate measure for comparison\nMedian NW: £57.17 million\nMedian YH: £58.49 million\nDifference in medians: £57.17 million - £58.49 million\n= -£1.34 million\n\nThe median of the North West was £57.15 million, the median in Yorkshire and the Humber was £58.49 million. This makes the median difference £1.34 million (or -£1.34 million depending on which difference we are finding). Therefore, the SFA was £1.34 million higher on average in the Yorkshire and Humber region than in the North West."
+  },
+  {
+    "objectID": "presentation.html#comparing-variables-over-time",
+    "href": "presentation.html#comparing-variables-over-time",
+    "title": "Statistical Thinking",
+    "section": "Comparing variables over time",
+    "text": "Comparing variables over time\nVisualised using line graph\nCommon comparisons: absolute difference, relative difference, or percentage change\nChoice depends on intention, interpretation differs\n\nWhen dealing with temporal data, it is important to quantify differences across time as well as visualising them using a line graph. Comparison across time is typically given as an absolute difference between time points, as a relative difference, or this is commonly converted into a percentage change."
+  },
+  {
+    "objectID": "presentation.html#section-53",
+    "href": "presentation.html#section-53",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Recall the line graph given in an earlier section showing the reduction in the number of violent crimes recorded between 2010 and 2020: This difference can be quantified by comparing the number of violent crimes recorded in 2010 and 2020."
+  },
+  {
+    "objectID": "presentation.html#section-54",
+    "href": "presentation.html#section-54",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Recall the line graph given in an earlier section showing the reduction in the number of violent crimes recorded between 2010 and 2020: This difference can be quantified by comparing the number of violent crimes recorded in 2010 (1,841,000 and 2020 1,239,000.)"
+  },
+  {
+    "objectID": "presentation.html#comparing-variables-over-time-1",
+    "href": "presentation.html#comparing-variables-over-time-1",
+    "title": "Statistical Thinking",
+    "section": "Comparing variables over time",
+    "text": "Comparing variables over time\nAbsolute difference: 1,841,000 - 1,239,000 = 602,000\nThere were 602,000 less violent crimes reported in 2020 compared to 2010\nRelative difference: 1,841,000 ÷ 1,239,000 = 1.486\nThere were 1.486 times more violent crimes reported in 2020 compared to 2010\n\nThe absolute difference is found by subtracting the number of violent crimes recorded in 2020, 1,239,000, by the number in 2010, 1,841,000. There were 602,000 ;ess violent crimes reported in 2020 compared to 2010.\nThe relative difference is found by dividing one count by the other. In this example, the relative difference (1,841,000 / 1,239,000) is 1.486. This means that there were 1.486 times more violent crimes reported in 2020 compared to 2010."
+  },
+  {
+    "objectID": "presentation.html#comparing-variables-over-time-2",
+    "href": "presentation.html#comparing-variables-over-time-2",
+    "title": "Statistical Thinking",
+    "section": "Comparing variables over time",
+    "text": "Comparing variables over time\nThe percentage change can also be found by converting the relative difference\nCompare relative difference to no difference: 1.486 - 1 = 0.486\nConvert the proportion change to percentage: 0.486 x 100%\n= 48.6%\nThere were 48.6% more violent crimes reported in 2010 than 2020\n\nThe percentage change can be found by comparing the relative difference to the null value of 1 (no relative difference). When comparing 2010 to 2020, the relative difference was 0.486 above 1, giving the proportion increase. This can be multiplied by 100 to give a percentage increase of 48.6%. Therefore, there were 48.6% more violent crimes reported in 2010 compared to 2020."
+  },
+  {
+    "objectID": "presentation.html#comparing-variables-over-time-3",
+    "href": "presentation.html#comparing-variables-over-time-3",
+    "title": "Statistical Thinking",
+    "section": "Comparing variables over time",
+    "text": "Comparing variables over time\nPercentage reduction found in similar way\nRelative difference: 1,239,000 ÷ 1,841,000 = 0.673\nCompare to no difference: 1 - 0.673 = 0.327 (32.7%)\nThere were 32.7% fewer violent crimes reported in 2020 than 2010\n\nThe relative difference can also be found by comparing 2020 to 2010 if we want to give the relative or percentage decrease in violent crime. The relative difference (1,239,000 / 1,841,000) is 0.673, so there were 0.673 times the number of crimes reported in 2020 than 2010. This result is not intuitive, so converting the difference into a percentage decrease can make the value easier to interpret. As with an increase, we first find the difference between the relative difference and the null (1 - 0.673). This gives a proportion decrease of 0.327 or a percentage decrease of 32.7%. Therefore, there were 32.7% fewer violent crimes reported in 2020 compared to 2010."
+  },
+  {
+    "objectID": "presentation.html#relationship-between-numeric-variables",
+    "href": "presentation.html#relationship-between-numeric-variables",
+    "title": "Statistical Thinking",
+    "section": "Relationship between numeric variables",
+    "text": "Relationship between numeric variables\nScatterplot used to visualise trends\nStrength of relationship quantified using correlation coefficients\nChoice of coefficients depends on if trend is linear or not\n\nLinear trend: Pearson’s correlation coefficient\nNonlinear trend: Spearman’s correlation coefficient\n\n\nCorrelation coefficients are summary statistics that describe the strength and direction of a relationship between two numeric variables. There are different types of correlation coefficients that exist, the choice of which depends on the nature of the trend it is measuring: is it linear or nonlinear?\nThe Pearson’s correlation coefficient measures the association between numeric variables if we assume it is linear. It essentially measures how close points lie to the line of best fit added to a scatterplot. The alternative to Pearson’s correlation is Spearman’s correlation coefficient, this measures the general trend upwards or downwards, whether or not this is linear. As with medians and IQRs, Spearman’s correlation coefficient uses less of the data than Pearson’s so we only use it where necessary."
+  },
+  {
+    "objectID": "presentation.html#correlation-coefficients",
+    "href": "presentation.html#correlation-coefficients",
+    "title": "Statistical Thinking",
+    "section": "Correlation coefficients",
+    "text": "Correlation coefficients\nTake value between -1 and 1\nCorrelation of 0 means no association\nCloser coefficient is to +1/-1, the stronger the positive/negative association is\n\nCorrelation coefficients take a value between -1 and 1. A value of 0 represents no association, values of +/- 1 represent perfect association (a straight or curved line depending on the choice of statistic). Generally, a correlation coefficient will lie between 0 and +/- 1 where the further the value gets from 0, the stronger the relationship is."
+  },
+  {
+    "objectID": "presentation.html#section-55",
+    "href": "presentation.html#section-55",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "A correlation coefficient is said to show a positive association if the value is above 0. This means as one variable increases, the other also tends to increase:"
+  },
+  {
+    "objectID": "presentation.html#what-are-inferential-statistics",
+    "href": "presentation.html#what-are-inferential-statistics",
+    "title": "Statistical Thinking",
+    "section": "What are inferential statistics?",
+    "text": "What are inferential statistics?\n\n\n\n\n\n\nAt the beginning of the course, we saw that one of the main aims of statistics is to make inferences about a target population of interest based on results of analysis applied to a random sample. These inferences require inferential statistics,"
+  },
+  {
+    "objectID": "presentation.html#what-are-inferential-statistics-1",
+    "href": "presentation.html#what-are-inferential-statistics-1",
+    "title": "Statistical Thinking",
+    "section": "What are inferential statistics?",
+    "text": "What are inferential statistics?\nInferential statistics make inferences about target population based on a random, representative sample\nCombine sample estimates with sample size and level of precision\nMost common inferential statistics: p-values and confidence intervals\n\nThese are estimated by combining results from the random, representative sample taken from the target population, and information about the sample size and precision of the sample estimate."
+  },
+  {
+    "objectID": "presentation.html#measures-of-precision",
+    "href": "presentation.html#measures-of-precision",
+    "title": "Statistical Thinking",
+    "section": "Measures of precision",
+    "text": "Measures of precision\nPrecision of an estimate quantified by standard error (SE)\nBased on sample size and sample variability\nDifferent formula for each type of estimate (e.g. mean, percentage, difference between means)\n\n\\(SE(\\bar{x}) = \\frac{SD}{\\sqrt{n}}\\)\n\n\nInferential statistics require a measure of how precise a sample estimate is. Precision is quanti􀏐ied using the standard error (SE), calculated using the sample size and sample variability. The formula used to calculate a standard error depends on the type of parameter we wish to obtain from the target. For example, the standard error of a single mean (𝑆𝐸(𝑥)̄ ) is found by dividing the sample standard deviation (𝑆𝐷) by the square root of the sample size (𝑛):"
+  },
+  {
+    "objectID": "presentation.html#measures-of-precision-1",
+    "href": "presentation.html#measures-of-precision-1",
+    "title": "Statistical Thinking",
+    "section": "Measures of precision",
+    "text": "Measures of precision\n\n\\(SE(\\bar{x}) = \\frac{SD}{\\sqrt{n}}\\)\n\n\nFor every parameter of interest:\n\nLarger sample, higher precision → lower standard error\nMore variability, lower precision → higher standard error\n\nInferential statistics work based on the central limit theorem\n\n\nRegardless of the formula used or the parameter of interest, the larger a sample is, the more precise an estimate will be. Conversely, the more varied a sample is, the less precise an estimate is. A precise estimate is represented by a small standard error value. Standard errors are used to estimate inferential statistics (p‑values and con􀏐idence intervals) based on the central limit theorem."
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem",
+    "href": "presentation.html#central-limit-theorem",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-1",
+    "href": "presentation.html#central-limit-theorem-1",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-2",
+    "href": "presentation.html#central-limit-theorem-2",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-3",
+    "href": "presentation.html#central-limit-theorem-3",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-4",
+    "href": "presentation.html#central-limit-theorem-4",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-5",
+    "href": "presentation.html#central-limit-theorem-5",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-6",
+    "href": "presentation.html#central-limit-theorem-6",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-7",
+    "href": "presentation.html#central-limit-theorem-7",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-8",
+    "href": "presentation.html#central-limit-theorem-8",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#central-limit-theorem-9",
+    "href": "presentation.html#central-limit-theorem-9",
+    "title": "Statistical Thinking",
+    "section": "Central limit theorem",
+    "text": "Central limit theorem"
+  },
+  {
+    "objectID": "presentation.html#confidence-intervals",
+    "href": "presentation.html#confidence-intervals",
+    "title": "Statistical Thinking",
+    "section": "Confidence intervals",
+    "text": "Confidence intervals\n\nA range of values the true population parameter is compatible with\nBased on sample estimate, precision, and confidence level\n\n\nA con􀏐idence interval is a range of values that the true population statistic is compatible with based on the sample estimate, precision, and some pre‑de􀏐ined level of con􀏐idence. The con􀏐idence level can be adjusted depending on how con􀏐ident we wish to be about the true population parameter."
+  },
+  {
+    "objectID": "presentation.html#section-62",
+    "href": "presentation.html#section-62",
+    "title": "Statistical Thinking",
+    "section": "",
+    "text": "Confidence levels\nNumber of SEs\n\n\n\n\n80%\n1.282\n\n\n90%\n1.645\n\n\n95%\n1.960\n\n\n99%\n2.576\n\n\n99.9%\n3.291"
+  },
+  {
+    "objectID": "presentation.html#confidence-intervals-1",
+    "href": "presentation.html#confidence-intervals-1",
+    "title": "Statistical Thinking",
+    "section": "Confidence intervals",
+    "text": "Confidence intervals\n\nA range of values the true population parameter is compatible with\nBased on sample estimate, precision, and confidence level\n\n- Based on central limit theorem, can capture ranges we would expect a percentage of parameter estimates to lie:\n\n\\(\\bar{x} \\pm 1.96 \\times SE(\\bar{x})\\)\n\n\nThe con􀏐idence interval is created assuming the central limit theorem. As the hypothetical repeated estimates are assumed to follow a normal distribution, we can use the sample estimate of the parameter and the standard error to obtain ranges within which we would expect a certain percentage of parameter estimates to lie."
+  },
+  {
+    "objectID": "presentation.html#confidence-interval-example",
+    "href": "presentation.html#confidence-interval-example",
+    "title": "Statistical Thinking",
+    "section": "Confidence interval example",
+    "text": "Confidence interval example\n\n\nWe wish to make inferences about the mean gestational period (length of time from conception to the birth of a baby) in the UK. As we are not able to obtain all information from every birth in the UK, we instead collect a random sample of 130 pregnant women and measure their gestational period in days:\nThis sample follows a normal distribution with mean gestational period 266.55 days, and a standard deviation of 16.37. However, if we wish to make inferences about the whole of the UK, we will need to estimate inferential statistics, such as a con􀏐idence interval."
+  },
+  {
+    "objectID": "presentation.html#confidence-interval-example-1",
+    "href": "presentation.html#confidence-interval-example-1",
+    "title": "Statistical Thinking",
+    "section": "Confidence interval example",
+    "text": "Confidence interval example\nFirst, we calculate the standard error of the mean:\n\n\\(SE = SD \\div \\sqrt{n}\\)\n\n\n\\(= 16.37 \\div \\sqrt{130}\\) \\(= 1.436\\)"
+  },
+  {
+    "objectID": "presentation.html#confidence-interval-example-2",
+    "href": "presentation.html#confidence-interval-example-2",
+    "title": "Statistical Thinking",
+    "section": "Confidence interval example",
+    "text": "Confidence interval example\n\n\nmean = 266.55 days\nConfidence level = 95%\n\nStandard error = 1.436\n\n\n95% confidence interval = [\\(266 \\pm 1.96 \\times 1.436\\)]\n= [\\(263.74, 269.37\\)]\n\nTherefore, we are 95% con􀏐ident that the mean gestational period in the whole of the UK lies between 263.74 days and 269.37 days (if the sample is random and representative!)."
+  },
+  {
+    "objectID": "presentation.html#p-values",
+    "href": "presentation.html#p-values",
+    "title": "Statistical Thinking",
+    "section": "p-values",
+    "text": "p-values\n\nProbability of obtaining a result as extreme or more extreme as the sample if the null hypothesis is true\nNull hypothesis (H0): no difference/association\n\n\nAnother commonly used inferential statistic is the p‑value. A p‑value is the probability of obtaining a sample estimate as extreme, or more extreme, than the current if some null hypothesis (H0) were true. The null hypothesis is usually ‘no difference’ or ‘no association’, depending on the value being tested."
+  },
+  {
+    "objectID": "presentation.html#p-values-1",
+    "href": "presentation.html#p-values-1",
+    "title": "Statistical Thinking",
+    "section": "p-values",
+    "text": "p-values\n\n\nIf we consider the normal distribution of repeated sample estimates, the p‑value is estimated by assuming the null hypothesis is true (and is therefore the peak of the distribution) and measuring how far the sample value is from this relative to the spread of the distribution (the standard error). The closer the sample estimate is to the null hypothesis, the more likely it was to occur if the null hypothesis were true, and the higher the p‑value"
+  },
+  {
+    "objectID": "presentation.html#p-values-2",
+    "href": "presentation.html#p-values-2",
+    "title": "Statistical Thinking",
+    "section": "p-values",
+    "text": "p-values\n\n\nThe further away from the null hypothesis, the less likely it would be to occur and the lower the p‑value."
+  },
+  {
+    "objectID": "presentation.html#p-values-3",
+    "href": "presentation.html#p-values-3",
+    "title": "Statistical Thinking",
+    "section": "p-values",
+    "text": "p-values\n\n\nProbability of obtaining a result as extreme or more extreme as the sample if the null hypothesis is true\nNull hypothesis (H0): no difference/association\n\n\n\n\nLow p-value: less evidence to support the null hypothesis\n\nVery low p-value is known as statistically significant"
+  },
+  {
+    "objectID": "presentation.html#statistical-significance",
+    "href": "presentation.html#statistical-significance",
+    "title": "Statistical Thinking",
+    "section": "Statistical significance",
+    "text": "Statistical significance\nOften significance is defined by arbitrary cut-off (usually 0.05)\nBe careful with these arbitrary definitions, it is not how probability behaves!\np &lt; 0.05 is significant at the 5% level\nWe never accept or reject a null hypothesis\n\nResults are often referred to as statistically signi􀏐icant if a p‑value falls below a certain threshold. This threshold is often set to 0.05, or a 5% chance that an estimate as extreme as the one obtained would occur if the null hypothesis were true. Although arbitrary cut‑offs may be useful in some situations, for example where a decision needs to be taken based on the results, this is not how probability behaves. In reality, there is very little difference between a p‑value of 0.049 (4.9% chance) and 0.051 (a 5.1% chance). Therefore, it is not advised to report ‘accepting’ or ‘rejecting’ a null hypothesis, despite how commonplace this is in some literature."
+  },
+  {
+    "objectID": "presentation.html#p-values-example",
+    "href": "presentation.html#p-values-example",
+    "title": "Statistical Thinking",
+    "section": "p-values example",
+    "text": "p-values example"
+  },
+  {
+    "objectID": "presentation.html#p-value-example",
+    "href": "presentation.html#p-value-example",
+    "title": "Statistical Thinking",
+    "section": "p-value example",
+    "text": "p-value example\nNull hypothesis: population mean is 40 weeks (280 days)\nSample mean: 266.55 days\nstandard error of the mean: 1.436 days\nBegin assuming the null hypothesis is true"
+  },
+  {
+    "objectID": "presentation.html#p-value-example-1",
+    "href": "presentation.html#p-value-example-1",
+    "title": "Statistical Thinking",
+    "section": "p-value example",
+    "text": "p-value example"
+  },
+  {
+    "objectID": "presentation.html#p-value-example-2",
+    "href": "presentation.html#p-value-example-2",
+    "title": "Statistical Thinking",
+    "section": "p-value example",
+    "text": "p-value example\n\n\nThe sample estimate, 266.55 days, lies very far from the hypothesised 280 days. This leads us to a very small p‑value, less than 0.0001. Such a small p‑value would most certainly be considered statistically signi􀏐icant, and provides strong evidence against the null hypothesis that this sample came from a population with a mean gestational age of 280 days."
+  },
+  {
+    "objectID": "presentation.html#relationship-between-p-values-and-confidence-intervals",
+    "href": "presentation.html#relationship-between-p-values-and-confidence-intervals",
+    "title": "Statistical Thinking",
+    "section": "Relationship between p-values and confidence intervals",
+    "text": "Relationship between p-values and confidence intervals\nConfidence intervals and p-values are based on the same information and so agree with one another\nIf a p-value is above 0.05, the sample estimate is less than 1.96 SEs away. This means it will be within the 95% confidence interval\nIf the null hypothesis is outside the 99% confidence interval, it is over 2.576 SEs away from the sample estimate so p &lt; 0.01"
+  },
+  {
+    "objectID": "presentation.html#statistical-thinking",
+    "href": "presentation.html#statistical-thinking",
+    "title": "Statistical Thinking",
+    "section": "Statistical thinking",
+    "text": "Statistical thinking\nStatistical analysis does not need to be complicated\nThink critically about the data, the research question and any biases\nUse visualisations to explore the data and convey messages in a clear, concise way\nQuantify findings with summary statistics"
+  },
+  {
+    "objectID": "presentation.html#statistical-thinking-1",
+    "href": "presentation.html#statistical-thinking-1",
+    "title": "Statistical Thinking",
+    "section": "Statistical thinking",
+    "text": "Statistical thinking\nNone of the approaches here make causal inferences about the target population\nDo not make causal statements unless using causal methods\nQuestion findings, check past data, investigate unusual findings"
+  }
+]
